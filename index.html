@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Album Collection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Melodic Mosaic</h1>
+    <h2>A Curated Compilation</h2>
+
+    <div class="sort-buttons">
+        <button id="sort-album-name">Sort by Album</button>
+        <button id="sort-artist-name">Sort by Artist</button>
+        <button id="sort-release-date">Sort by Release Date</button>
+        <button id="sort-rating">Sort by Rating</button>
+    </div>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search by album, artist, release date, or genre" />
+    </div>
+
+<div class="container">
+
+    <div class="album-cover" data-release-date="1991-09-24" data-artist-name="Nirvana" data-album-name="Nevermind" data-genres="Grunge,Alternative Rock">
+        <img src="images/Nevermind.png" alt="Nevermind Album Cover" data-rating="27">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1995-10-02" data-artist-name="Oasis" data-album-name="(What's the Story) Morning Glory? Album Cover" data-genres='["Rock", "Britpop"]'>
+        <img src="images/(What's the Story) Morning Glory-.jpg" alt="(What's the Story) Morning Glory?" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1964-07-10" data-artist-name="The Beatles" data-album-name="A Hard Day's Night Album Cover" data-genres='["Rock", "Pop Rock", "Pop"]'>
+        <img src="images/A Hard Day’s Night.jpg" alt="A Hard Day's Night" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1965-01-01" data-artist-name="John Coltrane" data-album-name="A Love Supreme Album Cover" data-genres='["Modal Jazz", "Post-Bop", "Spirtual Jazz"]'>
+        <img src="images/A Love Supreme.jpg" alt="A Love Supreme" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1995-06-20" data-artist-name="The Verve" data-album-name="A Northern Soul Album Cover" data-genres="Britpop,Psychedelic Rock">
+        <img src="images/A Northern Soul.jpg" alt="A Northern Soul" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2002-08-26" data-artist-name="Coldplay" data-album-name="A Rush of Blood to the Head Album Cover" data-genres="Rock,Alternative Rock,Arena Rock">
+        <img src="images/A Rush Of Blood To The Head.jpg" alt="A Rush of Blood to the Head" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1969-09-26" data-artist-name="The Beatles" data-album-name="Abbey Road Album Cover" data-genres="Rock">
+        <img src="images/Abbey Road.png" alt="Abbey Road" data-rating="11">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1991-11-18" data-artist-name="U2" data-album-name="Achtung Baby Album Cover" data-genres="Alternative Rock">
+        <img src="images/Achtung Baby.jpg" alt="Achtung Baby" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1987-09-07" data-artist-name="Pet Shop Boys" data-album-name="Actually" data-genres="Synth-Pop, Dance-Pop, Disco">
+        <img src="images/Actually.jpg" alt="Actually Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1970-09-19" data-artist-name="Neil Young" data-album-name="After the Gold Rush" data-genres="Folk Rock,Country Folk,Country Rock">
+        <img src="images/After The Gold Rush.jpg" alt="After the Gold Rush Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1975-11-14" data-artist-name="Eno" data-album-name="Another Green World" data-genres="Art Rock,Ambient,Art Pop,Electropop,Ambient Pop,Minimal,Avant-Pop">
+        <img src="images/Another Green World.jpg" alt="Another Green World Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1974-01-01" data-artist-name="The Miracles" data-album-name="Anthology" data-genres="R&B,Soul">
+        <img src="images/Anthology - Smoky Robinson And The Miracles .jpg" alt="Anthology Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1966-08-05" data-artist-name="The Beatles" data-album-name="Revolver" data-genres="Rock,Pop,Psychedelia">
+        <img src="images/Revolver.png" alt="Revolver Album Cover" data-rating="18">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1965-12-03" data-artist-name="The Beatles" data-album-name="Rubber Soul" data-genres="Folk Rock,Rock,Pop">
+        <img src="images/Rubber Soul.jpg" alt="Rubber Soul Album Cover" data-rating="8">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1967-05-26" data-artist-name="The Beatles" data-album-name="Sgt. Pepper's Lonely Hearts Club Band" data-genres="Rock,Pop,Psychedelia,Art Rock">
+        <img src="images/Sgt. Pepper's Lonely Hearts Club Band" alt="Sgt. Pepper's Lonely Hearts Club Band Album Cover" data-rating="8">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1968-11-22" data-artist-name="The Beatles" data-album-name="The Beatles" data-genres="Rock,Pop,Folk">
+        <img src="images/The Beatles.png" alt="The Beatles Album Cover" data-rating="14">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1963-03-22" data-artist-name="The Beatles" data-album-name="Please Please Me" data-genres="Merseybeat,Rock And Roll,Pop">
+        <img src="images/Please Please Me.jpg" alt="Please Please Me Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1963-11-22" data-artist-name="The Beatles" data-album-name="With the Beatles" data-genres="Merseybeat,Rock And Roll,Pop,R&B">
+        <img src="images/With the Beatles.jpg" alt="With the Beatles Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1995-08-22" data-artist-name="Rancid" data-album-name="...And Out Come the Wolves" data-genres="Punk Rock,Ska Punk,Pop-Punk">
+        <img src="images/And Out Comes The Wolves.jpg" alt="...And Out Come the Wolves Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1988-06-28" data-artist-name="Public Enemy" data-album-name="It Takes a Nation of Millions to Hold Us Back" data-genres="Hip Hop,Political Hip Hop,Sampledelia">
+        <img src="images/It Takes a Nation of Millions to Hold Us Back.jpg" alt="It Takes a Nation of Millions to Hold Us Back Album Cover" data-rating="23">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1979-12-14" data-artist-name="The Clash" data-album-name="London Calling" data-genres="Punk Rock,Post-Punk,New Wave">
+        <img src="images/London Calling.jpg" alt="London Calling Album Cover" data-rating="21">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1977-10-28" data-artist-name="Sex Pistols" data-album-name="Never Mind the Bollocks, Here's the Sex Pistols" data-genres="Punk Rock">
+        <img src="images/Never Mind the Bollocks, Here's the Sex Pistols.png" alt="Never Mind the Bollocks, Here's the Sex Pistols Album Cover" data-rating="18">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1966-05-16" data-artist-name="The Beach Boys" data-album-name="Pet Sounds" data-genres="Progressive Pop,Chamber Pop,Psychedelic Pop,Art Rock">
+        <img src="images/Pet Sounds.jpg" alt="Pet Sounds Album Cover" data-rating="17">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1967-03-12" data-artist-name="The Velvet Underground and Nico" data-album-name="The Velvet Underground & Nico" data-genres="Art Rock,Experimental Rock,Proto-Punk,Psychedelic Rock,Avant-Pop">
+        <img src="images/The Velvet Underground & Nico.jpg" alt="The Velvet Underground & Nico Album Cover" data-rating="16">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1971-05-21" data-artist-name="Marvin Gaye" data-album-name="What's Going On" data-genres="Rock,Alternative">
+        <img src="images/What's Going On.jpg" alt="What's Going On Album Cover" data-rating="16">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1972-05-12" data-artist-name="The Rolling Stones" data-album-name="Exile on Main St." data-genres="Rock And Roll,Hard Rock,Country Blues">
+        <img src="images/Exile On Main St..jpg" alt="Exile on Main St. Album Cover" data-rating="15">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1997-05-21" data-artist-name="Radiohead" data-album-name="OK Computer" data-genres="Art Rock,Alternative Rock">
+        <img src="images/Ok Computer.png" alt="OK Computer Album Cover" data-rating="15">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1977-02-08" data-artist-name="Television" data-album-name="Marquee Moon" data-genres="Punk Rock,Post-Punk,Art-Punk,Garage Rock">
+        <img src="images/Marquee Moon.png" alt="Marquee Moon Album Cover" data-rating="14">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1972-06-16" data-artist-name="David Bowie" data-album-name="The Rise and Fall of Ziggy Stardust and the Spiders from Mars" data-genres="Glam Rock,Proto-Punk">
+        <img src="images/The Rise And Fall Of Ziggy Stardust And The Spiders From Mars.jpg" alt="Album Cover" data-rating="14">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1966-06-20" data-artist-name="Bob Dylan" data-album-name="Blonde on Blonde" data-genres="Folk Rock,Blues Rock,Country Rock,Rock And Roll">
+        <img src="images/Blonde On Blonde.jpg" alt="Blonde on Blonde Album Cover" data-rating="13">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1965-08-30" data-artist-name="Bob Dylan" data-album-name="Highway 61 Revisited" data-genres="Folk Rock,Blues Rock, Rock And Roll">
+        <img src="images/Highway 61 Revisited.jpg" alt="Highway 61 Revisited Album Cover" data-rating="13">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1977-11-10" data-artist-name="Patti Smith" data-album-name="Horses" data-genres="Punk Rock,Art Punk,Garage Rock">
+        <img src="images/Horses.jpg" alt="Horses Album Cover" data-rating="13">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1998-08-25" data-artist-name="Lauryn Hill" data-album-name="The Miseducation of Lauryn Hill" data-genres="Neo Soul,R&B,Hip Hop, Hip Hop Soul,Progressive Rap">
+        <img src="images/The Miseducation of Lauryn Hill.jpg" alt="The Miseducation of Lauryn Hill Album Cover" data-rating="13">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1967-05-12" data-artist-name="The Jimi Hendrix Experience" data-album-name="Are You Experienced" data-genres="Psychedelic Rock,Hard Rock,Acid Rock,Blues">
+        <img src="images/Are You Experienced.jpg" alt="Are You Experienced Album Cover" data-rating="12">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1986-06-16" data-artist-name="The Smiths" data-album-name="The Queen Is Dead" data-genres="Indie Pop,Jangle Pop,Alternative Rock,Indie Rock,Post-Punk">
+        <img src="images/The Queen is Dead.jpg" alt="The Queen Is Dead Album Cover" data-rating="12">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1980-07-18" data-artist-name="Joy Division" data-album-name="Closer" data-genres="Post-Punk,Gothic Rock">
+        <img src="images/Closer.jpg" alt="Closer Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1982-11-29" data-artist-name="Michael Jackson" data-album-name="Thriller" data-genres="Pop,Post-Disco,R&B,Rock,Funk">
+        <img src="images/Thriller.jpg" alt="Thriller Album Cover" data-rating="11">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1968-11-29" data-artist-name="Van Morrison" data-album-name="Astral Weeks" data-genres="Folk Rock,Folk Jazz,Progressive Folk,Blue-Eyed Soul">
+        <img src="images/Astral Weeks.jpg" alt="Astral Weeks Album Cover" data-rating="10">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1975-01-20" data-artist-name="Bob Dylan" data-album-name="Blood on the Tracks" data-genres="Folk Rock">
+        <img src="images/Blood On The Tracks.jpg" alt="Blood on the Tracks Album Cover" data-rating="10">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1991-04-08" data-artist-name="Massive Attack" data-album-name="Blue Lines" data-genres="Trip Hop, British Hip Hop">
+        <img src="images/Blue Lines.jpg" alt="Blue Lines Album Cover" data-rating="10">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1993-09-21" data-artist-name="Nirvana" data-album-name="In Utero" data-genres="Grunge,Alternative Rock,Punk Rock,Noise Rock">
+        <img src="images/In Utero.jpg" alt="In Utero Album Cover" data-rating="10">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1991-11-04" data-artist-name="My Bloody Valentine" data-album-name="Loveless" data-genres="Shoegaze,Dream Pop,Noise Pop,Noise Rock,Experimental Rock">
+        <img src="images/Loveless.jpg" alt="Loveless Album Cover" data-rating="10">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1976-04-23" data-artist-name="Ramones" data-album-name="Ramones" data-genres="Punk Rock">
+        <img src="images/Ramones.jpg" alt="Ramones Album Cover" data-rating="10">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1971-06-22" data-artist-name="Joni Mitchell" data-album-name="Blue" data-genres="Folk, Folk Rock">
+        <img src="images/Blue.jpg" alt="Blue Album Cover" data-rating="9">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1967-11-01" data-artist-name="Love" data-album-name="Forever Changes" data-genres="Folk Rock,Orchestral Pop,Psychedelic Pop,Baroque Pop,Chamber Pop,Psychedelic Rock">
+        <img src="images/Forever Changes.jpg" alt="Forever Changes Album Cover" data-rating="9">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1959-08-17" data-artist-name="Miles Davis" data-album-name="Kind of Blue" data-genres="Rock,Alternative">
+        <img src="images/Kind Of Blue.jpg" alt="Kind of Blue Album Cover" data-rating="9">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1984-06-25" data-artist-name="Prince and the Revolution" data-album-name="Purple Rain" data-genres="Pop,Rock,R&B,Funk">
+        <img src="images/Purple Rain.jpg" alt="Purple Rain Album Cover" data-rating="9">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1980-10-08" data-artist-name="Talking Heads" data-album-name="Remain in Light" data-genres="New Wave,Post-Punk,Dance-Rock,Afrobeat,Worldbeat,Art Rock">
+        <img src="images/Remain In Light.png" alt="Remain in Light Album Cover" data-rating="9">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1987-03-30" data-artist-name="Prince" data-album-name="Sign o' the Times" data-genres="R&B,Funk,Soul,Rock,Avant-Pop">
+        <img src="images/Sign O’ The Times.jpg" alt="Sign o' the Times Album Cover" data-rating="9">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1977-04-08" data-artist-name="The Clash" data-album-name="The Clash" data-genres="Punk Rock">
+        <img src="images/The Clash.jpg" alt="The Clash Album Cover" data-rating="9">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1973-03-01" data-artist-name="Pink Floyd" data-album-name="The Dark Side of the Moon" data-genres="Progressive Rock,Psychedelia">
+        <img src="images/The Dark Side Of The Moon.png" alt="The Dark Side of the Moon Album Cover" data-rating="9">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2015-03-15" data-artist-name="Kendrick Lamar" data-album-name="To Pimp a Butterfly" data-genres="Alternative Hip Hop,Progressive Rap,Conscious Hip Hop,Jazz Rap,G-Funk,Neo Soul">
+        <img src="images/To Pimp a Butterfly.png" alt="To Pimp a Butterfly Album Cover" data-rating="9">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1979-06-15" data-artist-name="Joy Division" data-album-name="Unknown Pleasures" data-genres="Post-Punk,Gothic Rock">
+        <img src="images/Unknown Pleasures.jpg" alt="Unknown Pleasures Album Cover" data-rating="9">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1992-10-05" data-artist-name="R.E.M." data-album-name="Automatic for the People" data-genres="Alternative Rock,Baroque Pop">
+        <img src="images/Automatic for the People.jpg" alt="Automatic for the People Album Cover" data-rating="8">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1988-10-18" data-artist-name="Sonic Youth" data-album-name="Daydream Nation" data-genres="Experimental Rock,Alternative Rock,Indie Rock,Art Punk,Post-Punk,Grunge">
+        <img src="images/Daydream Nation.jpg" alt="Daydream Nation Album Cover" data-rating="8">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1994-08-29" data-artist-name="Oasis" data-album-name="Definitely Maybe" data-genres="Britpop,Rock">
+        <img src="images/Definitely Maybe.jpg" alt="Album Cover" data-rating="8">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1994-08-22" data-artist-name="Portishead" data-album-name="Dummy" data-genres="Trip Hop">
+        <img src="images/Dummy.png" alt="Dummy Album Cover" data-rating="8">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1968-10-16" data-artist-name="The Jimi Hendrix Experience" data-album-name="Electric Ladyland" data-genres="Psychedelic Rock,Acid Rock,Hard Rock,Funk,Progressive Soul">
+        <img src="images/Electric Ladyland.jpg" alt="Electric Ladyland Album Cover" data-rating="8">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1993-11-09" data-artist-name="Wu-Tang Clan" data-album-name="Enter the Wu-Tang (36 Chambers)" data-genres="Hardcore Hip Hop,East Coast Hip Hop,Alternative Hip Hop">
+        <img src="images/Enter the Wu-Tang (36 Chambers).jpg" alt="Enter the Wu-Tang (36 Chambers) Album Cover" data-rating="8">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1969-11-28" data-artist-name="The Rolling Stones" data-album-name="Let It Bleed" data-genres="Hard Rock,Blues,Country Blues">
+        <img src="images/Let It Bleed.jpg" alt="Let It Bleed Album Cover" data-rating="8">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1995-02-20" data-artist-name="Tricky" data-album-name="Maxinquaye" data-genres="Trip Hop,Experimental,Electronic,R&B,Post-Rock,British Hip Hop">
+        <img src="images/Maxinquaye.jpg" alt="Maxinquaye Album Cover" data-rating="8">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1996-06-18" data-artist-name="Beck" data-album-name="Odelay" data-genres="Alternative Rock,Sampledelia,Alternative Hip Hop,Expermental Rock,Folk Rock,Neo-Psychedelia">
+        <img src="images/Odelay.jpg" alt="Odelay Album Cover" data-rating="8">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1991-09-23" data-artist-name="Primal Scream" data-album-name="Screamadelica" data-genres="Alternative Rock,Alternative Dance,Neo-Psychedelia,Maddchester,Dance-Rock">
+        <img src="images/Screamadelica.jpg" alt="Screamadelica Album Cover" data-rating="8">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1992-12-15" data-artist-name="Dr. Dre" data-album-name="The Chronic" data-genres="West Coast Hip Hop,G-Funk,Gangsta Rap">
+        <img src="images/The Chronic.jpg" alt="The Chronic Album Cover" data-rating="8">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1967-01-04" data-artist-name="The Doors" data-album-name="The Doors" data-genres="Psychedelic Rock,Hard Rock,Art Rock,Psychedelia">
+        <img src="images/The Doors.jpg" alt="The Doors Album Cover" data-rating="8">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1987-03-09" data-artist-name="U2" data-album-name="The Joshua Tree" data-genres="Rock">
+        <img src="images/The Joshua Tree.jpg" alt="The Joshua Tree Album Cover" data-rating="8">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1970-07-07" data-artist-name="The Stooges" data-album-name="Fun House" data-genres="Proto-Punk,Hard Rock,Avant-Rock,Punk Jazz,Garage Rock">
+        <img src="images/Fun House.png" alt="Fun House Album Cover" data-rating="7">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2004-09-14" data-artist-name="Arcade Fire" data-album-name="Funeral" data-genres="Indie Rock,Chamber Pop,Art Rock,Baroque Pop">
+        <img src="images/Funeral.jpg" alt="Funeral Album Cover" data-rating="7">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1971-12-17" data-artist-name="David Bowie" data-album-name="Hunky Dory" data-genres="Art Pop,Pop Rock">
+        <img src="images/Hunky Dory.jpg" alt="Hunky Dory Album Cover" data-rating="7">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1994-04-19" data-artist-name="Nas" data-album-name="Illmatic" data-genres="East Coast Hip Hop,Hardcore Hip Hop,Jazz Rap">
+        <img src="images/Illmatic.jpg" alt="Illmatic Album Cover" data-rating="7">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1973-08-03" data-artist-name="Stevie Wonder" data-album-name="Innervisions" data-genres="Progressive Soul,Funk,Soul,Rock,Jazz">
+        <img src="images/Innervisions.jpg" alt="Innervisions Album Cover" data-rating="7">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1971-11-08" data-artist-name="Led Zeppelin" data-album-name="Untitled aka Led Zeppelin IV" data-genres="Hard Rock, Heavy Metal">
+        <img src="images/Led Zeppelin IV.jpg" alt="Untitled aka Led Zeppelin IV Album Cover" data-rating="7">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2010-11-22" data-artist-name="Kanye West" data-album-name="My Beautiful Dark Twisted Fantasy" data-genres="Hip Hop,Progressive Rap,Rap Opera">
+        <img src="images/My Beautiful Dark Twisted Fantasy.jpg" alt="My Beautiful Dark Twisted Fantasy Album Cover" data-rating="7">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1965-09-15" data-artist-name="Otis Redding" data-album-name="Otis Blue/Otis Redding Sings Soul" data-genres="Soul,R&B,Blues,Rock,Southern Soul">
+        <img src="images/Otis Blue-Otis Redding Sings Soul.jpg" alt="Otis Blue/Otis Redding Sings Soul Album Cover" data-rating="7">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1994-04-25" data-artist-name="Blur" data-album-name="Parklife" data-genres="Britpop">
+        <img src="images/Parklife.png" alt="Parklife Album Cover" data-rating="7">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1977-02-04" data-artist-name="Fleetwood Mac" data-album-name="Rumours" data-genres="Pop Rock,Soft Rock">
+        <img src="images/Rumours.jpg" alt="Rumours Album Cover" data-rating="7">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1971-10-10" data-artist-name="Carole King" data-album-name="Tapestry" data-genres="Soft Rock,Pop">
+        <img src="images/Tapestry.jpg" alt="Tapestry Album Cover" data-rating="7">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1969-09-22" data-artist-name="The Band" data-album-name="The Band" data-genres="Roots Rock,Folk Rock,Country Rock,Blues Rock,Americana">
+        <img src="images/The Band.png" alt="The Band Album Cover" data-rating="7">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1994-03-08" data-artist-name="Nine Inch Nails" data-album-name="The Downward Spiral" data-genres="Industrial Rock,Alternative Rock,Industrial Metal">
+        <img src="images/The Downward Spiral.png" alt="The Downward Spiral Album Cover" data-rating="7">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1975-08-25" data-artist-name="Artist" data-album-name="Born to Run" data-genres="Rock And Roll, Pop Rock, Power Pop">
+        <img src="images/Born To Run.jpg" alt="Born to Run Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1995-10-30" data-artist-name="Pulp" data-album-name="Different Class" data-genres="Britpop, Art Rock">
+        <img src="images/Different Class.jpg" alt="Different Class Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1992-09-29" data-artist-name="Alice in Chains" data-album-name="Dirt" data-genres="Grunge,Heavy Metal,Alternative Metal">
+        <img src="images/Dirt.jpg" alt="Dirt Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1996-09-16" data-artist-name="DJ Shadow" data-album-name="Endtroducing....." data-genres="Industrial Hip Hop,Trip Hop,Plunderphonics,Sampledelia">
+        <img src="images/Endtroducing......jpg" alt="Endtroducing..... Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1985-09-16" data-artist-name="Kate Bush" data-album-name="Hounds of Love" data-genres="Art Pop,Progressive Pop,Art Rock,Progressive Rock">
+        <img src="images/Hounds Of Love.png" alt="Hounds of Love Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2001-07-30" data-artist-name="The Strokes" data-album-name="Is This It" data-genres="Indie Rock,Garage Rock,Post-Punk Revival">
+        <img src="images/Is This It .jpg" alt="Is This It Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2000-10-02" data-artist-name="Radiohead" data-album-name="Kid A" data-genres="Electronica,Post-Rock,Art Rock,Ambient,Experimental Rock">
+        <img src="images/Kid A.png" alt="Kid A Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1994-04-12" data-artist-name="Hole" data-album-name="Live Through This" data-genres="Alternative Rock,Grunge,Punk Rock">
+        <img src="images/Live Through This.jpg" alt="Live Through This Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1986-03-03" data-artist-name="Metallica" data-album-name="Master of Puppets" data-genres="Thrash Metal">
+        <img src="images/Master of Puppets.png" alt="Master of Puppets Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1983-04-12" data-artist-name="R.E.M." data-album-name="Murmur" data-genres="Jangle Pop,Alternative Rock,Post-Punk,Folk Rock,Garage Rock">
+        <img src="images/Murmur.jpg" alt="Murmur Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1989-07-25" data-artist-name="Beastie Boys" data-album-name="Paul's Boutique" data-genres="Hip Hop,Sampledelia">
+        <img src="images/Paul's Boutique.jpg" alt="Paul's Boutique Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1995-06-07" data-artist-name="Björk" data-album-name="Post" data-genres="Art Pop,Electronica,Trip Hop,Experimental">
+        <img src="images/Post.png" alt="Post Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1994-09-13" data-artist-name="The Notorious B.I.G." data-album-name="Ready to Die" data-genres="East Coast Hip Hop, Gangsta Rap,Hardcore Hip Hop">
+        <img src="images/Ready to Die.jpg" alt="Ready to Die Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1993-07-27" data-artist-name="The Smashing Pumpkins" data-album-name="Siamese Dream" data-genres="Alternative Rock,Grunge,Alternative Metal,Psychedelic Rock,Indie Rock">
+        <img src="images/Siamese Dream.jpg" alt="Siamese Dream Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2001-09-11" data-artist-name="Jay-Z" data-album-name="The Blueprint" data-genres="East Coast Hip Hop">
+        <img src="images/The Blueprint.jpg" alt="The Blueprint Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1991-09-24" data-artist-name="A Tribe Called Quest" data-album-name="The Low End Theory" data-genres="East Coast Hip Hop,Alternative Hip Hop,Jazz Rap">
+        <img src="images/The Low End Theory.png" alt="The Low End Theory Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1989-05-02" data-artist-name="The Stone Roses" data-album-name="The Stone Roses" data-genres="Maddchester,Jangle Pop,Neo-Psychedelia,Alternative Rock">
+        <img src="images/The Stone Roses.jpg" alt="The Stone Roses Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1971-11-01" data-artist-name="Sly and the Family Stone" data-album-name="There's a Riot Goin' On" data-genres="Psychedelic Funk, Progressive Soul,Avant-Pop,Deep Funk">
+        <img src="images/There's A Riot Goin' On.jpg" alt="There's a Riot Goin' On Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1995-02-27" data-artist-name="PJ Harvey" data-album-name="To Bring You My Love" data-genres="Alternative Rock,Punk Blues,Blues Rock">
+        <img src="images/To Bring You My Love.jpg" alt="To Bring You My Love Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1977-03-01" data-artist-name="Kraftwerk" data-album-name="Trans-Europe Express" data-genres="Electronic,Synth-Pop,Experimental Pop,Avant-Garde">
+        <img src="images/Trans-Europe Express.jpg" alt="Trans-Europe Express Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1972-11-08" data-artist-name="Lou Reed" data-album-name="Transformer" data-genres="Glam Rock,Pop Rock">
+        <img src="images/Transformer.jpg" alt="Transformer Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1998-09-29" data-artist-name="Outkast" data-album-name="Aquemini" data-genres="Southern Hip Hop,Alternative Hip Hop,Progressive Rap,Soul,G-Funk">
+        <img src="images/Aquemini.jpg" alt="Aquemini Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1995-07-03" data-artist-name="D'Angelo" data-album-name="Brown Sugar" data-genres="Neo Soul,R&B,Soul,Funk">
+        <img src="images/Brown Sugar.jpg" alt="Brown Sugar Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2012-07-10" data-artist-name="Frank Ocean" data-album-name="Channel Orange" data-genres="Alternative R&B,Progressive Soul,Neo Soul">
+        <img src="images/Channel Orange.png" alt="Channel Orange Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1992-04-21" data-artist-name="Beastie Boys" data-album-name="Check Your Head" data-genres="Alternative Rock,Rap Rock,Hip Hop,Punk-Rap,Progressive Rap">
+        <img src="images/Check Your Head.jpg" alt="Check Your Head Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1981-12-05" data-artist-name="Black Flag" data-album-name="Damaged" data-genres="Hardcore Punk">
+        <img src="images/Damaged.jpg" alt="Damaged Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1996-05-21" data-artist-name="The Suicide Machines" data-album-name="Destruction by Definition" data-genres="Ska Punk, Punk Rock,Hardcore Punk,Melodic Hardcore">
+        <img src="images/Destruction by Definition.jpg" alt="Destruction by Definition Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1994-02-01" data-artist-name="Green Day" data-album-name="Dookie" data-genres="Punk Rock,Pop-Punk,Skate Punk">
+        <img src="images/Dookie.jpg" alt="Dookie Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1989-04-17" data-artist-name="Pixies" data-album-name="Doolittle" data-genres="Alternative Rock,Punk Rock,Indie Rock,Noise Pop,Grunge">
+        <img src="images/Doolittle.jpg" alt="Doolittle Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1989-05-28" data-artist-name="Operation Ivy" data-album-name="Energy" data-genres="Ska Punk,Punk Rock,Hardcore Punk">
+        <img src="images/Energy.jpg" alt="Energy Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1993-06-22" data-artist-name="Liz Phair" data-album-name="Exile in Guyville" data-genres="Indie Rock,Lo-Fi">
+        <img src="images/Exile in Guyville.jpg" alt="Exile in Guyville Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1990-04-10" data-artist-name="Public Enemy" data-album-name="Fear of a Black Planet" data-genres="Hardcore Hip Hop,Political Hip Hop,East Coast Hip Hop,Sampledelia,Progressive Rap">
+        <img src="images/Fear Of A Black Planet.jpg" alt="Fear of a Black Planet Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1980-09-02" data-artist-name="Dead Kennedys" data-album-name="Fresh Fruit for Rotting Vegetables" data-genres="Hardcore Punk">
+        <img src="images/Fresh Fruit for Rotting Vegetables.jpg" alt="Fresh Fruit for Rotting Vegetables Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1986-08-25" data-artist-name="Paul Simon" data-album-name="Graceland" data-genres="Worldbeat,Pop,Rock,Folk">
+        <img src="images/Graceland.jpg" alt="Graceland Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1970-12-11" data-artist-name="John Lennon" data-album-name="John Lennon/Plastic Ono Band" data-genres="Rock,Avant-Pop">
+        <img src="images/John Lennon-Plastic Ono Band.jpg" alt="John Lennon/Plastic Ono Band Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1963-05-01" data-artist-name="James Brown and the Famous Flames" data-album-name="Live at the Apollo" data-genres="R&B,Soul">
+        <img src="images/Live At The Apollo.jpg" alt="Live at the Apollo Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1977-01-14" data-artist-name="David Bowie" data-album-name="Low" data-genres="Art Rock,Avant-Pop,Electronic,Ambient,Experimental Rock">
+        <img src="images/Low.jpg" alt="Low Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1998-04-20" data-artist-name="Massive Attack" data-album-name="Mezzanine" data-genres="Trip Hop,Electronica">
+        <img src="images/Mezzanine.png" alt="Mezzanine Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1970-09-18" data-artist-name="Black Sabbath" data-album-name="Paranoid" data-genres="Heavy Metal">
+        <img src="images/Paranoid.png" alt="Paranoid Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1973-02-07" data-artist-name="The Stooges" data-album-name="Raw Power" data-genres="Proto-Punk,Hard Rock,Garage Rock, Punk Metal">
+        <img src="images/Raw Power.jpg" alt="Raw Power Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1992-04-20" data-artist-name="Pavement" data-album-name="Slanted and Enchanted" data-genres="Indie Rock,Lo-Fi,Noise Pop">
+        <img src="images/Slanted and Enchanted.jpg" alt="Slanted and Enchanted Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1976-09-28" data-artist-name="Stevie Wonder" data-album-name="Songs in the Key of Life" data-genres="R&B,Soul,Pop,Avant-Pop,Progressive Soul">
+        <img src="images/Songs in the Key of Life.jpg" alt="Songs in the Key of Life Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1971-04-23" data-artist-name="The Rolling Stones" data-album-name="Sticky Fingers" data-genres="Hard Rock,Roots Rock,Rock And Roll">
+        <img src="images/Sticky Fingers.jpg" alt="Sticky Fingers Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+     <div class="album-cover" data-release-date="1991-08-27" data-artist-name="Pearl Jam" data-album-name="Ten" data-genres="Grunge,Alternative Rock,Hard Rock">
+        <img src="images/Ten.png" alt="Ten Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1995-03-13" data-artist-name="Radiohead" data-album-name="The Bends" data-genres="Alternative Rock,Britpop,Indie Rock">
+        <img src="images/The Bends.png" alt="The Bends Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1971-08-14" data-artist-name="The Who" data-album-name="Who's Next" data-genres="Hard Rock,Arena Rock">
+        <img src="images/Who's Next.jpg" alt="Who's Next Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1989-03-03" data-artist-name="De La Soul" data-album-name="3 Feet High and Rising" data-genres="Alternative Hip Hop,Progressive Rap,Jazz Rap,Psychedelic,Sampledelia">
+        <img src="images/3 Feet High And Rising.jpg" alt="3 Feet High and Rising Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1982-02-05" data-artist-name="Bad Brains" data-album-name="Bad Brains" data-genres="Hardcore Punk,Reggae">
+        <img src="images/Bad Brains.png" alt="Bad Brains Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1991-10-08" data-artist-name="Soundgarden" data-album-name="Badmotorfinger" data-genres="Grunge,Alternative Metal,Heavy Metal,Hard Rock">
+        <img src="images/Badmotorfinger.png" alt="Badmotorfinger Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1997-02-11" data-artist-name="Erykah Badu" data-album-name="Baduizm" data-genres="R&B, Neo Soul">
+        <img src="images/Baduizm.jpg" alt="Baduizm Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1968-12-06" data-artist-name="The Rolling Stones" data-album-name="Beggars Banquet" data-genres="Roots Rock,Country Blues,Hard Rock">
+        <img src="images/Beggars Banquet.jpg" alt="Beggars Banquet Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1999-10-12" data-artist-name="Mos Def" data-album-name="Black on Both Sides" data-genres="Hip Hop">
+        <img src="images/Black on Both Sides.jpg" alt="Black on Both Sides Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1970-02-13" data-artist-name="Black Sabbath" data-album-name="Black Sabbath" data-genres="Heavy Metal">
+        <img src="images/Black Sabbath.png" alt="Black Sabbath Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1965-04-01" data-artist-name="Bob Dylan" data-album-name="Bringing It All Back Home" data-genres="Folk Rock,Folk,Blues">
+        <img src="images/Bringing It All Back Home.jpg" alt="Bringing It All Back Home Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1994-02-14" data-artist-name="Pavement" data-album-name="Crooked Rain, Crooked Rain" data-genres="XXX">
+        <img src="images/Crooked Rain, Crooked Rain.jpg" alt="Crooked Rain, Crooked Rain Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1991-04-08" data-artist-name="Sleater-Kinney" data-album-name="Dig Me Out" data-genres="Punk Rock">
+        <img src="images/Dig Me Out.jpg" alt="Dig Me Out Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1997-04-07" data-artist-name="The Chemical Brothers" data-album-name="Dig Your Own Hole" data-genres="Big Beat,Electronica,Breakbeat,Psychedelic Rock">
+        <img src="images/Dig Your Own Hole.jpg" alt="Dig Your Own Hole Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1967-11-02" data-artist-name="Cream" data-album-name="Disraeli Gears" data-genres="Psychedelic Rock,Blues Rock,Hard Rock">
+        <img src="images/Disraeli Gears.jpg" alt="Disraeli Gears Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1994-10-10" data-artist-name="Suede" data-album-name="Dog Man Star" data-genres="Art Rock,Glam Rock,Alternative Rock,Britpop">
+        <img src="images/Dog Man Star.jpg" alt="Dog Man Star Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1993-11-23" data-artist-name="Snoop Doggy Dogg" data-album-name="Doggystyle" data-genres="West Coast Hip Hop,G-Funk,Gangsta Rap">
+        <img src="images/Doggystyle.jpg" alt="Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2003-04-01" data-artist-name="The White Stripes" data-album-name="Elephant" data-genres="Rock,Alternative Rock,Blues Rock, Garage Rock,Punk Blues">
+        <img src="images/Elephant.jpg" alt="Elephant Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1982-05-21" data-artist-name="Discharge" data-album-name="Hear Nothing See Nothing Say Nothing" data-genres="D-Beat">
+        <img src="images/Hear Nothing See Nothing Say Nothing.jpg" alt="Hear Nothing See Nothing Say Nothing Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1998-10-06" data-artist-name="Less Than Jake" data-album-name="Hello Rockview" data-genres="Ska Punk,Punk Rock,Pop Punk">
+        <img src="images/Hello Rockview.jpg" alt="Hello Rockview Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1969-07-30" data-artist-name="Miles Davis" data-album-name="In a Silent Way" data-genres="Jazz Fusion,Jazz Rock">
+        <img src="images/In A Silent Way.jpg" alt="In a Silent Way Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1998-02-10" data-artist-name="Neutral Milk Hotel" data-album-name="In the Aeroplane Over the Sea" data-genres="Indie Rock,Psychedelic Folk,Lo-Fi">
+        <img src="images/In the Aeroplane Over the Sea.jpg" alt="In the Aeroplane Over the Sea Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1998-03-24" data-artist-name="Catch 22" data-album-name="Keasbey Nights" data-genres="Ska Punk">
+        <img src="images/Keasbey Nights.jpg" alt="Keasbey Nights Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>   
+    <div class="album-cover" data-release-date="1969-01-12" data-artist-name="Led Zeppelin" data-album-name="Led Zeppelin" data-genres="Hard Rock,Blues Rock">
+        <img src="images/Led Zeppelin.jpg" alt="Led Zeppelin Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1995-06-15" data-artist-name="Artist" data-album-name="Album" data-genres="XXX">
+        <img src="images/" alt="Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1979-11-02" data-artist-name="The Damned" data-album-name="Machine Gun Etiquette" data-genres="Punk Rock,Hardcore Punk,Neo-Psychedelia">
+        <img src="images/Machine Gun Etiquette.jpg" alt="Machine Gun Etiquette Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2004-03-23" data-artist-name="Madvillain" data-album-name="Madvillainy" data-genres="Alternative Hip Hop,Jazz Rap,Experimental Hip Hop">
+        <img src="images/Madvillainy.png" alt="Madvillainy Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1982-09-04" data-artist-name="The Descendents" data-album-name="Milo Goes to College" data-genres="Hardcore Punk,Melodic Hardcore">
+        <img src="images/Milo Goes To College.jpg" alt="Milo Goes to College Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--template
+    <div class="album-cover" data-release-date="1995-06-15" data-artist-name="Artist" data-album-name="Album" data-genres="XXX">
+        <img src="images/" alt="Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+end template-->
+</div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
