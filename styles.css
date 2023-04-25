@@ -227,12 +227,12 @@ button:hover {
 
 
 .stats-section {
-  width: 90%;
+  width: 100%;
   margin: 40px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -265,5 +265,10 @@ button:hover {
 .stats-section ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 10px 0;
+}
+
+#total-albums {
+  text-align: center;
+
 }

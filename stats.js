@@ -22,13 +22,14 @@ function calculateStats() {
   
     const sortedAlbumCounts = Object.entries(artistAlbumCounts)
       .sort((a, b) => b[1] - a[1])
-      .slice(0, 25);
+      .filter(([artist, count]) => count > 1)
+      .slice(0, 50);
     const sortedRatingPoints = Object.entries(artistRatingPoints)
       .sort((a, b) => b[1] - a[1])
-      .slice(0, 25);
+      .slice(0, 50);
     const sortedGenreCounts = Object.entries(genreCounts)
       .sort((a, b) => b[1] - a[1])
-      .slice(0, 25);
+      .slice(0, 50);
   
     return { sortedAlbumCounts, sortedRatingPoints, sortedGenreCounts };
 }
@@ -46,7 +47,7 @@ function calculateStats() {
     const mostRatingPoints = document.querySelector('#most-rating-points ul');
     stats.sortedRatingPoints.forEach(([artist, points]) => {
       const li = document.createElement('li');
-      li.textContent = `${artist} (${points} rating points)`;
+      li.textContent = `${artist} (${points} points)`;
       mostRatingPoints.appendChild(li);
     });
     
@@ -57,3 +58,6 @@ function calculateStats() {
       mostGenres.appendChild(li);
     });
 });
+
+
+

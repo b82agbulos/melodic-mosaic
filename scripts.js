@@ -8,6 +8,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const searchInput = document.getElementById("search-input");
   const searchButton = document.getElementById("search-button");
   const albumCovers = document.querySelectorAll(".album-cover");
+  const stats = calculateStats();
+  const totalAlbums = countTotalAlbums(Array.from(document.querySelectorAll('.album-cover')));
+  const totalAlbumsElement = document.querySelector('#total-albums');
+  totalAlbumsElement.textContent = `Total Albums: ${totalAlbums}`;
+
+
   albumCovers.forEach((albumCover) => {
       albumCover.addEventListener("click", () => displayAlbumInfo(albumCover));
     }); 
@@ -189,9 +195,7 @@ sortByRatingBtn.addEventListener("click", () => {
       });
 });
 
-
-
-
-
-//stats//
+function countTotalAlbums(albumCovers) {
+  return albumCovers.length;
+}
 
