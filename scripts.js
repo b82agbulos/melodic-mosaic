@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const totalAlbumsElement = document.querySelector('#total-albums');
   totalAlbumsElement.textContent = `Total Albums: ${totalAlbums}`;
 
-
   albumCovers.forEach((albumCover) => {
       albumCover.addEventListener("click", () => displayAlbumInfo(albumCover));
     }); 
@@ -49,7 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
     
-
     function displayAlbumInfo(albumCover) {
       const infoDisplay = albumCover.querySelector(".album-info");
       const isVisible = infoDisplay.style.opacity === '1';
@@ -62,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
           const artistName = albumCover.dataset.artistName;
           const albumName = albumCover.dataset.albumName;
           const releaseDate = new Date(albumCover.dataset.releaseDate).getFullYear();
-  
+    
           // Update the info-display div with the album information
           infoDisplay.innerHTML = `
               <p><strong>Artist:</strong> ${artistName}</p>
