@@ -51,28 +51,29 @@ document.addEventListener("DOMContentLoaded", function () {
     function displayAlbumInfo(albumCover) {
       const infoDisplay = albumCover.querySelector(".album-info");
       const isVisible = infoDisplay.style.opacity === '1';
-  
-      if (isVisible) {
-          infoDisplay.style.opacity = '0';
-          albumCover.classList.remove('info-displayed');
-          container.classList.remove('info-displayed');
-      } else {
-          const artistName = albumCover.dataset.artistName;
-          const albumName = albumCover.dataset.albumName;
-          const releaseDate = new Date(albumCover.dataset.releaseDate).getFullYear();
     
-          // Update the info-display div with the album information
-          infoDisplay.innerHTML = `
-              <p><strong>Artist:</strong> ${artistName}</p>
-              <p><strong>Album:</strong> ${albumName}</p>
-              <p><strong>Year:</strong> ${releaseDate}</p>
-          `;
-  
-          infoDisplay.style.opacity = '1';
-          albumCover.classList.add('info-displayed');
-          container.classList.add('info-displayed');
+      if (isVisible) {
+        infoDisplay.style.opacity = '0';
+        albumCover.classList.remove('info-displayed');
+        container.classList.remove('info-displayed');
+        infoDisplay.innerHTML = ''; // clear the contents of the infoDisplay element
+      } else {
+        const artistName = albumCover.dataset.artistName;
+        const albumName = albumCover.dataset.albumName;
+        const releaseDate = new Date(albumCover.dataset.releaseDate).getFullYear();
+    
+        // Update the info-display div with the album information
+        infoDisplay.innerHTML = `
+          <p><strong>Artist:</strong> ${artistName}</p>
+          <p><strong>Album:</strong> ${albumName}</p>
+          <p><strong>Year:</strong> ${releaseDate}</p>
+        `;
+    
+        infoDisplay.style.opacity = '1';
+        albumCover.classList.add('info-displayed');
+        container.classList.add('info-displayed');
       }
-  }
+    }
 
     // To search as you type
     searchInput.addEventListener("input", () => filterAlbumCovers(searchInput.value));
@@ -196,4 +197,3 @@ sortByRatingBtn.addEventListener("click", () => {
 function countTotalAlbums(albumCovers) {
   return albumCovers.length;
 }
-
