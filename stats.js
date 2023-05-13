@@ -22,7 +22,7 @@ function calculateStats() {
 
   const sortedAlbumCounts = Object.entries(artistAlbumCounts)
     .sort((a, b) => b[1] - a[1])
-    .filter(([artist, count]) => count > 1)
+    .filter(([artist, count]) => count > 2)
     .slice(0, 50);
   const sortedRatingPoints = Object.entries(artistRatingPoints)
     .sort((a, b) => b[1] - a[1])
