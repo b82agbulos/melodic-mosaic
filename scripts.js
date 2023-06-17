@@ -88,32 +88,44 @@ document.addEventListener("DOMContentLoaded", function () {
   }
     
     
-    function displayAlbumInfo(albumCover) {
-      const infoDisplay = albumCover.querySelector(".album-info");
-      const isVisible = infoDisplay.style.opacity === '1';
-    
-      if (isVisible) {
-        infoDisplay.style.opacity = '0';
-        albumCover.classList.remove('info-displayed');
-        container.classList.remove('info-displayed');
-        infoDisplay.innerHTML = ''; // clear the contents of the infoDisplay element
-      } else {
-        const artistName = albumCover.dataset.artistName;
-        const albumName = albumCover.dataset.albumName;
-        const releaseDate = new Date(albumCover.dataset.releaseDate).getFullYear();
-    
-        // Update the info-display div with the album information
-        infoDisplay.innerHTML = `
-          <p><strong>Artist:</strong> ${artistName}</p>
-          <p><strong>Album:</strong> ${albumName}</p>
-          <p><strong>Year:</strong> ${releaseDate}</p>
+  function displayAlbumInfo(albumCover) {
+    const infoDisplay = albumCover.querySelector(".album-info");
+    const isVisible = infoDisplay.style.opacity === '1';
+  
+    if (isVisible) {
+      infoDisplay.style.opacity = '0';
+      albumCover.classList.remove('info-displayed');
+      container.classList.remove('info-displayed');
+      infoDisplay.innerHTML = ''; // Clear the contents of the infoDisplay element
+    } else {
+      const artistName = albumCover.dataset.artistName;
+      const albumName = albumCover.dataset.albumName;
+      const releaseDate = new Date(albumCover.dataset.releaseDate).getFullYear();
+      const spotifyUri = albumCover.dataset.spotifyUri;
+  
+      // Construct the album information HTML
+      let albumInfoHTML = `
+        <p><strong>Artist:</strong> ${artistName}</p>
+        <p><strong>Album:</strong> ${albumName}</p>
+        <p><strong>Year:</strong> ${releaseDate}</p>
+      `;
+  
+      // Add Spotify widget iframe if a Spotify URI is available
+      if (spotifyUri) {
+        const spotifyId = spotifyUri.split(':').pop();
+        albumInfoHTML += `
+          <iframe src="https://open.spotify.com/embed/album/${spotifyId}" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         `;
-    
-        infoDisplay.style.opacity = '1';
-        albumCover.classList.add('info-displayed');
-        container.classList.add('info-displayed');
       }
+  
+      // Update the info-display div with the album information
+      infoDisplay.innerHTML = albumInfoHTML;
+  
+      infoDisplay.style.opacity = '1';
+      albumCover.classList.add('info-displayed');
+      container.classList.add('info-displayed');
     }
+  }
 
     // To search as you type
     searchInput.addEventListener("input", () => filterAlbumCovers(searchInput.value));
