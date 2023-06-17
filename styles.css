@@ -297,3 +297,19 @@ button:hover {
 .last-song-container{
   align-items: center;
 }
+
+::placeholder { /* Most modern browsers support this now. */
+  text-align: center;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  text-align: center;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  text-align: center;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  text-align: center;
+}
