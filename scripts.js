@@ -7,46 +7,86 @@ document.addEventListener("DOMContentLoaded", function () {
   const sortByRatingBtn = document.getElementById("sort-rating");
   const searchInput = document.getElementById("search-input");
   const searchButton = document.getElementById("search-button");
-  const albumCovers = document.querySelectorAll(".album-cover");
-  const stats = calculateStats();
-  const totalAlbums = countTotalAlbums(Array.from(document.querySelectorAll('.album-cover')));
+  const albumCovers = Array.from(document.querySelectorAll(".album-cover"));
+  let stats = calculateStats(albumCovers);  // Changed to let
+  const totalAlbums = countTotalAlbums(albumCovers);
   const totalAlbumsElement = document.querySelector('#total-albums');
   totalAlbumsElement.textContent = `Total Albums: ${totalAlbums}`;
 
-  albumCovers.forEach((albumCover) => {
-      albumCover.addEventListener("click", () => displayAlbumInfo(albumCover));
-    }); 
+  // Display initial stats
+  displayStats(stats);
 
+  albumCovers.forEach((albumCover) => {
+    albumCover.addEventListener("click", () => displayAlbumInfo(albumCover));
+  });
+
+  function replaceSymbols(query) {
+    return query.replace(/&/g, "and");
+  }
+    
+  function filterAlbumCovers(query) {
+    const updatedQuery = replaceSymbols(query);
+    const regex = new RegExp(updatedQuery, "i");
+
+    albumCovers.forEach((albumCover) => {
+      const artistName = albumCover.dataset.artistName;
+      const albumName = albumCover.dataset.albumName;
+      const releaseDate = albumCover.dataset.releaseDate;
+      const genre = albumCover.dataset.genres
+        .split(',')
+        .map((g) => replaceSymbols(g))
+        .join(',');
+
+      if (
+        regex.test(artistName) ||
+        regex.test(albumName) ||
+        regex.test(releaseDate) ||
+        regex.test(genre)
+      ) {
+        albumCover.style.display = "flex";
+      } else {
+        albumCover.style.display = "none";
+      }
+    });
+
+    const filteredAlbumCovers = albumCovers.filter(albumCover => albumCover.style.display !== "none");
+
+    // Calculate statistics based on currently visible album covers
+    stats = calculateStats(filteredAlbumCovers);  // Changed to update existing stats variable
+
+    // Display the new statistics
+    displayStats(stats);
+  }
   
-    function replaceSymbols(query) {
-      return query.replace(/&/g, "and");
-    }
+  function displayStats(stats) {
+    // Clear current statistics
+    document.querySelector('#most-albums ul').innerHTML = '';
+    document.querySelector('#most-rating-points ul').innerHTML = '';
+    document.querySelector('#most-genres ul').innerHTML = '';
+  
+    // Display new statistics
+    const mostAlbums = document.querySelector('#most-albums ul');
+    stats.sortedAlbumCounts.forEach(([artist, count]) => {
+      const li = document.createElement('li');
+      li.textContent = `${artist} (${count} albums)`;
+      mostAlbums.appendChild(li);
+    });
     
-    function filterAlbumCovers(query) {
-      const updatedQuery = replaceSymbols(query);
-      const regex = new RegExp(updatedQuery, "i");
+    const mostRatingPoints = document.querySelector('#most-rating-points ul');
+    stats.sortedRatingPoints.forEach(([artist, points]) => {
+      const li = document.createElement('li');
+      li.textContent = `${artist} (${points} points)`;
+      mostRatingPoints.appendChild(li);
+    });
     
-      albumCovers.forEach((albumCover) => {
-        const artistName = albumCover.dataset.artistName;
-        const albumName = albumCover.dataset.albumName;
-        const releaseDate = albumCover.dataset.releaseDate;
-        const genre = albumCover.dataset.genres
-          .split(',')
-          .map((g) => replaceSymbols(g))
-          .join(',');
+    const mostGenres = document.querySelector('#most-genres ul');
+    stats.sortedGenreCounts.forEach(([genre, count]) => {
+      const li = document.createElement('li');
+      li.textContent = `${genre} (${count} entries)`;
+      mostGenres.appendChild(li);
+    });
+  }
     
-        if (
-          regex.test(artistName) ||
-          regex.test(albumName) ||
-          regex.test(releaseDate) ||
-          regex.test(genre)
-        ) {
-          albumCover.style.display = "flex";
-        } else {
-          albumCover.style.display = "none";
-        }
-      });
-    }
     
     function displayAlbumInfo(albumCover) {
       const infoDisplay = albumCover.querySelector(".album-info");

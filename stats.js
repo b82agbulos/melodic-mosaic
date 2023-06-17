@@ -29,7 +29,7 @@ function calculateStats() {
     .sort((a, b) => b[1] - a[1])
     .slice(0, 50);
   const sortedGenreCounts = Object.entries(genreCounts)
-    .filter(([genre, count]) => count >= 25)
+  .filter(([genre, count]) => count >= 25)
     .sort((a, b) => b[1] - a[1])
     .slice(0, 50);
 
@@ -37,7 +37,7 @@ function calculateStats() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  const stats = calculateStats();
+  const stats = calculateStats(albumCovers);
   
   const mostAlbums = document.querySelector('#most-albums ul');
   stats.sortedAlbumCounts.forEach(([artist, count]) => {
