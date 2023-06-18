@@ -329,6 +329,6 @@ document.getElementById('melodic-mosaic').addEventListener('click', function() {
   window.location.href = 'index.html';
 });
 
-  document.getElementById('textures').addEventListener('click', function() {
-    window.location.href = 'textures.html';
-  });
+document.getElementById('textures').addEventListener('click', function() {
+  window.location.href = 'textures.html';
+});
