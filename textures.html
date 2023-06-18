@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textures</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Textures</h1>
+
+    <div class="sort-buttons">
+        <button id="sort-album-name">Sort by Album</button>
+        <button id="sort-artist-name">Sort by Artist</button>
+        <button id="sort-release-date">Sort by Release Date</button>
+        <button id="sort-rating">Sort by Rating</button>
+      </div>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search by album, artist, release date, or genre" />
+    </div>
+    <div class="playlist-buttons">
+        <button class="button" id="melodic-mosaic">Melodic Mosaic</button>
+    </div>
+
+
+<div class="container">
+
+    <div class="album-cover" data-release-date="1967-05-26" data-artist-name="The Beatles" data-album-name="Sgt. Pepper's Lonely Hearts Club Band" data-genres="Rock,Pop,Psychedelic,Art Rock" data-spotify-uri="spotify:album:6QaVfG1pHYl1z15ZxkvVDW">
+        <img src="images/Sgt. Pepper's Lonely Hearts Club Band" alt="Sgt. Pepper's Lonely Hearts Club Band Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1971-05-21" data-artist-name="Marvin Gaye" data-album-name="What's Going On" data-genres="Rock,Alternative" data-spotify-uri="spotify:album:2v6ANhWhZBUKkg6pJJBs3B">
+        <img src="images/What's Going On.jpg" alt="What's Going On Album Cover" data-rating="8">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1987-03-09" data-artist-name="U2" data-album-name="The Joshua Tree" data-genres="Rock" data-spotify-uri="spotify:album:5vBZRYu2GLA65nfxBvG1a7">
+        <img src="images/The Joshua Tree.jpg" alt="The Joshua Tree Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1966-05-16" data-artist-name="The Beach Boys" data-album-name="Pet Sounds" data-genres="Progressive Pop,Chamber Pop,Psychedelic Pop,Art Rock" data-spotify-uri="spotify:album:2CNEkSE8TADXRT2AzcEt1b">
+        <img src="images/Pet Sounds.jpg" alt="Pet Sounds Album Cover" data-rating="8">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1966-06-20" data-artist-name="Bob Dylan" data-album-name="Blonde on Blonde" data-genres="Folk Rock,Blues Rock,Country Rock,Rock And Roll" data-spotify-uri="spotify:album:4NP1rhnsPdYpnyJP0p0k0L">
+        <img src="images/Blonde On Blonde.jpg" alt="Blonde on Blonde Album Cover" data-rating="7">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1986-06-16" data-artist-name="The Smiths" data-album-name="The Queen Is Dead" data-genres="Indie Pop,Jangle Pop,Alternative Rock,Indie Rock,Post-Punk" data-spotify-uri="spotify:album:5Y0p2XCgRRIjna91aQE8q7">
+        <img src="images/The Queen is Dead.jpg" alt="The Queen Is Dead Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1989-05-02" data-artist-name="The Stone Roses" data-album-name="The Stone Roses" data-genres="Maddchester,Jangle Pop,Neo-Psychedelia,Alternative Rock" data-spotify-uri="spotify:album:0um9FI6BLBldL5POP4D4Cw">
+        <img src="images/The Stone Roses.jpg" alt="The Stone Roses Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1975-01-20" data-artist-name="Bob Dylan" data-album-name="Blood on the Tracks" data-genres="Folk Rock" data-spotify-uri="spotify:album:4WD4pslu83FF6oMa1e19mF">
+        <img src="images/Blood On The Tracks.jpg" alt="Blood on the Tracks Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1968-11-29" data-artist-name="Van Morrison" data-album-name="Astral Weeks" data-genres="Folk Rock,Folk Jazz,Progressive Folk,Blue-Eyed Soul" data-spotify-uri="spotify:album:4pG3bKkbmReDt5QTDn3JDz">
+        <img src="images/Astral Weeks.jpg" alt="Astral Weeks Album Cover" data-rating="8">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1989-04-17" data-artist-name="Pixies" data-album-name="Doolittle" data-genres="Alternative Rock,Punk Rock,Indie Rock,Noise Pop,Grunge" data-spotify-uri="spotify:album:0DQyTVcDhK9wm0f6RaErWO">
+        <img src="images/Doolittle.jpg" alt="Doolittle Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1966-08-05" data-artist-name="The Beatles" data-album-name="Revolver" data-genres="Rock,Pop,Psychedelic" data-spotify-uri="spotify:album:3PRoXYsngSwjEQWR5PsHWR">
+        <img src="images/Revolver.png" alt="Revolver Album Cover" data-rating="8">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1971-06-22" data-artist-name="Joni Mitchell" data-album-name="Blue" data-genres="Folk, Folk Rock">
+        <img src="images/Blue.jpg" alt="Blue Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1987-03-30" data-artist-name="Prince" data-album-name="Sign o' the Times" data-genres="R&B,Funk,Soul,Rock,Avant-Pop" data-spotify-uri="spotify:album:2QuHyvguNhl5kfdoE17RRe">
+        <img src="images/Sign O’ The Times.jpg" alt="Sign o' the Times Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1991-04-08" data-artist-name="Massive Attack" data-album-name="Blue Lines" data-genres="Trip Hop, British Hip Hop" data-spotify-uri="spotify:album:5mAPk4qeNqVLtNydaWbWlf">
+        <img src="images/Blue Lines.jpg" alt="Blue Lines Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1977-10-28" data-artist-name="Sex Pistols" data-album-name="Never Mind the Bollocks, Here's the Sex Pistols" data-genres="Punk Rock" data-spotify-uri="spotify:album:5fxYu3rqjCNTSPKN8mtEl2">
+        <img src="images/Never Mind the Bollocks, Here's the Sex Pistols.png" alt="Never Mind the Bollocks, Here's the Sex Pistols Album Cover" data-rating="7">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1991-09-24" data-artist-name="Nirvana" data-album-name="Nevermind" data-genres="Grunge,Alternative Rock" data-spotify-uri="spotify:album:2guirTSEqLizK7j9i1MTTZ">
+        <img src="images/Nevermind.png" alt="Nevermind Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1965-08-30" data-artist-name="Bob Dylan" data-album-name="Highway 61 Revisited" data-genres="Folk Rock,Blues Rock, Rock And Roll" data-spotify-uri="spotify:album:6YabPKtZAjxwyWbuO9p4ZD">
+        <img src="images/Highway 61 Revisited.jpg" alt="Highway 61 Revisited Album Cover" data-rating="7">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1971-12-17" data-artist-name="David Bowie" data-album-name="Hunky Dory" data-genres="Art Pop,Pop Rock" data-spotify-uri="spotify:album:6fQElzBNTiEMGdIeY0hy5l">
+        <img src="images/Hunky Dory.jpg" alt="Hunky Dory Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1976-09-28" data-artist-name="Stevie Wonder" data-album-name="Songs in the Key of Life" data-genres="R&B,Soul,Pop,Avant-Pop,Progressive Soul" data-spotify-uri="spotify:album:6YUCc2RiXcEKS9ibuZxjt0">
+        <img src="images/Songs in the Key of Life.jpg" alt="Songs in the Key of Life Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1972-11-08" data-artist-name="Lou Reed" data-album-name="Transformer" data-genres="Glam Rock,Pop Rock" data-spotify-uri="spotify:album:5SqbMEyAt8332ISGiLX0St">
+        <img src="images/Transformer.jpg" alt="Transformer Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1972-05-12" data-artist-name="The Rolling Stones" data-album-name="Exile on Main St." data-genres="Rock And Roll,Hard Rock,Country Blues" data-spotify-uri="spotify:album:5U4dnRZsfW8NmwBBkELFPh">
+        <img src="images/Exile On Main St..jpg" alt="Exile on Main St. Album Cover" data-rating="7">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1968-11-22" data-artist-name="The Beatles" data-album-name="The Beatles" data-genres="Rock,Pop,Folk" data-spotify-uri="spotify:album:1klALx0u4AavZNEvC4LrTL">
+        <img src="images/The Beatles.png" alt="The Beatles Album Cover" data-rating="7">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1977-04-08" data-artist-name="The Clash" data-album-name="The Clash" data-genres="Punk Rock" data-spotify-uri="spotify:album:49kzgMsxHU5CTeb2XmFHjo">
+        <img src="images/The Clash.jpg" alt="The Clash Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1977-02-08" data-artist-name="Television" data-album-name="Marquee Moon" data-genres="Punk Rock,Post-Punk,Art Punk,Garage Rock" data-spotify-uri="spotify:album:630o1rKTDsLeIPreOY1jqP">
+        <img src="images/Marquee Moon.png" alt="Marquee Moon Album Cover" data-rating="7">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2001-07-30" data-artist-name="The Strokes" data-album-name="Is This It" data-genres="Indie Rock,Garage Rock,Post-Punk Revival" data-spotify-uri="spotify:album:2k8KgmDp9oHrmu0MIj4XDE">
+        <img src="images/Is This It .jpg" alt="Is This It Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1967-03-12" data-artist-name="The Velvet Underground and Nico" data-album-name="The Velvet Underground & Nico" data-genres="Art Rock,Experimental Rock,Proto-Punk,Psychedelic Rock,Avant-Pop" data-spotify-uri="spotify:album:4xwx0x7k6c5VuThz5qVqmV">
+        <img src="images/The Velvet Underground & Nico.jpg" alt="The Velvet Underground & Nico Album Cover" data-rating="8">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1965-12-03" data-artist-name="The Beatles" data-album-name="Rubber Soul" data-genres="Folk Rock,Rock,Pop" data-spotify-uri="spotify:album:50o7kf2wLwVmOTVYJOTplm">
+        <img src="images/Rubber Soul.jpg" alt="Rubber Soul Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1969-09-26" data-artist-name="The Beatles" data-album-name="Abbey Road Album Cover" data-genres="Rock" data-spotify-uri="spotify:album:0ETFjACtuP2ADo6LFhL6HN">
+        <img src="images/Abbey Road.png" alt="Abbey Road" data-rating="7">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1995-03-13" data-artist-name="Radiohead" data-album-name="The Bends" data-genres="Alternative Rock,Britpop,Indie Rock" data-spotify-uri="spotify:album:35UJLpClj5EDrhpNIi4DFg">
+        <img src="images/The Bends.png" alt="The Bends Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+
+
+
+
+
+
+  
+</div>
+<section id="last-song">
+    <h2>Sonic Footprint</h2>
+    <div class="container">
+        <div id="last-song-container"></div>
+    </div>
+ </section>
+<h2>Figures Unveiled: Spotlight on Stats</h2>
+<section class="stats-section">
+    <div class="stats-columns">
+      <section id="most-albums">
+        <h3>Collection's Top Creatives:</h3> 
+        <h4>Prolific Album Masters</h4>
+        <ul></ul>
+      </section>
+      <section id="most-rating-points">
+        <h3>Point Leaders:</h3>
+        <h4>Artistry in Full Score</h4>
+        <ul></ul>
+      </section>
+      <section id="most-genres">
+        <h3>Genre Highlights:</h3>
+        <h4>Leading Tags</h4>
+        <ul></ul>
+      </section>
+    </div>
+  </section>
+  <p id="total-albums"></p>
+    <script src="scripts.js"></script>
+    <script src="playlist-stats.js"></script>
+</body>
+</html>
