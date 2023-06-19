@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waves</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Waves</h1>
+
+    <div class="sort-buttons">
+        <button id="sort-album-name">Sort by Album</button>
+        <button id="sort-artist-name">Sort by Artist</button>
+        <button id="sort-release-date">Sort by Release Date</button>
+        <button id="sort-rating">Sort by Rating</button>
+      </div>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search by album, artist, release date, or genre" />
+    </div>
+    <div class="playlist-buttons">
+        <a href="the-jukebox.html">
+            <button id="The Jukebox">The Jukebox</button>
+       </a>
+        <button class="button" id="melodic-mosaic">Melodic Mosaic</button>
+    </div>
+
+
+<div class="container">
+
+
+    <div class="album-cover" data-release-date="1967-03-12" data-artist-name="The Velvet Underground and Nico" data-album-name="The Velvet Underground & Nico" data-genres="Art Rock,Experimental Rock,Proto-Punk,Psychedelic Rock,Avant-Pop" data-spotify-uri="spotify:album:4xwx0x7k6c5VuThz5qVqmV">
+        <img src="images/The Velvet Underground & Nico.jpg" alt="The Velvet Underground & Nico Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1966-05-16" data-artist-name="The Beach Boys" data-album-name="Pet Sounds" data-genres="Progressive Pop,Chamber Pop,Psychedelic Pop,Art Rock" data-spotify-uri="spotify:album:2CNEkSE8TADXRT2AzcEt1b">
+        <img src="images/Pet Sounds.jpg" alt="Pet Sounds Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1965-02-01" data-artist-name="John Coltrane" data-album-name="A Love Supreme" data-genres="Modal Jazz,Post-Bop,Spirtual Jazz" data-spotify-uri="spotify:album:7Eoz7hJvaX1eFkbpQxC5PA">
+        <img src="images/A Love Supreme.jpg" alt="A Love Supreme Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1968-11-22" data-artist-name="The Beatles" data-album-name="The Beatles" data-genres="Rock,Pop,Folk" data-spotify-uri="spotify:album:1klALx0u4AavZNEvC4LrTL">
+        <img src="images/The Beatles.png" alt="The Beatles Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1966-09-16" data-artist-name="Nina Simone" data-album-name="Wild is the Wind" data-genres="Jazz,Blues,Folk,R&B" data-spotify-uri="spotify:album:2EYVXfypcucR62WMKJl6Mr">
+        <img src="images/Wild Is the Wind.png" alt="Wild Is the Wind Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1966-06-20" data-artist-name="Bob Dylan" data-album-name="Blonde on Blonde" data-genres="Folk Rock,Blues Rock,Country Rock,Rock And Roll" data-spotify-uri="spotify:album:4NP1rhnsPdYpnyJP0p0k0L">
+        <img src="images/Blonde On Blonde.jpg" alt="Blonde on Blonde Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1963-05-01" data-artist-name="James Brown and the Famous Flames" data-album-name="Live at the Apollo" data-genres="R&B,Soul" data-spotify-uri="spotify:album:0B6BbyElOe4bwziJrunOTe">
+        <img src="images/Live At The Apollo.jpg" alt="Live at the Apollo Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1966-08-05" data-artist-name="The Beatles" data-album-name="Revolver" data-genres="Rock,Pop,Psychedelic" data-spotify-uri="spotify:album:3PRoXYsngSwjEQWR5PsHWR">
+        <img src="images/Revolver.png" alt="Revolver Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1969-07-30" data-artist-name="Miles Davis" data-album-name="In a Silent Way" data-genres="Jazz Fusion,Jazz-Rock" data-spotify-uri="spotify:album:0Hs3BomCdwIWRhgT57x22T">
+        <img src="images/In A Silent Way.jpg" alt="In a Silent Way Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1967-03-10" data-artist-name="Aretha Franklin" data-album-name="I Never Loved a Man the Way I Love You" data-genres="Southern Soul" data-spotify-uri="spotify:album:5WndWfzGwCkHzAbQXVkg2V">
+        <img src="images/I Never Loved a Man the Way I Love You.png" alt="I Never Loved a Man the Way I Love You Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1963-07-01" data-artist-name="Charles Mingus" data-album-name="The Black Saint and the Sinner Lady" data-genres="Avant-Garde Jazz,Third Stream" data-spotify-uri="spotify:album:6Sts4Yh7KsDFwq2yTWrGGV">
+        <img src="images/The Black Saint and Sinner Lady.jpg" alt="The Black Saint and the Sinner Lady Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1965-08-30" data-artist-name="Bob Dylan" data-album-name="Highway 61 Revisited" data-genres="Folk Rock,Blues Rock, Rock And Roll" data-spotify-uri="spotify:album:6YabPKtZAjxwyWbuO9p4ZD">
+        <img src="images/Highway 61 Revisited.jpg" alt="Highway 61 Revisited Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1967-01-01" data-artist-name="Nina Simone" data-album-name="Nina Simone Sings the Blues" data-genres="Blues,Soul,Jazz,Pop,Folk" data-spotify-uri="spotify:album:12aKG91Tj6hJFOe90TzcX2">
+        <img src="images/Nina Simone Sings the Blues.jpg" alt="Nina Simone Sings the Blues Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1969-10-10" data-artist-name="Frank Zappa" data-album-name="Hot Rats" data-genres="Instrumental Rock,Jazz Fusion,Progressive Rock" data-spotify-uri="spotify:album:0WYYrC9My9rYWigac003hw">
+        <img src="images/Hot Rats.jpg" alt="Hot Rats Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1969-09-26" data-artist-name="The Beatles" data-album-name="Abbey Road Album Cover" data-genres="Rock" data-spotify-uri="spotify:album:0ETFjACtuP2ADo6LFhL6HN">
+        <img src="images/Abbey Road.png" alt="Abbey Road" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1968-11-29" data-artist-name="Van Morrison" data-album-name="Astral Weeks" data-genres="Folk Rock,Folk Jazz,Progressive Folk,Blue-Eyed Soul" data-spotify-uri="spotify:album:4pG3bKkbmReDt5QTDn3JDz">
+        <img src="images/Astral Weeks.jpg" alt="Astral Weeks Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1967-11-01" data-artist-name="Love" data-album-name="Forever Changes" data-genres="Folk Rock,Orchestral Pop,Psychedelic Pop,Baroque Pop,Chamber Pop,Psychedelic Rock" data-spotify-uri="spotify:album:2amHBpP8C0EUy6yBNy6nN6">
+        <img src="images/Forever Changes.jpg" alt="Forever Changes Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1969-11-28" data-artist-name="The Rolling Stones" data-album-name="Let It Bleed" data-genres="Hard Rock,Blues,Country Blues" data-spotify-uri="spotify:album:4l4u9e9jSbotSXNjYfOugy">
+        <img src="images/Let It Bleed.jpg" alt="Let It Bleed Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1965-09-15" data-artist-name="Otis Redding" data-album-name="Otis Blue/Otis Redding Sings Soul" data-genres="Soul,R&B,Blues,Rock,Southern Soul" data-spotify-uri="spotify:album:2P0TLZSGxpDmYdp16bI4hv">
+        <img src="images/Otis Blue-Otis Redding Sings Soul.jpg" alt="Otis Blue/Otis Redding Sings Soul Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1963-11-22" data-artist-name="The Beatles" data-album-name="With the Beatles" data-genres="Merseybeat,Rock And Roll,Pop,R&B" data-spotify-uri="spotify:album:1aYdiJk6XKeHWGO3FzHHTr">
+        <img src="images/With the Beatles.jpg" alt="With the Beatles Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1965-06-21" data-artist-name="The Byrds" data-album-name="Mr. Tambourine Man" data-genres="Folk Rock" data-spotify-uri="spotify:album:0pkrqPjeq9K5KD0hFqAKNa">
+        <img src="images/Mr. Tambourine Man.jpg" alt="Mr. Tambourine Man Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1967-12-15" data-artist-name="The Who" data-album-name="The Who Sell Out" data-genres="Psychedelic Pop,Power Pop,Art Pop,Mod" data-spotify-uri="spotify:album:2nSduHVT17MPQCehfMRPG6">
+        <img src="images/The Who Sell Out.jpg" alt="The Who Sell Out Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1968-10-16" data-artist-name="The Jimi Hendrix Experience" data-album-name="Electric Ladyland" data-genres="Psychedelic Rock,Acid Rock,Hard Rock,Funk,Progressive Soul" data-spotify-uri="spotify:album:5z090LQztiqh13wYspQvKQ">
+        <img src="images/Electric Ladyland.jpg" alt="Electric Ladyland Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1967-01-04" data-artist-name="The Doors" data-album-name="The Doors" data-genres="Psychedelic Rock,Hard Rock,Art Rock,Psychedelic" data-spotify-uri="spotify:album:1jWmEhn3ggaL6isoyLfwBn">
+        <img src="images/The Doors.jpg" alt="The Doors Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1968-12-06" data-artist-name="The Rolling Stones" data-album-name="Beggars Banquet" data-genres="Roots Rock,Country Blues,Hard Rock" data-spotify-uri="spotify:album:6OHri5qNxwCdVSdyCslspd">
+        <img src="images/Beggars Banquet.jpg" alt="Beggars Banquet Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+
+</div>
+<section id="last-song">
+    <h2>Sonic Footprint</h2>
+    <div class="container">
+        <div id="last-song-container"></div>
+    </div>
+ </section>
+<h2>Figures Unveiled: Spotlight on Stats</h2>
+<section class="stats-section">
+    <div class="stats-columns">
+      <section id="most-albums">
+        <h3>Collection's Top Creatives:</h3> 
+        <h4>Prolific Album Masters</h4>
+        <ul></ul>
+      </section>
+      <section id="most-rating-points">
+        <h3>Point Leaders:</h3>
+        <h4>Artistry in Full Score</h4>
+        <ul></ul>
+      </section>
+      <section id="most-genres">
+        <h3>Genre Highlights:</h3>
+        <h4>Leading Tags</h4>
+        <ul></ul>
+      </section>
+    </div>
+  </section>
+  <p id="total-albums"></p>
+    <script src="scripts.js"></script>
+    <script src="the-jukebox-stats.js"></script>
+</body>
+</html>
