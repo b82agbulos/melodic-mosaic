@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let stats = calculateStats(albumCovers);  // Changed to let
   const totalAlbums = countTotalAlbums(albumCovers);
   const totalAlbumsElement = document.querySelector('#total-albums');
-  totalAlbumsElement.textContent = `Total Albums: ${totalAlbums}`;
+  totalAlbumsElement.textContent = `Total LPs & EPs: ${totalAlbums}`;
 
   // Display initial stats
   displayStats(stats);
@@ -283,7 +283,7 @@ function fetchLastSong() {
       songInfo.classList.add('song-info');
 
       const title = document.createElement('span');
-      title.textContent = "Title: ";
+      title.innerHTML = "<strong>Title: </strong>";
       const songName = document.createElement('span');
       songName.textContent = titleCase(lastSong.name);
       title.append(songName);
@@ -291,7 +291,7 @@ function fetchLastSong() {
       const titleBreak = document.createElement('br');
 
       const artistLabel = document.createElement('span');
-      artistLabel.textContent = "Artist: ";
+      artistLabel.innerHTML = "<strong>Artist: </strong>";
       const artistName = document.createElement('span');
       artistName.textContent = titleCase(lastSong.artist['#text']);
       artistLabel.append(artistName);
@@ -299,7 +299,7 @@ function fetchLastSong() {
       const breakLine = document.createElement('br');
 
       const albumLabel = document.createElement('span');
-      albumLabel.textContent = "Album: ";
+      albumLabel.innerHTML = "<strong>Album: </strong>";
       const albumName = document.createElement('span');
       albumName.textContent = titleCase(lastSong.album['#text']);
       albumLabel.append(albumName);
