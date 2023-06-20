@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jukebox: Echoes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Jukebox</h1>
+    <h2>Echoes</h2>
+
+
+    <div class="sort-buttons">
+        <button id="sort-album-name">Sort by Album</button>
+        <button id="sort-artist-name">Sort by Artist</button>
+        <button id="sort-release-date">Sort by Release Date</button>
+        <button id="sort-rating">Sort by Rating</button>
+        <button id="refresh">Refresh</button>
+      </div>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search by album, artist, release date, or genre" />
+    </div>
+    <div class="playlist-buttons">
+    </a>
+    <div class="playlist-buttons">
+        <a href="the-jukebox.html">
+            <button id="The Jukebox">Jukebox</button>
+       </a>
+        <button class="button" id="melodic-mosaic">Melodic Mosaic</button>
+    </div>
+
+
+<div class="container">
+    <!-- 1980s -->
+    <div class="album-cover" data-release-date="1979-12-14" data-artist-name="The Clash" data-album-name="London Calling" data-genres="Punk Rock,Post-Punk,New Wave" data-spotify-uri="spotify:album:6FCzvataOZh68j8OKzOt9a">
+        <img src="images/London Calling.jpg" alt="London Calling Album Cover" data-rating="2"> <!-- 4=70s,2=80s  -->
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1988-10-18" data-artist-name="Sonic Youth" data-album-name="Daydream Nation" data-genres="Experimental Rock,Alternative Rock,Indie Rock,Art Punk,Post-Punk,Grunge" data-spotify-uri="spotify:album:3BYlBcND6PeKoW6ZODjZO3">
+        <img src="images/Daydream Nation.jpg" alt="Daydream Nation Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1980-10-08" data-artist-name="Talking Heads" data-album-name="Remain in Light" data-genres="New Wave,Post-Punk,Dance-Rock,Afrobeat,Worldbeat,Art Rock" data-spotify-uri="spotify:album:1JvXxLsm0PxlGH4LXzqMGq">
+        <img src="images/Remain In Light.png" alt="Remain in Light Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1989-07-25" data-artist-name="Beastie Boys" data-album-name="Paul's Boutique" data-genres="Hip Hop,Sampledelia" data-spotify-uri="spotify:album:1kmyirVya5fRxdjsPFDM05">
+        <img src="images/Paul's Boutique.jpg" alt="Paul's Boutique Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1989-04-17" data-artist-name="Pixies" data-album-name="Doolittle" data-genres="Alternative Rock,Punk Rock,Indie Rock,Noise Pop,Grunge" data-spotify-uri="spotify:album:0DQyTVcDhK9wm0f6RaErWO">
+        <img src="images/Doolittle.jpg" alt="Doolittle Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1983-04-12" data-artist-name="R.E.M." data-album-name="Murmur" data-genres="Jangle Pop,Alternative Rock,Post-Punk,Folk Rock,Garage Rock" data-spotify-uri="spotify:album:4Mw9Gcu1LT7JaipXdwrq1Q">
+        <img src="images/Murmur.jpg" alt="Murmur Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1984-06-25" data-artist-name="Prince and the Revolution" data-album-name="Purple Rain" data-genres="Pop,Rock,R&B,Funk" data-spotify-uri="spotify:album:7nXJ5k4XgRj5OLg9m8V3zc">
+        <img src="images/Purple Rain.jpg" alt="Purple Rain Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1982-11-29" data-artist-name="Michael Jackson" data-album-name="Thriller" data-genres="Pop,Post-Disco,R&B,Rock,Funk" data-spotify-uri="spotify:album:2ANVost0y2y52ema1E9xAZ">
+        <img src="images/Thriller.jpg" alt="Thriller Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1988-08-08" data-artist-name="N.W.A" data-album-name="Straight Outta Compton" data-genres="West Coast Hip Hop,Gangsta Rap,Hardcore Hip Hop" data-spotify-uri="spotify:album:0Y7qkJVZ06tS2GUCDptzyW">
+        <img src="images/Straight Outta Compton.jpg" alt="Straight Outta Compton Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1985-09-16" data-artist-name="Kate Bush" data-album-name="Hounds of Love" data-genres="Art Pop,Progressive Pop,Art Rock,Progressive Rock" data-spotify-uri="spotify:album:5G5UwqPsxDKpxJLX4xsyuh">
+        <img src="images/Hounds Of Love.png" alt="Hounds of Love Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1986-06-16" data-artist-name="The Smiths" data-album-name="The Queen Is Dead" data-genres="Indie Pop,Jangle Pop,Alternative Rock,Indie Rock,Post-Punk" data-spotify-uri="spotify:album:5Y0p2XCgRRIjna91aQE8q7">
+        <img src="images/The Queen is Dead.jpg" alt="The Queen Is Dead Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1988-06-28" data-artist-name="Public Enemy" data-album-name="It Takes a Nation of Millions to Hold Us Back" data-genres="Hip Hop,Political Hip Hop,Sampledelia" data-spotify-uri="spotify:album:1Rj1daFzMlYzLv7lJl14hz">
+        <img src="images/It Takes a Nation of Millions to Hold Us Back.jpg" alt="It Takes a Nation of Millions to Hold Us Back Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1988-03-21" data-artist-name="Pixies" data-album-name="Surfer Rosa" data-genres="Alternative Rock,Art Punk,Grunge" data-spotify-uri="spotify:album:50j4Wm1b9hLpSpPIA39Vp9">
+        <img src="images/Surfer Rosa.jpg" alt="Surfer Rosa Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1985-09-30" data-artist-name="Tom Waits" data-album-name="Rain Dogs" data-genres="Experimental Rock,Industrial Rock,Americana" data-spotify-uri="spotify:album:5bbb7E51zaDCuD85uLyFkK">
+        <img src="images/Rain Dogs.png" alt="Rain Dogs Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1986-02-04" data-artist-name="Janet Jackson" data-album-name="Control" data-genres="Pop,R&B" data-spotify-uri="spotify:album:7GWkceE5McMVfffd1RGL6Y">
+        <img src="images/Control.jpg" alt="Control Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1989-05-02" data-artist-name="The Cure" data-album-name="Disintegration" data-genres="Gothic Rock,Alternative Rock,Dream Pop,Post-Punk,New Wave,Art Rock" data-spotify-uri="spotify:album:0A13JySVHzBoRZFk2o89Wl">
+        <img src="images/Disintegration.jpg" alt="Disintegration Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1980-07-18" data-artist-name="Joy Division" data-album-name="Closer" data-genres="Post-Punk,Gothic Rock" data-spotify-uri="spotify:album:0KBdfMTMxi0oD1oVqApTjr">
+        <img src="images/Closer.jpg" alt="Closer Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1984-07-16" data-artist-name="Sade" data-album-name="Diamond Life" data-genres="Smooth Soul,Sophisti-Pop" data-spotify-uri="spotify:album:3JcNnjMVSKiNpqhErZarW0">
+        <img src="images/Diamond Life.jpg" alt="Diamond Life Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1987-03-09" data-artist-name="U2" data-album-name="The Joshua Tree" data-genres="Rock" data-spotify-uri="spotify:album:5vBZRYu2GLA65nfxBvG1a7">
+        <img src="images/The Joshua Tree.jpg" alt="The Joshua Tree Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1986-08-25" data-artist-name="Paul Simon" data-album-name="Graceland" data-genres="Worldbeat,Pop,Rock,Folk" data-spotify-uri="spotify:album:4WoQ94qzwQj28n3nlSOVLB">
+        <img src="images/Graceland.jpg" alt="Graceland Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1984-06-04" data-artist-name="Bruce Springsteen" data-album-name="Born in the U.S.A." data-genres="Rock And Roll,Heartland Rock,Pop" data-spotify-uri="spotify:album:0PMasrHdpaoIRuHuhHp72O">
+        <img src="images/Born in the U.S.A..jpg" alt="Born in the U.S.A. Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1982-03-15" data-artist-name="Richard and Linda Thompson" data-album-name="Shoot Out the Lights" data-genres="British Folk Rock" data-spotify-uri="spotify:album:4xX94uM6Kf972DJurGKnbb">
+        <img src="images/Shoot Out the Lights.jpg" alt="Shoot Out the Lights Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1988-04-05" data-artist-name="Tracy Chapman" data-album-name="Tracy Chapman" data-genres="Contemporary Folk,Folk Rock,Roots Rock" data-spotify-uri="spotify:album:6hmmX5UP4rIvOpGSaPerV8">
+        <img src="images/Tracy Chapman.jpg" alt="Tracy Chapman Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1986-03-03" data-artist-name="Metallica" data-album-name="Master of Puppets" data-genres="Thrash Metal" data-spotify-uri="spotify:album:5gzLOflH95LkKYE6XSXE9k">
+        <img src="images/Master of Puppets.png" alt="Master of Puppets Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1989-05-02" data-artist-name="The Stone Roses" data-album-name="The Stone Roses" data-genres="Maddchester,Jangle Pop,Neo-Psychedelia,Alternative Rock" data-spotify-uri="spotify:album:0um9FI6BLBldL5POP4D4Cw">
+        <img src="images/The Stone Roses.jpg" alt="The Stone Roses Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1989-03-03" data-artist-name="De La Soul" data-album-name="3 Feet High and Rising" data-genres="Alternative Hip Hop,Progressive Rap,Jazz Rap,Psychedelic,Sampledelia" data-spotify-uri="spotify:album:34LxHI9x14qXUOS8AWRrYD">
+        <img src="images/3 Feet High And Rising.jpg" alt="3 Feet High and Rising Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1987-03-30" data-artist-name="Prince" data-album-name="Sign o' the Times" data-genres="R&B,Funk,Soul,Rock,Avant-Pop" data-spotify-uri="spotify:album:2QuHyvguNhl5kfdoE17RRe">
+        <img src="images/Sign O’ The Times.jpg" alt="Sign o' the Times Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1985-11-18" data-artist-name="The Jesus and Mary Chain" data-album-name="Psychocandy" data-genres="Noise Pop,Alternative Rock,Post-Punk,Indie Rock" data-spotify-uri="spotify:album:0PnzJO3D4i85ALVJPaDpru">
+        <img src="images/Psychocandy.png" alt="Psychocandy Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1984-11-12" data-artist-name="The Smiths" data-album-name="Hatful of Hollow" data-genres="Alternative Rock,Indie Pop,Post-Punk" data-spotify-uri="spotify:album:1j57Q5ntVi7crpibb0h4sv">
+        <img src="images/Hatful Of Hollow.jpg" alt="Hatful of Hollow Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1980-11-28" data-artist-name="The Jam" data-album-name="Sound Affects" data-genres="Mod Revival,New Wave,Post-Punk" data-spotify-uri="spotify:album:4DkUmnDgrkBTk1RGLCTZcb">
+        <img src="images/Sound Affects.jpg" alt="Sound Affects Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1985-05-13" data-artist-name="New Order" data-album-name="Low-Life" data-genres="Synth-Pop,Dance-Pop,Post-Punk" data-spotify-uri="spotify:album:6ls958BLJbeFT3OqAYTvQB">
+        <img src="images/Low-Life.jpg" alt="Low-Life Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1981-10-16" data-artist-name="The Human League" data-album-name="Dare" data-genres="New Wave,Synth-Pop" data-spotify-uri="spotify:album:3ls7tE9D2SIvjTmRuEtsQY">
+        <img src="images/Dare.png" alt="Dare Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1983-02-28" data-artist-name="U2" data-album-name="War" data-genres="Post-Punk" data-spotify-uri="spotify:album:6GaqU0TlYBKHUiSJ0AT9A2">
+        <img src="images/War.jpg" alt="War Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1985-05-13" data-artist-name="Dire Straits" data-album-name="Brothers in Arms" data-genres="Pop Rock" data-spotify-uri="spotify:album:7jvcSnCnugLcisBCNBm60s">
+        <img src="images/Brothers in Arms.jpg" alt="Brothers in Arms Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1987-09-07" data-artist-name="Pet Shop Boys" data-album-name="Actually" data-genres="Synth-Pop, Dance-Pop, Disco" data-spotify-uri="spotify:album:0p5QwhEke5P9mFY4CY9u4j">
+        <img src="images/Actually.jpg" alt="Actually Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1989-03-21" data-artist-name="Madonna" data-album-name="Like a Prayer" data-genres="Pop" data-spotify-uri="spotify:album:48AGkmM7iO4jrELRnNZGPV">
+        <img src="images/Like a Prayer.png" alt="Like a Prayer Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1980-07-25" data-artist-name="AC/DC" data-album-name="Back in Black" data-genres="Hard Rock,Heavy Metal,Arena Rock" data-spotify-uri="spotify:album:6mUdeDZCsExyJLMdAfDuwh">
+        <img src="images/Back in Black.jpg" alt="Back in Black Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1987-07-21" data-artist-name="Guns N' Roses" data-album-name="Appetite for Destruction" data-genres="Hard Rock,Heavy Metal,Glam Metal,Pop Metal,Blues Rock" data-spotify-uri="spotify:album:28yHV3Gdg30AiB8h8em1eW">
+        <img src="images/Appetite for Destruction.png" alt="Appetite for Destruction Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1982-07-02" data-artist-name="Elvis Costello and the Attractions" data-album-name="Imperial Bedroom" data-genres="New Wave,Baroque Pop,Art Rock" data-spotify-uri="spotify:album:1pK8MLyjgvt8pNVkQCBnSg">
+        <img src="images/Imperial Bedroom.jpg" alt="Imperial Bedroom Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1980-10-17" data-artist-name="Bruce Springsteen" data-album-name="The River" data-genres="Heartland Rock,Rock And Roll" data-spotify-uri="spotify:album:6YNIEeDWqC09YIWzhoSVLg">
+        <img src="images/The River.jpg" alt="The River Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1982-06-21" data-artist-name="ABC" data-album-name="The Lexicon of Love" data-genres="New Pop,Pop,Sophisti-Pop,New Wave,Disco,Dance-Pop,Blue-Eyed Soul" data-spotify-uri="spotify:album:1vkql5n4Vb9j5XG3yxOU66">
+        <img src="images/The Lexicon of Love.jpg" alt="The Lexicon of Love Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1983-10-21" data-artist-name="The The" data-album-name="Soul Mining" data-genres="Pop,Post-Punk,Synth-Pop" data-spotify-uri="spotify:album:0I7bOh7mYGUEyqCFHU9R0A">
+        <img src="images/Soul Mining.jpg" alt="Soul Mining Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    
+    
+    </div>
+    <section id="last-song">
+        <h2>Sonic Footprint</h2>
+        <div class="container">
+            <div id="last-song-container"></div>
+        </div>
+     </section>
+    <h2>Figures Unveiled: Spotlight on Stats</h2>
+    <section class="stats-section">
+        <div class="stats-columns">
+          <section id="most-albums">
+            <h3>Collection's Top Creatives:</h3> 
+            <h4>Prolific Album Masters</h4>
+            <ul></ul>
+          </section>
+          <section id="most-rating-points">
+            <h3>Point Leaders:</h3>
+            <h4>Artistry in Full Score</h4>
+            <ul></ul>
+          </section>
+          <section id="most-genres">
+            <h3>Genre Highlights:</h3>
+            <h4>Leading Tags</h4>
+            <ul></ul>
+          </section>
+        </div>
+      </section>
+      <p id="total-albums"></p>
+        <script src="scripts.js"></script>
+        <script src="the-jukebox-sub-stats.js"></script>
+    </body>
+    </html>

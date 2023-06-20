@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const sortByArtistNameBtn = document.getElementById("sort-artist-name");
   const sortByAlbumNameBtn = document.getElementById("sort-album-name");
   const sortByRatingBtn = document.getElementById("sort-rating");
+  const refreshButton = document.getElementById('refresh');
   const searchInput = document.getElementById("search-input");
   const searchButton = document.getElementById("search-button");
   const albumCovers = Array.from(document.querySelectorAll(".album-cover"));
@@ -86,7 +87,9 @@ document.addEventListener("DOMContentLoaded", function () {
       mostGenres.appendChild(li);
     });
   }
-    
+  refreshButton.addEventListener('click', function() {
+    location.reload();
+  });  
     
   function displayAlbumInfo(albumCover) {
     const infoDisplay = albumCover.querySelector(".album-info");
@@ -332,3 +335,4 @@ document.getElementById('melodic-mosaic').addEventListener('click', function() {
 document.getElementById('textures').addEventListener('click', function() {
   window.location.href = 'textures.html';
 });
+
