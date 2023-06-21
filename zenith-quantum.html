@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenith</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Zenith</h1>
+    <h2>Quantum</h2>
+
+    <div class="sort-buttons">
+        <button id="sort-album-name">Sort by Album</button>
+        <button id="sort-artist-name">Sort by Artist</button>
+        <button id="sort-release-date">Sort by Release Date</button>
+
+        <button id="refresh">Refresh</button>
+      </div>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search by album, artist, release date, or genre" />
+    </div>
+    <div class="playlist-buttons">
+        <a href="zenith.html">
+            <button id="zenith">Zenith</button>
+       </a>
+    <a href="zenith-ethereal.html">
+        <button class="button" id="ethereal">Ethereal</button>
+     </a>
+    <!-- 
+     <a href="the-jukebox-odyssey.html">
+        <button class="button" id="odyssey">Odyssey</button>
+     </a> -->
+        <button class="button" id="melodic-mosaic">Melodic Mosaic</button>
+    </div>
+
+<div class="container">
+
+
+    <div class="album-cover" data-release-date="2000-10-02" data-artist-name="Radiohead" data-album-name="Kid A" data-genres="Electronica,Post-Rock,Art Rock,Ambient,Experimental Rock" data-spotify-uri="spotify:album:6GjwtEZcfenmOf6l18N7T7">
+        <img src="images/Kid A.png" alt="Kid A Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1999-06-12" data-artist-name="Sigur Rós" data-album-name="Ágætis byrjun" data-genres="Post-Rock,Dream Pop,Ambient,Art Rock,Shoegaze" data-spotify-uri="spotify:album:1DMMv1Kmoli3Y9fVEZDUVC">
+        <img src="images/Ágætis Byrjun.jpg" alt="Ágætis byrjun Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2000-06-13" data-artist-name="Modest Mouse" data-album-name="The Moon & Antarctica" data-genres="Indie Rock" data-spotify-uri="spotify:album:5SbcupirEParczvqqyUPXL">
+        <img src="images/The Moon & Antarctica.png" alt="The Moon & Antarctica Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2000-02-22" data-artist-name="Yo La Tengo" data-album-name="And Then Nothing Turned Itself Inside-Out" data-genres="Indie Rock,Dream Pop" data-spotify-uri="spotify:album:5iVEe1GHMtvUHwwqArThFa">
+        <img src="images/And Then Nothing Turned Itself Inside-Out.jpg" alt="And Then Nothing Turned Itself Inside-Out Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2000-10-09" data-artist-name="Godspeed You! Black Emperor" data-album-name="Lift Your Skinny Fists Like Antennas to Heaven" data-genres="Post-Rock" data-spotify-uri="spotify:album:2rT82YYlV9UoxBYLIezkRq">
+        <img src="images/Lift Yr. Skinny Fists Like Antennas to Heaven!.png" alt="Lift Your Skinny Fists Like Antennas to Heaven Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2000-05-29" data-artist-name="Grandaddy" data-album-name="The Sophtware Slump" data-genres="Indie Rock,Space Rock" data-spotify-uri="spotify:album:4iUBdDlipS1BISMY5Bk2gQ">
+        <img src="images/The Sophtware Slump.jpg" alt="The Sophtware Slump Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2000-09-26" data-artist-name="The Microphones" data-album-name="It Was Hot, We Stayed in the Water" data-genres="Indie Rock,Lo-Fi,Indie Pop" data-spotify-uri="spotify:album:5jPQa1BcteUZm0h0pxuEDg">
+        <img src="images/It Was Hot, We Stayed in the Water.jpg" alt="It Was Hot, We Stayed in the Water Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2000-07-18" data-artist-name="Les Savy Fav" data-album-name="Emor: Rome Upside Down" data-genres="Art Punk,Post-Hardcore,Post-Punk" data-spotify-uri="spotify:album:3vzFsRQkbgUkG7ni1uLR0c">
+        <img src="images/Rome (Written Upside Down) EP.jpg" alt="Emor: Rome Upside Down Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2000-05-01" data-artist-name="Clinic" data-album-name="Internal Wrangler" data-genres="Indie Rock,Post-Punk Revival,Garage Rock" data-spotify-uri="spotify:album:4RMrSFzNSKNkKkkqcTibuv">
+        <img src="images/Internal Wrangler.jpg" alt="Internal Wrangler Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2000-04-04" data-artist-name="Smog" data-album-name="Dongs of Sevotion" data-genres="Lo-Fi,Indie Rock" data-spotify-uri="spotify:album:7nmRFyTp3Ybj9QRNFxlT27">
+        <img src="images/Dongs of Sevotion.jpg" alt="Dongs of Sevotion Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2001-09-11" data-artist-name="The Microphones" data-album-name="The Glow Pt. 2" data-genres="Lo-Fi,Indie Folk,Ambient,Noise Rock,Neofolk" data-spotify-uri="spotify:album:6QYoRO2sXThCORAifrP4Bl">
+        <img src="images/The Glow, Pt. 2.jpg" alt="The Glow Pt. 2 Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2001-07-03" data-artist-name="Fennesz" data-album-name="Endless Summer" data-genres="Electronica,Glitch,Ambient,Noise,Electroacoustic" data-spotify-uri="spotify:album:0xnL6goTzcRFKzbrleXfpF">
+        <img src="images/Endless Summer.jpg" alt="Endless Summer Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2000-11-27" data-artist-name="The Avalanches" data-album-name="Since I Left You" data-genres="Dance,Sampledelia,Disco,Plunderphonics" data-spotify-uri="spotify:album:0YtYaaO0aipyeQl0xhAWTO">
+        <img src="images/Since I Left You.jpg" alt="Since I Left You Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2001-04-17" data-artist-name="Unwound" data-album-name="Leaves Turn Inside You" data-genres="Post-Hardcore,Indie Rock,Post-Rock,Art Rock,Noise Rock" data-spotify-uri="spotify:album:6lw4HFj2dgaG98jjSP5zOz">
+        <img src="images/Leaves Turn Inside You.jpg" alt="Leaves Turn Inside You Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2001-08-28" data-artist-name="Circulatory System" data-album-name="Circulatory System" data-genres="Indie Rock,Psychedelic Rock" data-spotify-uri="spotify:album:3aS9Dk8gOKfZ4DMi2HC7to">
+        <img src="images/Circulatory System.jpg" alt="Circulatory System Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2001-05-30" data-artist-name="Radiohead" data-album-name="Amnesiac" data-genres="Experimental Rock,Electronica,Alternative Rock" data-spotify-uri="spotify:album:1HrMmB5useeZ0F5lHrMvl0">
+        <img src="images/Amnesiac.png" alt="Amnesiac Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1999-12-23" data-artist-name="Múm" data-album-name="Yesterday Was Dramatic – Today Is OK" data-genres="Electropop,Post-Rock,Ambient,Electronica" data-spotify-uri="spotify:album:1NNVjD5ZkVg6eeR62OmEs2">
+        <img src="images/Yesterday Was Dramatic, Today Is OK.png" alt="Yesterday Was Dramatic – Today Is OK Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2001-07-03" data-artist-name="The White Stripes" data-album-name="White Blood Cells" data-genres="Garage Rock,Blues Rock,Pop Rock" data-spotify-uri="spotify:album:6Xvc1TfpVEhDeHhmTQEtp0">
+        <img src="images/White Blood Cells.jpg" alt="White Blood Cells Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2000-11-21" data-artist-name="The New Pornographers" data-album-name="Mass Romantic" data-genres="Indie Rock,Power Pop" data-spotify-uri="spotify:album:7GG0z7TgUMeCr35TvMMhNR">
+        <img src="images/Mass Romantic.jpg" alt="Mass Romantic Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2001-06-11" data-artist-name="Prefuse 73" data-album-name="Vocal Studies + Uprock Narratives" data-genres="IDM,Glitch,Hip Hop" data-spotify-uri="spotify:album:5GZT4mMtpvjixRGvrKNAkg">
+        <img src="images/Vocal Studies + Uprock Narratives.jpg" alt="Vocal Studies + Uprock Narratives Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2002-08-19" data-artist-name="Interpol" data-album-name="Turn On the Bright Lights" data-genres="Indie Rock,Post-Punk Revival" data-spotify-uri="spotify:album:4sW8Eql2e2kdRP1A1R1clG">
+        <img src="images/Turn On The Bright Lights.png" alt="Turn On the Bright Lights Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2001-09-18" data-artist-name="Wilco" data-album-name="Yankee Hotel Foxtrot" data-genres="Art Rock,Indie Rock" data-spotify-uri="spotify:album:0rPtXOMN42nsLDiShvGamv">
+        <img src="images/Yankee Hotel Foxtrot.jpg" alt="Yankee Hotel Foxtrot Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2002-02-26" data-artist-name="...And You Will Know Us by the Trail of Dead" data-album-name="Source Tags & Codes" data-genres="Alternative Rock,Post-Hardcore,Art Rock" data-spotify-uri="spotify:album:6eo9wHG2V79FTfz9pmfUEU">
+        <img src="images/Source Tags & Codes.jpg" alt="Source Tags & Codes Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2002-06-03" data-artist-name="The Books" data-album-name="Thought for Food" data-genres="Folktronica,Post-Rock,Sound Collage" data-spotify-uri="spotify:album:0uRZLNJY35KvsXRbkGYQnx">
+        <img src="images/Thought for Food.jpg" alt="Thought for Food Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2002-07-16" data-artist-name="The Flaming Lips" data-album-name="Yoshimi Battles the Pink Robots" data-genres="Neo-Psychedelia,Space Rock,Dream Pop" data-spotify-uri="spotify:album:49LA20VMk65fQyEaIzYdvf">
+        <img src="images/Yoshimi Battles the Pink Robots.jpg" alt="Yoshimi Battles the Pink Robots Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2002-08-20" data-artist-name="Spoon" data-album-name="Kill the Moonlight" data-genres="Indie Rock,Art Rock,Post-Punk Revival" data-spotify-uri="spotify:album:519PD4UWRalte2kjiiPY8i">
+        <img src="images/Kill the Moonlight.jpg" alt="Kill the Moonlight Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2002-01-14" data-artist-name="The Notwist" data-album-name="Neon Golden" data-genres="Indie Electronic,Post-Rock,Art Rock" data-spotify-uri="spotify:album:56Ez1wZMgHE5dIjyBFdZF4">
+        <img src="images/Neon Golden.jpg" alt="Neon Golden Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2002-02-13" data-artist-name="Boards of Canada" data-album-name="Geogaddi" data-genres="Electric,IDM,Downtempo,Hauntology,Psychedelic" data-spotify-uri="spotify:album:4T7JGfRryhw5POaXalkApE">
+        <img src="images/Geogaddi.png" alt="Geogaddi Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2002-06-25" data-artist-name="Sonic Youth" data-album-name="Murray Street" data-genres="Alternative Rock,Experimental Rock,Noise Rock" data-spotify-uri="spotify:album:3jYv3H9FDiWyl8K0PMcsyp">
+        <img src="images/Murray Street.png" alt="Murray Street Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2001-10-30" data-artist-name="Liars" data-album-name="They Threw Us All in a Trench and Stuck a Monument on Top" data-genres="Noise Rock,Post-Punk Revival" data-spotify-uri="spotify:album:2proOwuLWNCnlbmLwoLm5X">
+        <img src="images/They Threw Us All in a Trench and Stuck a Monument on Top.jpg" alt="They Threw Us All in a Trench and Stuck a Monument on Top Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2003-09-08" data-artist-name="The Rapture" data-album-name="Echoes" data-genres="Dance-Punk,Post-Punk Revival,Electronica,Art Punk,Alternative Dance" data-spotify-uri="spotify:album:1htTXDHC2YhVq0xTwHzaHh">
+        <img src="images/Echoes.png" alt="Echoes Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2003-10-07" data-artist-name="The Books" data-album-name="The Lemon of Pink" data-genres="Folktronica,Ambient,Musique Concrète" data-spotify-uri="spotify:album:6zwjQ6buUEcF3E9IGTJXtP">
+        <img src="images/The Lemon of Pink.jpg" alt="The Lemon of Pink Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2003-07-01" data-artist-name="Sufjan Stevens" data-album-name="Michigan" data-genres="Indie Folk,Folk-Pop,Baroque Pop" data-spotify-uri="spotify:album:2XOwIbRcNFIBFvGEHDSBQk">
+        <img src="images/Michigan.jpg" alt="Michigan Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2003-06-09" data-artist-name="Radiohead" data-album-name="Hail to the Thief" data-genres="Alternative Rock,Art Rock,Experimental Rock,Electronic Rock" data-spotify-uri="spotify:album:5mzoI3VH0ZWk1pLFR6RoYy">
+        <img src="images/Hail to the Thief.png" alt="Hail to the Thief Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2003-03-31" data-artist-name="Manitoba" data-album-name="Up in Flames" data-genres="Folktronica,Indie Pop" data-spotify-uri="spotify:album:65TXyh4nfpqV0pttAN439J">
+        <img src="images/Up in Flames.jpg" alt="Up in Flames Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2003-05-06" data-artist-name="Prefuse 73" data-album-name="One Word Extinguisher" data-genres="IDM,Electronica,Glitch,Hip Hop" data-spotify-uri="spotify:album:11ghskpbs7SPZa4X6WAzlq">
+        <img src="images/One Word Extinguisher.jpg" alt="One Word Extinguisher Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2003-08-25" data-artist-name="Prefuse 73" data-album-name="Extinguished: Outtakes" data-genres="Hip Hop,Electronica" data-spotify-uri="spotify:album:0jdfQY2sPmzkwa1KtSDGbg">
+        <img src="images/Extinguished- Outtakes.jpg" alt="Extinguished: Outtakes Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2003-10-21" data-artist-name="The Shins" data-album-name="Chutes Too Narrow" data-genres="Indie Rock,Indie Pop,Indie Folk" data-spotify-uri="spotify:album:05APAIA6c0Qf7QtFQYZAKm">
+        <img src="images/Chutes Too Narrow.png" alt="Chutes Too Narrow Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2003-04-14" data-artist-name="M83" data-album-name="Dead Cities, Red Seas & Lost Ghosts" data-genres="Electric,Shoegaze" data-spotify-uri="spotify:album:44Sy39wQjQFX0jJOufXTvv">
+        <img src="images/Dead Cities, Red Seas & Lost Ghosts.jpg" alt="Dead Cities, Red Seas & Lost Ghosts Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2002-10-15" data-artist-name="Broken Social Scene" data-album-name="You Forgot It in People" data-genres="Indie Rock" data-spotify-uri="spotify:album:6nL0U84JsEJ0cRsGCnsDnJ">
+        <img src="images/You Forgot It in People.jpg" alt="You Forgot It in People Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2003-10-21" data-artist-name="The Unicorns" data-album-name="Who Will Cut Our Hair When We're Gone?" data-genres="Indie Rock,Indie Pop,Lo-Fi" data-spotify-uri="spotify:album:5YVJt1byIaOGa6PWU3SJ53">
+        <img src="images/Who Will Cut Our Hair When We're Gone-.jpg" alt="Who Will Cut Our Hair When We're Gone? Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2004-09-14" data-artist-name="Arcade Fire" data-album-name="Funeral" data-genres="Indie Rock,Chamber Pop,Art Rock,Baroque Pop" data-spotify-uri="spotify:album:6ZB8qaR9JNuS0Q0bG1nbcH">
+        <img src="images/Funeral.jpg" alt="Funeral Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2004-05-03" data-artist-name="Animal Collective" data-album-name="Sung Tongs" data-genres="Freak Folk,Psychedelic Folk,Avant-Pop" data-spotify-uri="spotify:album:4eBP58Wc5U1rmNt0BdQmMa">
+        <img src="images/Sung Tongs.png" alt="Sung Tongs Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2004-05-17" data-artist-name="The Streets" data-album-name="A Grand Don't Come for Free" data-genres="Alternative Hip Hop,Electronica,Rap Opera" data-spotify-uri="spotify:album:365ETCJBUmEWroc4UGBS1u">
+        <img src="images/A Grand Don’t Come for Free.jpg" alt="A Grand Don't Come for Free Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2004-07-13" data-artist-name="The Fiery Furnaces" data-album-name="Blueberry Boat" data-genres="Indie Rock,Progressive Rock,Experimental Rock,Art Rock" data-spotify-uri="spotify:album:2WENPrYb3m58O5tTmy53lY">
+        <img src="images/Blueberry Boat.jpg" alt="Blueberry Boat Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2004-09-28" data-artist-name="Brian Wilson" data-album-name="Brian Wilson Presents Smile" data-genres="Orchestral Pop,Art Pop,Psychedelic Pop,Americana,Indie Rock" data-spotify-uri="spotify:album:4Uc6YCjpfyjj02rZfg2EUv">
+        <img src="images/Brian Wilson Presents Smile.png" alt="Brian Wilson Presents Smile Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2004-03-23" data-artist-name="Madvillain" data-album-name="Madvillainy" data-genres="Alternative Hip Hop,Jazz Rap" data-spotify-uri="spotify:album:19bQiwEKhXUBJWY6oV3KZk">
+        <img src="images/Madvillainy.png" alt="Madvillainy Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2004-04-24" data-artist-name="Devendra Banhart" data-album-name="Rejoicing in the Hands" data-genres="Acoustic,Folk Rock" data-spotify-uri="spotify:album:5Zb4BBkenfVUOZ2gI1mxWY">
+        <img src="images/Rejoicing in the Hands.jpg" alt="Rejoicing in the Hands Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2004-09-13" data-artist-name="The Go! Team" data-album-name="Thunder, Lightning, Strike" data-genres="Indie Rock,Alternative Dance,Alternative Hip Hop,Indie Electronic,Lo-Fi" data-spotify-uri="spotify:album:7k8fPk75tH4HPLy43neH0S">
+        <img src="images/Thunder, Lightning, Strike.jpg" alt="Thunder, Lightning, Strike Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2004-04-20" data-artist-name="Ghostface" data-album-name="The Pretty Toney Album" data-genres="Hip Hop" data-spotify-uri="spotify:album:2JFiDG0ymh2FuAqZj79tTJ">
+        <img src="images/The Pretty Toney Album.jpg" alt="The Pretty Toney Album Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2004-03-23" data-artist-name="Joanna Newsom" data-album-name="The Milk-Eyed Mender" data-genres="Appalachian,Americana,Avant-Garde,Folk-Pop,Freak Folk,Psychedelic Folk">
+        <img src="images/The Milk-Eyed Mender.jpg" alt="The Milk-Eyed Mender Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2005-07-04" data-artist-name="Sufjan Stevens" data-album-name="Illinois" data-genres="Indie Folk,Folk Baroque,Indie Rock" data-spotify-uri="spotify:album:1pOl0KEC1iQnA6F0XxV4To">
+        <img src="images/Illinois.jpg" alt="Illinois Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2005-08-30" data-artist-name="Kanye West" data-album-name="Late Registration" data-genres="Hip Hop,Pop Rap,Progressive Rap" data-spotify-uri="spotify:album:5ll74bqtkcXlKE7wwkMq4g">
+        <img src="images/Late Registration.png" alt="Late Registration Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2006-05-30" data-artist-name="Art Brut" data-album-name="Bang Bang Rock & Roll" data-genres="Indie Rock,Art Punk,Garage Punk" data-spotify-uri="spotify:album:3wX4loyNH7gmjqqqoFLypJ">
+        <img src="images/Bang Bang Rock & Roll.jpg" alt="Bang Bang Rock & Roll Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2005-03-22" data-artist-name="M.I.A." data-album-name="Arular" data-genres="World,Hip Hop,Dancehall,Dance" data-spotify-uri="spotify:album:7CzEknt9gJwe0QC89ir1JX">
+        <img src="images/Arular.jpg" alt="Arular Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2005-02-01" data-artist-name="Antony and the Johnsons" data-album-name="I Am a Bird Now" data-genres="Baroque Pop,Art Pop,Soul,Chamber Pop" data-spotify-uri="spotify:album:1qgHb6l3H8xHuBQrFtvjKN">
+        <img src="images/I Am a Bird Now.jpg" alt="I Am a Bird Now Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2005-10-11" data-artist-name="Deerhoof" data-album-name="The Runners Four" data-genres="Pop Rock,Art Pop" data-spotify-uri="spotify:album:0i3G7wf85pdgPiHkHlrKS3">
+        <img src="images/The Runners Four.jpg" alt="The Runners Four Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2005-10-18" data-artist-name="Animal Collective" data-album-name="Feels" data-genres="Indie Rock" data-spotify-uri="spotify:album:21LZ1OSKbxSU5I7QBUalW8">
+        <img src="images/Feels.png" alt="Feels Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2005-01-24" data-artist-name="LCD Soundsystem" data-album-name="LCD Soundsystem" data-genres="Dance-Punk,Electronica,Indie Rock" data-spotify-uri="spotify:album:6aSk2vxoY3xtz7cXKuY9EL">
+        <img src="images/LCD Soundsytem.jpg" alt="LCD Soundsystem Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2004-12-07" data-artist-name="Cam'ron" data-album-name="Purple Haze" data-genres="Hip Hop" data-spotify-uri="spotify:album:4k6ci0PJUSV8CeQDTBfm44">
+        <img src="images/Purple Haze.jpg" alt="Purple Haze Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2005-09-27" data-artist-name="Wolf Parade" data-album-name="Apologies to the Queen Mary" data-genres="Indie Rock" data-spotify-uri="spotify:album:6ZeO3WNF2Gti8ZQnXog5SQ">
+        <img src="images/Apologies to the Queen Mary.jpg" alt="Apologies to the Queen Mary Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2006-02-17" data-artist-name="The Knife" data-album-name="Silent Shout" data-genres="Synth-Pop,Techno,Electronic" data-spotify-uri="spotify:album:1UdCT7t0rfNPu5Bn957U8r">
+        <img src="images/Silent Shout.png" alt="Silent Shout Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2006-07-06" data-artist-name="TV on the Radio" data-album-name="Return to Cookie Mountain" data-genres="Art Rock,Synth-Punk,Experimental,Post-Punk Revival,Psychedelic,Shoegaze,Space Rock" data-spotify-uri="spotify:album:7xn8nwwutlJFMb7Zf9NEHi">
+        <img src="images/Return to Cookie Mountain.jpg" alt="Return to Cookie Mountain Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2006-11-14" data-artist-name="Joanna Newsom" data-album-name="Ys" data-genres="Progressive Folk,Indie Folk,Baroque Pop,Avant-Pop,Indie Rock">
+        <img src="images/Ys.png" alt="Ys Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2006-03-28" data-artist-name="Ghostface Killah" data-album-name="Fishscale" data-genres="Hip Hop" data-spotify-uri="spotify:album:0gaLZATMEssSErDzywUqxD">
+        <img src="images/Fishscale.jpg" alt="Fishscale Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2006-10-03" data-artist-name="The Hold Steady" data-album-name="Boys and Girls in America" data-genres="Indie Rock,Rock" data-spotify-uri="spotify:album:1lLya6vgwjJahE3TMq7IfR">
+        <img src="images/Boys and Girls in America.jpg" alt="Boys and Girls in America Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2006-02-20" data-artist-name="Liars" data-album-name="Drum's Not Dead" data-genres="Experimental Rock,Noise Rock,Post-Punk Revival" data-spotify-uri="spotify:album:4xeba6CVGWt31LsqwhS8Mg">
+        <img src="images/Drum's Not Dead.jpg" alt="Drum's Not Dead Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2006-11-28" data-artist-name="Clipse" data-album-name="Hell Hath No Fury" data-genres="Hip Hop" data-spotify-uri="spotify:album:1HftQWyKWoGsrmG5lRkJDE">
+        <img src="images/Hell Hath No Fury.jpg" alt="Hell Hath No Fury Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2006-09-05" data-artist-name="Grizzly Bear" data-album-name="Yellow House" data-genres="Psychedelic Folk,Indie Folk,Roots Rock" data-spotify-uri="spotify:album:6t0H9hI4985J8y6HbWu6ta">
+        <img src="images/Yellow House.jpg" alt="Yellow House Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2005-11-18" data-artist-name="Boris" data-album-name="Pink" data-genres="Heavy Metal,Stoner Rock,Noise Rock,Garage Punk,Ambient,Psychedelic" data-spotify-uri="spotify:album:0L7mC9kTa31p3cEaFwHIgD">
+        <img src="images/Pink.png" alt="Pink Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2006-05-08" data-artist-name="Scott Walker" data-album-name="The Drift" data-genres="Avant-Garde,Experimental,Gothic Rock" data-spotify-uri="spotify:album:3sVEXeNRjZngHef8wbgFwn">
+        <img src="images/The Drift.jpg" alt="The Drift Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2007-03-20" data-artist-name="Panda Bear" data-album-name="Person Pitch" data-genres="Psychedelic Pop,Avant-Pop,Sampledelia,Experimental Pop,Post-Rock,Dream Pop" data-spotify-uri="spotify:album:64TDaAbxgO0TmKZrIavdLg">
+        <img src="images/Person Pitch.png" alt="Person Pitch Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2007-03-12" data-artist-name="LCD Soundsystem" data-album-name="Sound of Silver" data-genres="Dance-Punk,Electronic Rock,Electronica,Indie Rock" data-spotify-uri="spotify:album:1R8kkopLT4IAxzMMkjic6X">
+        <img src="images/Sound Of Silver.jpg" alt="Sound of Silver Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2007-08-08" data-artist-name="M.I.A." data-album-name="Kala" data-genres="Dance,World,Hip Hop" data-spotify-uri="spotify:album:2xoj2gYed3IYmGWn3owSfu">
+        <img src="images/Kala.jpg" alt="Kala Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2007-10-10" data-artist-name="Radiohead" data-album-name="In Rainbows" data-genres="Art Rock,Alternative Rock,Experimental Rock,Art Pop,Electronica" data-spotify-uri="spotify:album:5vkqYmiPBYLaalcmjujWxK">
+        <img src="images/In Rainbows.png" alt="In Rainbows Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2007-01-07" data-artist-name="Of Montreal" data-album-name="Hissing Fauna, Are You the Destroyer?" data-genres="Indie Pop,Glam Rock,Art Pop,Experimental Pop,Neo-Psychedelia" data-spotify-uri="spotify:album:15Fb7HPHdy42No0l9KnXAZ">
+        <img src="images/Hissing Fauna, Are You the Destroyer-.jpg" alt="Hissing Fauna, Are You the Destroyer? Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2007-09-10" data-artist-name="Animal Collective" data-album-name="Strawberry Jam" data-genres="Psychedelic Pop,Electropop,Experimental Pop" data-spotify-uri="spotify:album:4TyyZazCkju7vwioaV1KyE">
+        <img src="images/Strawberry Jam.png" alt="Strawberry Jam Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2007-07-10" data-artist-name="Spoon" data-album-name="Ga Ga Ga Ga Ga" data-genres="Indie Rock,Post-Punk Revival,Art Rock,Indie Pop" data-spotify-uri="spotify:album:3tSpLdSd2zhM0N0aYZd13E">
+        <img src="images/Ga Ga Ga Ga Ga.jpg" alt="Ga Ga Ga Ga Ga Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2007-05-14" data-artist-name="Battles" data-album-name="Mirrored" data-genres="Experimental Rock, Math Rock" data-spotify-uri="spotify:album:64shsDEnphK07flo3DzWAc">
+        <img src="images/Mirrored.png" alt="Mirrored Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2007-03-26" data-artist-name="The Field" data-album-name="From Here We Go Sublime" data-genres="Techno,Ambient Pop" data-spotify-uri="spotify:album:5oNWGhIs9vpB6FJ6rv5VuO">
+        <img src="images/From Here We Go Sublime.jpg" alt="From Here We Go Sublime Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2007-11-05" data-artist-name="Burial" data-album-name="Untrue" data-genres="Dubstep,UK Garage,Ambient" data-spotify-uri="spotify:album:1iRPiEYHIX2zpF8lkW54SK">
+        <img src="images/Untrue.jpg" alt="Untrue Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2008-04-08" data-artist-name="Fleet Foxes" data-album-name="Sun Giant" data-genres="Indie Folk" data-spotify-uri="spotify:album:3vz6xBtlgVdLTRgK1CiPcF">
+        <img src="images/Sun Giant.jpg" alt="Sun Giant Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2008-06-03" data-artist-name="Fleet Foxes" data-album-name="Fleet Foxes" data-genres="Indie Folk,Chamber Pop,Folk Rock,Folk-Pop" data-spotify-uri="spotify:album:5GRnydamKvIeG46dycID6v">
+        <img src="images/Fleet Foxes.jpg" alt="Fleet Foxes Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2008-04-28" data-artist-name="Portishead" data-album-name="Third" data-genres="Experimental Rock,Electronica,Psychedelic Rock" data-spotify-uri="spotify:album:4BnNSzOWadogStvyYshJIo">
+        <img src="images/Third.png" alt="Third Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2008-05-08" data-artist-name="No Age" data-album-name="Nouns" data-genres="Noise Pop,Experimental Pop,Punk Rock,Lo-Fi" data-spotify-uri="spotify:album:0sK9bT9H10yJ8S0jxC4PaD">
+        <img src="images/Nouns.jpg" alt="Nouns Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2008-03-22" data-artist-name="Cut Copy" data-album-name="In Ghost Colours" data-genres="Electropop,Alternative Dance,Dance-Punk" data-spotify-uri="spotify:album:6k3dwEFYKsGrhS40jtiAGt">
+        <img src="images/In Ghost Colours.jpg" alt="In Ghost Colours Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2008-08-19" data-artist-name="Deerhunter" data-album-name="Microcastle" data-genres="Shoegaze,Indie Pop,Indie Rock,Baroque Pop" data-spotify-uri="spotify:album:4wJ585ippGitIpRcGs1GD7">
+        <img src="images/Microcastle.jpg" alt="Microcastle Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2008-10-28" data-artist-name="Deerhunter" data-album-name="Weird Era Cont." data-genres="Shoegaze,Post-Punk,Noise Pop" data-spotify-uri="spotify:album:6UvnlfAkFdfAtEJO6xaQjI">
+        <img src="images/Weird Era Cont..jpg" alt="Weird Era Cont. Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2008-09-16" data-artist-name="TV on the Radio" data-album-name="Dear Science" data-genres="Indie Rock,Art Rock,Funk,Soul,Post-Punk" data-spotify-uri="spotify:album:3bWZ33ZCvHQD3nJnPjpfk7">
+        <img src="images/Dear Science.jpg" alt="Dear Science Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2008-01-29" data-artist-name="Vampire Weekend" data-album-name="Vampire Weekend" data-genres="Indie Pop,Chamber Pop,African Popular,Worldbeat" data-spotify-uri="spotify:album:7n8NJkGKAl2np1bXiRn0CY">
+        <img src="images/Vampire Weekend.jpg" alt="Vampire Weekend Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2008-04-11" data-artist-name="M83" data-album-name="Saturdays = Youth" data-genres="Synth-Pop,New Wave,Dream Pop" data-spotify-uri="spotify:album:4HshNHpHWtmaw8sDrOXNuE">
+        <img src="images/Saturdays = Youth.jpg" alt="Saturdays = Youth Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2008-03-10" data-artist-name="Hercules and Love Affair" data-album-name="Hercules and Love Affair" data-genres="Disco,House,Funktronica" data-spotify-uri="spotify:album:7EMv3oMKUEpNrKFVZd1XYJ">
+        <img src="images/Hercules and Love Affair.jpg" alt="Hercules and Love Affair Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2008-10-07" data-artist-name="DJ /rupture" data-album-name="Uproot" data-genres="Dubstep,Ragga,Hip Hop">
+        <img src="images/Uproot.jpeg" alt="Uproot Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2009-01-06" data-artist-name="Animal Collective" data-album-name="Merriweather Post Pavilion" data-genres="Psychedelic Pop,Electropop,Synth-Pop,Neo-Psychedelia,Indipendent,Avant-Pop" data-spotify-uri="spotify:album:5O9OXl9zAWMJTzawofxuan">
+        <img src="images/Merriweather Post Pavilion.png" alt="Merriweather Post Pavilion Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2009-06-09" data-artist-name="Dirty Projectors" data-album-name="Bitte Orca" data-genres="Indie Rock,Art Pop,Progressive Pop" data-spotify-uri="spotify:album:2Geg4mwE8z9DO5BSSUoMKz">
+        <img src="images/Bitte Orca.png" alt="Bitte Orca Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2009-08-14" data-artist-name="The xx" data-album-name="xx" data-genres="Indie Pop,Dream Pop,Indie Rock" data-spotify-uri="spotify:album:6tzQKMilI02kn1lzLklDI8">
+        <img src="images/xx.png" alt="xx Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2009-10-13" data-artist-name="The Flaming Lips" data-album-name="Embryonic" data-genres="Acid Rock,Psychedelic Rock" data-spotify-uri="spotify:album:1QaudSbWNyACrk0JGemI3r">
+        <img src="images/Embryonic.png" alt="Embryonic Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2009-09-08" data-artist-name="Raekwon" data-album-name="Only Built 4 Cuban Linx... Pt. II" data-genres="Hip Hop" data-spotify-uri="spotify:album:64B2AghiyK1TbiTp8DmBeX">
+        <img src="images/Only Built 4 Cuban Linx... Pt. II.jpg" alt="Only Built 4 Cuban Linx... Pt. II Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2009-05-26" data-artist-name="Grizzly Bear" data-album-name="Veckatimest" data-genres="Psychedelic Folk,Indie Folk,Chamber Pop,Indie Rock,Psychedelic Pop,Baroque Pop" data-spotify-uri="spotify:album:3XQMgEnLQnOMkFaJA9w6sZ">
+        <img src="images/Veckatimest.jpg" alt="Veckatimest Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2009-04-03" data-artist-name="Bat for Lashes" data-album-name="Two Suns" data-genres="Art Rock" data-spotify-uri="spotify:album:7cj1dERc5yhFBqtxlRYGSe">
+        <img src="images/Two Suns.jpg" alt="Two Suns Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2009-05-25" data-artist-name="Phoenix" data-album-name="Wolfgang Amadeus Phoenix" data-genres="Pop Rock,Indie Pop,Synth-Pop,New Wave,Sophisti-Pop" data-spotify-uri="spotify:album:0xG5b9nkWxKc5VTpo6Fq5I">
+        <img src="images/Wolfgang Amadeus Phoenix.jpg" alt="Wolfgang Amadeus Phoenix Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2009-01-12" data-artist-name="Fever Ray" data-album-name="Fever Ray" data-genres="Electropop" data-spotify-uri="spotify:album:019nA7vSKz0dD5yRKYRpbM">
+        <img src="images/Fever Ray.png" alt="Fever Ray Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2009-09-22" data-artist-name="Girls" data-album-name="Album" data-genres="Indie Pop,Indie Rock,Surf,Jangle Pop,Dream Pop" data-spotify-uri="spotify:album:6pgu30AeNftRqCOIFj9ZCh">
+        <img src="images/Album.jpg" alt="Album Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+    <section id="last-song">
+        <h2>Sonic Footprint</h2>
+        <div class="container">
+            <div id="last-song-container"></div>
+        </div>
+     </section>
+    <h2>Figures Unveiled: Spotlight on Stats</h2>
+    <section class="stats-section">
+        <div class="stats-columns">
+          <section id="most-albums">
+            <h3>Collection's Top Creatives:</h3> 
+            <h4>Prolific Album Masters</h4>
+            <ul></ul>
+          </section>
+          <section id="most-rating-points">
+            <h3>Point Leaders:</h3>
+            <h4>Artistry in Full Score</h4>
+            <ul></ul>
+          </section>
+          <section id="most-genres">
+            <h3>Genre Highlights:</h3>
+            <h4>Leading Tags</h4>
+            <ul></ul>
+          </section>
+        </div>
+      </section>
+      <p id="total-albums"></p>
+        <script src="scripts.js"></script>
+        <script src="zenith-sub-stats.js"></script>
+    </body>
+    </html>
