@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const sortByArtistNameBtn = document.getElementById("sort-artist-name");
   const sortByAlbumNameBtn = document.getElementById("sort-album-name");
   const sortByRatingBtn = document.getElementById("sort-rating");
-  const refreshButton = document.getElementById('refresh');
+  const refreshButton = document.getElementById('shuffle');
   const searchInput = document.getElementById("search-input");
   const searchButton = document.getElementById("search-button");
   const albumCovers = Array.from(document.querySelectorAll(".album-cover"));
