@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Voyage</h1>
+    <!-- <h2>Timeless Treasures</h2> -->
+
+    <div class="sort-buttons">
+        <button id="sort-album-name">Sort by Album</button>
+        <button id="sort-artist-name">Sort by Artist</button>
+        <button id="sort-release-date">Sort by Release Date</button>
+        <button id="sort-rating">Sort by Rating</button>
+        <button id="refresh">Refresh</button>
+      </div>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search by album, artist, release date, or genre" />
+    </div>
+    <div class="playlist-buttons">
+        <button class="button" id="melodic-mosaic">Melodic Mosaic</button>
+    </div>
+
+
+<div class="container">
+
+    <div class="album-cover" data-release-date="1971-11-08" data-artist-name="Led Zeppelin" data-album-name="Untitled aka Led Zeppelin IV" data-genres="Hard Rock, Heavy Metal" data-spotify-uri="spotify:album:5EyIDBAqhnlkAHqvPRwdbX">
+        <img src="images/Led Zeppelin IV.jpg" alt="Untitled aka Led Zeppelin IV Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1978-02-10" data-artist-name="Van Halen" data-album-name="Van Halen" data-genres="Hard Rock,Heavy Metal" data-spotify-uri="spotify:album:7DdEbYFPKTZ8KB4z6L4UnQ">
+        <img src="images/Van Halen.jpg" alt="Van Halen Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1967-05-12" data-artist-name="The Jimi Hendrix Experience" data-album-name="Are You Experienced" data-genres="Psychedelic Rock,Hard Rock,Acid Rock,Blues" data-spotify-uri="spotify:album:7rSZXXHHvIhF4yUFdaOCy9">
+        <img src="images/Are You Experienced.jpg" alt="Are You Experienced Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1987-07-21" data-artist-name="Guns N' Roses" data-album-name="Appetite for Destruction" data-genres="Hard Rock,Heavy Metal,Glam Metal,Pop Metal,Blues Rock" data-spotify-uri="spotify:album:28yHV3Gdg30AiB8h8em1eW">
+        <img src="images/Appetite for Destruction.png" alt="Appetite for Destruction Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1965-12-03" data-artist-name="The Who" data-album-name="My Generation" data-genres="Garage Rock,Power Pop,R&B,Mod" data-spotify-uri="spotify:album:6Oc6Ok1Oawu8lRkjmD4mXy">
+        <img src="images/My Generation.jpg" alt="My Generation Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1962-01-11" data-artist-name="Howlin' Wolf" data-album-name="Howlin' Wolf" data-genres="Chicago Blues" data-spotify-uri="spotify:album:26TtzBrPdUkHMSTPSbctbl">
+        <img src="images/Howlin’ Wolf.jpg" alt="Howlin' Wolf Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1986-03-03" data-artist-name="Metallica" data-album-name="Master of Puppets" data-genres="Thrash Metal" data-spotify-uri="spotify:album:5gzLOflH95LkKYE6XSXE9k">
+        <img src="images/Master of Puppets.png" alt="Master of Puppets Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1970-11-26" data-artist-name="Derek and the Dominos" data-album-name="Layla and Other Assorted Love Songs" data-genres="Blues Rock,Soul,Rock And Roll" data-spotify-uri="spotify:album:5iIWnMgvSM8uEBwXKsPcXM">
+        <img src="images/Layla and Other Assorted Love Songs.jpg" alt="Layla and Other Assorted Love Songs Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1971-07-12" data-artist-name="Funkadelic" data-album-name="Maggot Brain" data-genres="Psychedelic Funk,Funk Rock,R&B,Acid Rock,Progressive Soul" data-spotify-uri="spotify:album:3ywVzrwMQ3Kq43N9zBdBQm">
+        <img src="images/Maggot Brain.jpg" alt="Maggot Brain Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1973-03-01" data-artist-name="Pink Floyd" data-album-name="The Dark Side of the Moon" data-genres="Progressive Rock,Psychedelic" data-spotify-uri="spotify:album:4LH4d3cOWNNsVw41Gqt2kv">
+        <img src="images/The Dark Side Of The Moon.png" alt="The Dark Side of the Moon Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1991-11-04" data-artist-name="My Bloody Valentine" data-album-name="Loveless" data-genres="Shoegaze,Dream Pop,Noise Pop,Noise Rock,Experimental Rock" data-spotify-uri="spotify:album:3GH4IiI6jQAIvnHVdb5FB6">
+        <img src="images/Loveless.jpg" alt="Loveless Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1970-09-18" data-artist-name="Black Sabbath" data-album-name="Paranoid" data-genres="Heavy Metal" data-spotify-uri="spotify:album:6r7LZXAVueS5DqdrvXJJK7">
+        <img src="images/Paranoid.png" alt="Paranoid Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1969-10-22" data-artist-name="Led Zeppelin" data-album-name="Led Zeppelin II" data-genres="Hard Rock,Heavy Metal,Blues Rock" data-spotify-uri="spotify:album:58MQ0PLijVHePUonQlK76Y">
+        <img src="images/Led Zeppelin II.jpg" alt="Led Zeppelin II Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1995-03-13" data-artist-name="Radiohead" data-album-name="The Bends" data-genres="Alternative Rock,Britpop,Indie Rock" data-spotify-uri="spotify:album:35UJLpClj5EDrhpNIi4DFg">
+        <img src="images/The Bends.png" alt="The Bends Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1971-07-06" data-artist-name="The Allman Brothers Band" data-album-name="At Fillmore East" data-genres="Southern Rock,Blues Rock,Jazz-Rock" data-spotify-uri="spotify:album:0Y5Wlv2OJKaW0uDJ5HnUfy">
+        <img src="images/At Fillmore East.png" alt="At Fillmore East Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1991-09-24" data-artist-name="Nirvana" data-album-name="Nevermind" data-genres="Grunge,Alternative Rock" data-spotify-uri="spotify:album:2guirTSEqLizK7j9i1MTTZ">
+        <img src="images/Nevermind.png" alt="Nevermind Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1976-04-23" data-artist-name="Ramones" data-album-name="Ramones" data-genres="Punk Rock" data-spotify-uri="spotify:album:3ToX9inehiXTv17hpaOyie">
+        <img src="images/Ramones.jpg" alt="Ramones Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1967-11-02" data-artist-name="Cream" data-album-name="Disraeli Gears" data-genres="Psychedelic Rock,Blues Rock,Hard Rock" data-spotify-uri="spotify:album:6fRqzJT070Kp9RWlSXmKcY">
+        <img src="images/Disraeli Gears.jpg" alt="Disraeli Gears Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1987-01-01" data-artist-name="Charlie Christian" data-album-name="The Genius of the Electric Guitar" data-genres="Jazz,Swing,Bebop" data-spotify-uri="spotify:album:4QIxeBZfEtZpUWFbOrMrjV">
+        <img src="images/Genius Of The Electric Guitar.jpg" alt="The Genius of the Electric Guitar Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1975-02-24" data-artist-name="Led Zeppelin" data-album-name="Physical Graffiti" data-genres="Hard Rock" data-spotify-uri="spotify:album:4Q7cPyiP8cMIlUEHAqeYfd">
+        <img src="images/Physical Graffiti.jpg" alt="Physical Graffiti Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1968-10-16" data-artist-name="The Jimi Hendrix Experience" data-album-name="Electric Ladyland" data-genres="Psychedelic Rock,Acid Rock,Hard Rock,Funk,Progressive Soul" data-spotify-uri="spotify:album:5z090LQztiqh13wYspQvKQ">
+        <img src="images/Electric Ladyland.jpg" alt="Electric Ladyland Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1959-01-01" data-artist-name="Snooks Eaglin" data-album-name="New Orleans Street Singer" data-genres="Blues" data-spotify-uri="spotify:album:3QYOWNnvJBThutwlzjBhry">
+        <img src="images/New Orleans.jpg" alt="New Orleans Street Singer Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1966-08-05" data-artist-name="The Beatles" data-album-name="Revolver" data-genres="Rock,Pop,Psychedelic" data-spotify-uri="spotify:album:3PRoXYsngSwjEQWR5PsHWR">
+        <img src="images/Revolver.png" alt="Revolver Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1980-07-25" data-artist-name="AC/DC" data-album-name="Back in Black" data-genres="Hard Rock,Heavy Metal,Arena Rock" data-spotify-uri="spotify:album:6mUdeDZCsExyJLMdAfDuwh">
+        <img src="images/Back in Black.jpg" alt="Back in Black Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1956-12-01" data-artist-name="Johnny Burnette and the Rock 'n Roll Trio" data-album-name="Johnny Burnette and the Rock 'n Roll Trio" data-genres="Rockabilly" data-spotify-uri="spotify:album:0WDDlUimET7qIVjs0Sm3mM">
+        <img src="images/The Rock ‘N’ Roll Trio.jpg" alt="Johnny Burnette and the Rock 'n Roll Trio Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1990-07-24" data-artist-name="Pantera" data-album-name="Cowboys from Hell" data-genres="Groove Metal,Thrash Metal" data-spotify-uri="spotify:album:5szY4sBOSD6IFjFN1RtWTe">
+        <img src="images/Cowboys From Hell.jpg" alt="Cowboys from Hell Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1977-02-08" data-artist-name="Television" data-album-name="Marquee Moon" data-genres="Punk Rock,Post-Punk,Art Punk,Garage Rock" data-spotify-uri="spotify:album:630o1rKTDsLeIPreOY1jqP">
+        <img src="images/Marquee Moon.png" alt="Marquee Moon Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1972-05-12" data-artist-name="The Rolling Stones" data-album-name="Exile on Main St." data-genres="Rock And Roll,Hard Rock,Country Blues" data-spotify-uri="spotify:album:5U4dnRZsfW8NmwBBkELFPh">
+        <img src="images/Exile On Main St..jpg" alt="Exile on Main St. Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1988-09-07" data-artist-name="Metallica" data-album-name="...And Justice for All" data-genres="Thrash Metal,Progressive Metal" data-spotify-uri="spotify:album:4Cn4T0onWhfJZwWVzU5a2t">
+        <img src="images/And Justice For All.jpg" alt="...And Justice for All Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1959-07-01" data-artist-name="Chuck Berry" data-album-name="Chuck Berry Is on Top" data-genres="Rock And Roll" data-spotify-uri="spotify:album:6eedtCtCjibu80yOhylSGL">
+        <img src="images/Chuck Berry Is On Top.png" alt="Chuck Berry Is on Top Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1980-09-12" data-artist-name="Ozzy Osbourne" data-album-name="Blizzard of Ozz" data-genres="Heavy Metal" data-spotify-uri="spotify:album:4qUMByJ3Pk94BFnCmGaUPS">
+        <img src="images/Blizzard of Ozz.png" alt="Blizzard of Ozz Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1970-05-23" data-artist-name="The Who" data-album-name="Live at Leeds" data-genres="Hard Rock" data-spotify-uri="spotify:album:6W3aTLI4B5UsPpWMvhT2W4">
+        <img src="images/Live At Leeds.jpg" alt="Live at Leeds Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1965-06-21" data-artist-name="The Byrds" data-album-name="Mr. Tambourine Man" data-genres="Folk Rock" data-spotify-uri="spotify:album:0pkrqPjeq9K5KD0hFqAKNa">
+        <img src="images/Mr. Tambourine Man.jpg" alt="Mr. Tambourine Man Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1996-09-17" data-artist-name="Tool" data-album-name="Ænima" data-genres="Alternative Metal,Progressive Metal" data-spotify-uri="spotify:album:6yWMN087PgSimbcVmHLEwG">
+        <img src="images/AEima.jpg" alt="Ænima Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1961-01-01" data-artist-name="Robert Johnson" data-album-name="King of the Delta Blues Singers" data-genres="Delta Blues" data-spotify-uri="spotify:album:2IWaNq5o4tG1w6yxve5BMU">
+        <img src="images/King Of The Delta Blues Singers.jpg" alt="King of the Delta Blues Singers Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1972-04-01" data-artist-name="Richard Thompson" data-album-name="Henry the Human Fly" data-genres="Folk Rock">
+        <img src="images/Henry The Human Fly.jpg" alt="Henry the Human Fly Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1991-08-27" data-artist-name="Pearl Jam" data-album-name="Ten" data-genres="Grunge,Alternative Rock,Hard Rock" data-spotify-uri="spotify:album:5B4PYA7wNN4WdEXdIJu58a">
+        <img src="images/Ten.png" alt="Ten Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1977-10-28" data-artist-name="Sex Pistols" data-album-name="Never Mind the Bollocks, Here's the Sex Pistols" data-genres="Punk Rock" data-spotify-uri="spotify:album:5fxYu3rqjCNTSPKN8mtEl2">
+        <img src="images/Never Mind the Bollocks, Here's the Sex Pistols.png" alt="Never Mind the Bollocks, Here's the Sex Pistols Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1960-04-01" data-artist-name="Wes Montgomery" data-album-name="The Incredible Jazz Guitar of Wes Montgomery" data-genres="Jazz" data-spotify-uri="spotify:album:1junpO1JYOvWEcWOIt5PpP">
+        <img src="images/Incredible Jazz Guitar.jpg" alt="The Incredible Jazz Guitar of Wes Montgomery Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div> 
+    <div class="album-cover" data-release-date="2002-10-01" data-artist-name="Stevie Ray Vaughan and Double Trouble" data-album-name="The Essential Stevie Ray Vaughan and Double Trouble" data-genres="Texas Blues,Blues Rock" data-spotify-uri="spotify:album:4dShhtGUjPunYS95jHOm3r">
+        <img src="images/The Essential Stevie Ray Vaughan and Double Trouble.jpg" alt="The Essential Stevie Ray Vaughan and Double Trouble Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1975-03-29" data-artist-name="Jeff Beck" data-album-name="Blow by Blow" data-genres="Jazz Fusion,Instrumental Rock" data-spotify-uri="spotify:album:6fhTDVBs7qeoP3254hMu6u">
+        <img src="images/Blow by Blow .jpg" alt="Blow by Blow Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1956-03-13" data-artist-name="Elvis Presley" data-album-name="Elvis Presley" data-genres="Rock And Roll, Rockabilly" data-spotify-uri="spotify:album:7GXP5OhYyPVLmcVfO9Iqin">
+        <img src="images/Elvis Presley.jpg" alt="Elvis Presley Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1982-03-22" data-artist-name="Iron Maiden" data-album-name="The Number of the Beast" data-genres="Heavy Metal" data-spotify-uri="spotify:album:33d72N71hl9bXwT4zAcqUy">
+        <img src="images/The Number of the Beast.jpg" alt="The Number of the Beast Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1971-06-01" data-artist-name="Link Wray" data-album-name="Link Wray" data-genres="Country,Blues,Folk Rock,Swamp Rock" data-spotify-uri="spotify:album:6NYyr8iHYfYxCRrvFu0Xfi">
+        <img src="images/Link Wray.jpg" alt="Link Wray Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1991-09-24" data-artist-name="Red Hot Chili Peppers" data-album-name="Blood Sugar Sex Magik" data-genres="Funk Rock,Alternative Rock,Funk Metal,Rap Rock" data-spotify-uri="spotify:album:1DCI2yWmV4UI7Aga71yx9B">
+        <img src="images/Blood Sugar Sex Magik.png" alt="Blood Sugar Sex Magik Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1958-04-01" data-artist-name="Muddy Waters" data-album-name="The Best of Muddy Waters" data-genres="Chicago Blues" data-spotify-uri="spotify:album:6xU8hHhpGaDmFdOVEGRzpY">
+        <img src="images/The Best Of Muddy Waters.jpeg" alt="The Best of Muddy Waters Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1971-08-14" data-artist-name="The Who" data-album-name="Who's Next" data-genres="Hard Rock,Arena Rock" data-spotify-uri="spotify:album:53PBYiedQrASAs5sy63JqT">
+        <img src="images/Who's Next.jpg" alt="Who's Next Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1987-10-15" data-artist-name="Joe Satriani" data-album-name="Surfing with the Alien" data-genres="Instrumental Rock,Hard Rock,Jazz Fusion" data-spotify-uri="spotify:album:4SFG7APMZeeM97ixKPoQuk">
+        <img src="images/Surfing with the Alien.jpg" alt="Surfing with the Alien Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2002-11-19" data-artist-name="Sister Rosetta Tharpe" data-album-name="The Original Soul Sister" data-genres="Blues,Gospel,R&B,Jazz,Rock And Roll">
+        <img src="images/The Original Soul Sister.jpg" alt="The Original Soul Sister Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1992-11-03" data-artist-name="Rage Against the Machine" data-album-name="Rage Against the Machine" data-genres="Rap Metal,Funk Metal,Alternative Metal,Rap Rock" data-spotify-uri="spotify:album:4LaRYkT4oy47wEuQgkLBul">
+        <img src="images/Rage Against The Machine.png" alt="Rage Against the Machine Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1981-10-01" data-artist-name="Ozzy Osbourne" data-album-name="Diary of a Madman" data-genres="Heavy Metal,Hard Rock" data-spotify-uri="spotify:album:4xiRrFE0Gq4Si9mAfPB3hZ">
+        <img src="images/Diary of a Madman.jpg" alt="Diary of a Madman Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1975-09-12" data-artist-name="Pink Floyd" data-album-name="Wish You Were Here" data-genres="Progressive Rock,Art Rock,Experimental Rock" data-spotify-uri="spotify:album:0bCAjiUamIFqKJsekOYuRw">
+        <img src="images/Wish You Were Here.png" alt="Wish You Were Here Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1971-04-23" data-artist-name="The Rolling Stones" data-album-name="Sticky Fingers" data-genres="Hard Rock,Roots Rock,Rock And Roll" data-spotify-uri="spotify:album:29m6DinzdaD0OPqWKGyMdz">
+        <img src="images/Sticky Fingers.jpg" alt="Sticky Fingers Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1979-03-23" data-artist-name="Van Halen" data-album-name="Van Halen II" data-genres="Hard Rock,Heavy Metal" data-spotify-uri="spotify:album:3w93PGkmXAmEAdJVvmPbzI">
+        <img src="images/Van Halen II.jpg" alt="Van Halen II Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1984-01-01" data-artist-name="Yngwie Malmsteen" data-album-name="Rising Force" data-genres="Neoclassical Metal,Instrumental Rock,Heavy Metal">
+        <img src="images/Rising Force.jpeg" alt="Rising Force Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1982-01-01" data-artist-name="Chuck Berry" data-album-name="The Great Twenty-Eight" data-genres="Rock And Roll" data-spotify-uri="spotify:album:4hQtcgvaybCqBsTrfiL1jC">
+        <img src="images/The Great Twenty-Eight.jpg" alt="The Great Twenty-Eight Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1986-09-19" data-artist-name="Megadeth" data-album-name="Peace Sells... but Who's Buying?" data-genres="Thrash Metal" data-spotify-uri="spotify:album:4U8ZF5zDIRy4lBnnXBN2uO">
+        <img src="images/Peace Sells... But Who's Buying-.jpg" alt="Peace Sells... but Who's Buying? Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1970-07-07" data-artist-name="The Stooges" data-album-name="Fun House" data-genres="Proto-Punk,Hard Rock,Experimental Rock,Punk Jazz,Garage Rock" data-spotify-uri="spotify:album:5qhXaVIC5BdE4a5Kq1FMZG">
+        <img src="images/Fun House.png" alt="Fun House Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1975-09-10" data-artist-name="Kiss" data-album-name="Alive!" data-genres="Hard Rock,Heavy Metal" data-spotify-uri="spotify:album:6TRmLIsPKSPS71Cnq8FiMc">
+        <img src="images/Alive!.jpg" alt="Alive! Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1979-07-27" data-artist-name="AC/DC" data-album-name="Highway to Hell" data-genres="Hard Rock,Blues Rock,Heavy Metal" data-spotify-uri="spotify:album:10v912xgTZbjAtYfyKWJCS">
+        <img src="images/Highway to Hell.jpg" alt="Highway to Hell Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1981-02-12" data-artist-name="Rush" data-album-name="Moving Pictures" data-genres="Progressive Rock" data-spotify-uri="spotify:album:2xg7iIKoSqaDNpDbJnyCjY">
+        <img src="images/Moving Pictures.jpg" alt="Moving Pictures Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1997-05-21" data-artist-name="Radiohead" data-album-name="OK Computer" data-genres="Art Rock,Alternative Rock" data-spotify-uri="spotify:album:6dVIqQ8qmQ5GBnJ9shOYGE">
+        <img src="images/Ok Computer.png" alt="OK Computer Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1976-05-03" data-artist-name="Aerosmith" data-album-name="Rocks" data-genres="Hard Rock,Heavy Metal" data-spotify-uri="spotify:album:4ldiyfqRvKiIasHHuDftuP">
+        <img src="images/Rocks.png" alt="Rocks Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1986-10-07" data-artist-name="Slayer" data-album-name="Reign in Blood" data-genres="Thrash Metal" data-spotify-uri="spotify:album:2DumvqHl78bNXuvU9kQfPN">
+        <img src="images/Reign in Blood.jpg" alt="Reign in Blood Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1969-01-12" data-artist-name="Led Zeppelin" data-album-name="Led Zeppelin" data-genres="Hard Rock,Blues Rock" data-spotify-uri="spotify:album:3ycjBixZf7S3WpC5WZhhUK">
+        <img src="images/Led Zeppelin.jpg" alt="Led Zeppelin Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1990-05-22" data-artist-name="Steve Vai" data-album-name="Passion and Warfare" data-genres="Instrumental Rock,Progressive Metal" data-spotify-uri="spotify:album:1fyrOcra2DI3quvnzAEQ45">
+        <img src="images/Passion and Warfare.jpg" alt="Passion and Warfare Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1994-08-29" data-artist-name="Oasis" data-album-name="Definitely Maybe" data-genres="Britpop,Rock" data-spotify-uri="spotify:album:3LzKUdUTdJb6P7xGN6SotC">
+        <img src="images/Definitely Maybe.jpg" alt="Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2005-03-08" data-artist-name="Black Label Society" data-album-name="Mafia" data-genres="Heavy Metal,Southern Rock,Groove Metal,Hard Rock" data-spotify-uri="spotify:album:274s9WKrHQR6FlW1jrFLKo">
+        <img src="images/Mafia.jpg" alt="Mafia Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1991-11-05" data-artist-name="Stevie Ray Vaughan and Double Trouble" data-album-name="The Sky Is Crying" data-genres="Texas Blues,Electric Blues" data-spotify-uri="spotify:album:7pBJuCKTNKFLf6JztTYv6B">
+        <img src="images/The Sky is Crying.jpg" alt="The Sky Is Crying Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1980-04-14" data-artist-name="Judas Priest" data-album-name="British Steel" data-genres="Heavy Metal" data-spotify-uri="spotify:album:5bqtZRbUZUxUps8mrO9tGY">
+        <img src="images/British Steel.jpg" alt="British Steel Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1976-09-13" data-artist-name="Lynyrd Skynyrd" data-album-name="One More from the Road" data-genres="Southern Rock,Boogie Rock,Blues Rock" data-spotify-uri="spotify:album:6uYKuKqqEx3ajoKzywSpYl">
+        <img src="images/One More from the Road.jpeg" alt="One More from the Road Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2001-09-04" data-artist-name="System of a Down" data-album-name="Toxicity" data-genres="Alternative Metal, Nu Metal" data-spotify-uri="spotify:album:6jWde94ln40epKIQCd8XUh">
+        <img src="images/Toxicity.png" alt="Toxicity Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1965-12-03" data-artist-name="The Beatles" data-album-name="Rubber Soul" data-genres="Folk Rock,Rock,Pop" data-spotify-uri="spotify:album:50o7kf2wLwVmOTVYJOTplm">
+        <img src="images/Rubber Soul.jpg" alt="Rubber Soul Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1987-03-09" data-artist-name="U2" data-album-name="The Joshua Tree" data-genres="Rock" data-spotify-uri="spotify:album:5vBZRYu2GLA65nfxBvG1a7">
+        <img src="images/The Joshua Tree.jpg" alt="The Joshua Tree Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1971-08-14" data-artist-name="The Inner Mounting Flame" data-album-name="The Inner Mounting Flame" data-genres="Jazz Fusion,Progressive Rock" data-spotify-uri="spotify:album:6XHQCPGwvSaqv9MZ2tauqr">
+        <img src="images/The Inner Mounting Flame.jpg" alt="The Inner Mounting Flame Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1984-01-09" data-artist-name="Van Halen" data-album-name="1984" data-genres="Hard Rock,Glam Metal,Heavy Metal,Electronic Rock,Pop Rock" data-spotify-uri="spotify:album:3REUXdj5OPKhuDTrTtCBU0">
+        <img src="images/1984.jpg" alt="1984 Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1978-03-01" data-artist-name="Mahogany Rush" data-album-name="Live" data-genres="Hard Rock" data-spotify-uri="spotify:album:4JLVWtkPW7RO2NMinEw2M3">
+        <img src="images/Live.jpeg" alt="Live Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1992-02-25" data-artist-name="Pantera" data-album-name="Vulgar Display of Power" data-genres="Groove Metal,Thrash Metal" data-spotify-uri="spotify:album:7kW0cpKgSVsEqcc8xgbSb0">
+        <img src="images/Vulgar Display of Power.jpg" alt="Vulgar Display of Power Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1966-07-22" data-artist-name="John Mayall with Eric Clapton" data-album-name="Blues Breakers" data-genres="Blues Rock,Blues" data-spotify-uri="spotify:album:4bSvzPMgzwvfqHAbcWG88o">
+        <img src="images/Blues Breakers with Eric Clapton.jpg" alt="Blues Breakers Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2003-04-01" data-artist-name="The White Stripes" data-album-name="Elephant" data-genres="Rock,Alternative Rock,Blues Rock, Garage Rock,Punk Blues" data-spotify-uri="spotify:album:6D9urpsOWWKtYvF6PaorGE">
+        <img src="images/Elephant.jpg" alt="Elephant Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1976-03-26" data-artist-name="Thin Lizzy" data-album-name="Jailbreak" data-genres="Hard Rock,Blues Rock" data-spotify-uri="spotify:album:2TCSZn8ArTdDhXYhsTNBPm">
+        <img src="images/Jailbreak.jpg" alt="Jailbreak Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1995-10-24" data-artist-name="The Smashing Pumpkins" data-album-name="Mellon Collie and the Infinite Sadness" data-genres="Alternative Rock,Grunge,Alternative Metal,Art Rock,Heavy Metal" data-spotify-uri="spotify:album:55RhFRyQFihIyGf61MgcfV">
+        <img src="images/Mellon Collie and the Infinite Sadness.jpg" alt="Mellon Collie and the Infinite Sadness Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1981-07-11" data-artist-name="Def Leppard" data-album-name="High 'n' Dry" data-genres="Hard Rock,Heavy Metal" data-spotify-uri="spotify:album:"2FC50FeHFVmksOYX1cymxr>
+        <img src="images/High ’n’ Dry.jpg" alt="High 'n' Dry Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1972-08-01" data-artist-name="Roy Buchanan" data-album-name="Roy Buchanan" data-genres="Rock,Country,Blues" data-spotify-uri="spotify:album:6rwY78ocBwZYi3OhapYyfw">
+        <img src="images/Roy Buchanan.jpg" alt="Roy Buchanan Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1964-05-01" data-artist-name="The Shadows" data-album-name="Dance With The Shadows" data-genres="Rock" data-spotify-uri="spotify:album:63MJqGez1AN3G4bduMAA24">
+        <img src="images/Dance with the Shadows.jpg" alt="Dance With The Shadows Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1965-08-30" data-artist-name="Bob Dylan" data-album-name="Highway 61 Revisited" data-genres="Folk Rock,Blues Rock, Rock And Roll" data-spotify-uri="spotify:album:6YabPKtZAjxwyWbuO9p4ZD">
+        <img src="images/Highway 61 Revisited.jpg" alt="Highway 61 Revisited Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1972-03-25" data-artist-name="Deep Purple" data-album-name="Machine Head" data-genres="Hard Rock,Heavy Metal" data-spotify-uri="spotify:album:1EK3a0Yctg4d3nGQzE4Uty">
+        <img src="images/Machine Head.jpg" alt="Machine Head Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1998-08-18" data-artist-name="Korn" data-album-name="Follow the Leader" data-genres="Nu Metal,Alternative Metal" data-spotify-uri="spotify:album:0gsiszk6JWYwAyGvaTTud4">
+        <img src="images/Follow the Leader (2).jpg" alt="Follow the Leader Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1968-07-29" data-artist-name="Jeff Beck" data-album-name="Truth" data-genres="Blues Rock,Hard Rock,Heavy Metal" data-spotify-uri="spotify:album:0Tt2yDuJ0jiy0JwZzUZdlE">
+        <img src="images/Truth.jpg" alt="Truth Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1973-08-13" data-artist-name="Lynyrd Skynyrd" data-album-name="(Pronounced 'Lĕh-'nérd 'Skin-'nérd)" data-genres="Southern Rock,Hard Rock,Blues Rock" data-spotify-uri="spotify:album:6DExt1eX4lflLacVjHHbOs">
+        <img src="images/(Pronounced 'Lĕh-'nérd 'Skin-'nérd).jpg" alt="(Pronounced 'Lĕh-'nérd 'Skin-'nérd) Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2003-01-06" data-artist-name="Children of Bodom" data-album-name="Hate Crew Deathroll" data-genres="Melodic Death Metal,Power Metal" data-spotify-uri="spotify:album:29Ge8PsI0Qshm3q3NCS7Uu">
+        <img src="images/Hate Crew Deathroll.jpg" alt="Hate Crew Deathroll Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1983-06-13" data-artist-name="Stevie Ray Vaughan and Double Trouble" data-album-name="Texas Flood" data-genres="Texas Blues,Electric Blues" data-spotify-uri="spotify:album:1AL5oXZRtTc8PyhcTwg4xQ">
+        <img src="images/Texas Flood.jpg" alt="Texas Flood Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1991-10-08" data-artist-name="Soundgarden" data-album-name="Badmotorfinger" data-genres="Grunge,Alternative Metal,Heavy Metal,Hard Rock" data-spotify-uri="spotify:album:2W6MaUiInBkna5DfBES4E3">
+        <img src="images/Badmotorfinger.png" alt="Badmotorfinger Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1965-04-01" data-artist-name="Chuck Berry" data-album-name="Chuck Berry in London" data-genres="Rock And Roll" data-spotify-uri="spotify:album:7iSQ8Jg0DA18JCl4SqpDEW">
+        <img src="images/Chuck Berry in London.jpg" alt="Chuck Berry in London Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1991-08-12" data-artist-name="Metallica" data-album-name="Metallica" data-genres="Heavy Metal" data-spotify-uri="spotify:album:55fq75UfkYbGMq4CncCtOH">
+        <img src="images/Metallica.jpg" alt="Metallica Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1991-03-19" data-artist-name="Danny Gatton" data-album-name="88 Elmira St." data-genres="Rock,Jazz,Country,Rockabilly,Blues" data-spotify-uri="spotify:album:0zcSjjFNhLitwN0JuAAuhS">
+        <img src="images/88 Elmira St..jpg" alt="88 Elmira St. Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1975-11-21" data-artist-name="Queen" data-album-name="A Night at the Opera" data-genres="Progressive Rock,Pop,Heavy Metal,Hard Rock,Avant-Pop" data-spotify-uri="spotify:album:7HVoV2lgVsmuiHsjbbUJB4">
+        <img src="images/A Night at the Opera.png" alt="A Night at the Opera Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2003-01-06" data-artist-name="Children of Bodom" data-album-name="Hate Crew Deathroll" data-genres="Melodic Death Metal,Power Metal" data-spotify-uri="spotify:album:29Ge8PsI0Qshm3q3NCS7Uu">
+        <img src="images/Hate Crew Deathroll.jpg" alt="Hate Crew Deathroll Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1976-08-25" data-artist-name="Boston" data-album-name="Boston" data-genres="Hard Rock,Arena Rock,Pop Metal" data-spotify-uri="spotify:album:2QLp07RO6anZHmtcKTEvSC">
+        <img src="images/Boston.jpg" alt="Boston Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2004-08-31" data-artist-name="Lamb of God" data-album-name="Ashes of the Wake" data-genres="Groove Metal,Thrash Metal,Metalcore" data-spotify-uri="spotify:album:3ffdUrEvCQJX6mn2ZTq93m">
+        <img src="images/Ashes of the Wake.jpg" alt="Ashes of the Wake Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1967-01-04" data-artist-name="The Doors" data-album-name="The Doors" data-genres="Psychedelic Rock,Hard Rock,Art Rock,Psychedelic" data-spotify-uri="spotify:album:1jWmEhn3ggaL6isoyLfwBn">
+        <img src="images/The Doors.jpg" alt="The Doors Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1972-06-16" data-artist-name="David Bowie" data-album-name="The Rise and Fall of Ziggy Stardust and the Spiders from Mars" data-genres="Glam Rock,Proto-Punk" data-spotify-uri="spotify:album:48D1hRORqJq52qsnUYZX56">
+        <img src="images/The Rise And Fall Of Ziggy Stardust And The Spiders From Mars.jpg" alt="Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+
+
+
+</div>
+<section id="last-song">
+    <h2>Sonic Footprint</h2>
+    <div class="container">
+        <div id="last-song-container"></div>
+    </div>
+ </section>
+<h2>Figures Unveiled: Spotlight on Stats</h2>
+<section class="stats-section">
+    <div class="stats-columns">
+      <section id="most-albums">
+        <h3>Collection's Top Creatives:</h3> 
+        <h4>Prolific Album Masters</h4>
+        <ul></ul>
+      </section>
+      <section id="most-rating-points">
+        <h3>Point Leaders:</h3>
+        <h4>Artistry in Full Score</h4>
+        <ul></ul>
+      </section>
+      <section id="most-genres">
+        <h3>Genre Highlights:</h3>
+        <h4>Leading Tags</h4>
+        <ul></ul>
+      </section>
+    </div>
+  </section>
+  <p id="total-albums"></p>
+    <script src="scripts.js"></script>
+    <script src="voyage-stats.js"></script>
+</body>
+</html>
