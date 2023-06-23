@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reVoltage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>reVoltage</h1>
+
+    <div class="sort-buttons">
+        <button id="sort-album-name">Sort by Album</button>
+        <button id="sort-artist-name">Sort by Artist</button>
+        <button id="sort-release-date">Sort by Release Date</button>
+        <button id="sort-rating">Sort by Rating</button>
+        <button id="shuffle">Shuffle</button>
+      </div>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search by album, artist, release date, or genre" />
+    </div>
+    <div class="playlist-buttons">
+        <button class="button" id="melodic-mosaic">Melodic Mosaic</button>
+    </div>
+
+
+<div class="container">
+
+    <div class="album-cover" data-release-date="1977-10-28" data-artist-name="Sex Pistols" data-album-name="Never Mind the Bollocks, Here's the Sex Pistols" data-genres="Punk Rock" data-spotify-uri="spotify:album:5fxYu3rqjCNTSPKN8mtEl2">
+        <img src="images/Never Mind the Bollocks, Here's the Sex Pistols.png" alt="Never Mind the Bollocks, Here's the Sex Pistols Album Cover" data-rating="17">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1979-12-14" data-artist-name="The Clash" data-album-name="London Calling" data-genres="Punk Rock,Post-Punk,New Wave" data-spotify-uri="spotify:album:6FCzvataOZh68j8OKzOt9a">
+        <img src="images/London Calling.jpg" alt="London Calling Album Cover" data-rating="7">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1976-04-23" data-artist-name="Ramones" data-album-name="Ramones" data-genres="Punk Rock" data-spotify-uri="spotify:album:3ToX9inehiXTv17hpaOyie">
+        <img src="images/Ramones.jpg" alt="Ramones Album Cover" data-rating="13">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1982-05-21" data-artist-name="Discharge" data-album-name="Hear Nothing See Nothing Say Nothing" data-genres="D-Beat" data-spotify-uri="spotify:album:6WYcRCX40Kfhjjeiy2S91P">
+        <img src="images/Hear Nothing See Nothing Say Nothing.jpg" alt="Hear Nothing See Nothing Say Nothing Album Cover" data-rating="10">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1994-02-01" data-artist-name="Green Day" data-album-name="Dookie" data-genres="Punk Rock,Pop-Punk,Skate Punk" data-spotify-uri="spotify:album:4uG8q3GPuWHQlRbswMIRS6">
+        <img src="images/Dookie.jpg" alt="Dookie Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1984-07-01" data-artist-name="Hüsker Dü" data-album-name="Zen Arcade" data-genres="Hardcore Punk,Post-Hardcore,Psychedelic,Indie Rock" data-spotify-uri="spotify:album:0J1DP5GvKrzWumwzlcFhLc">
+        <img src="images/Zen Arcade.jpg" alt="Zen Arcade Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1977-12-01" data-artist-name="Wire" data-album-name="Pink Flag" data-genres="Punk Rock,Art Punk,Post-Punk" data-spotify-uri="spotify:album:4WXqZZ28geJSPtqLcCF56L">
+        <img src="images/Pink Flag.jpg" alt="Pink Flag Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1977-04-08" data-artist-name="The Clash" data-album-name="The Clash" data-genres="Punk Rock" data-spotify-uri="spotify:album:49kzgMsxHU5CTeb2XmFHjo">
+        <img src="images/The Clash.jpg" alt="The Clash Album Cover" data-rating="13">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1980-09-02" data-artist-name="Dead Kennedys" data-album-name="Fresh Fruit for Rotting Vegetables" data-genres="Hardcore Punk" data-spotify-uri="spotify:album:5cADwrInLLhrjsXSmEPE3E">
+        <img src="images/Fresh Fruit for Rotting Vegetables.jpg" alt="Fresh Fruit for Rotting Vegetables Album Cover" data-rating="13">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1981-12-05" data-artist-name="Black Flag" data-album-name="Damaged" data-genres="Hardcore Punk" data-spotify-uri="spotify:album:34aFnrFRBlErcbU6moRZR3">
+        <img src="images/Damaged.jpg" alt="Damaged Album Cover" data-rating="12">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1991-09-24" data-artist-name="Nirvana" data-album-name="Nevermind" data-genres="Grunge,Alternative Rock" data-spotify-uri="spotify:album:2guirTSEqLizK7j9i1MTTZ">
+        <img src="images/Nevermind.png" alt="Nevermind Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1991-04-08" data-artist-name="Sleater-Kinney" data-album-name="Dig Me Out" data-genres="Punk Rock" data-spotify-uri="spotify:album:3tshnNFNhHrO6NUQ0BHw42">
+        <img src="images/Dig Me Out.jpg" alt="Dig Me Out Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1980-04-26" data-artist-name="X" data-album-name="Los Angeles" data-genres="Punk Rock" data-spotify-uri="spotify:album:1qs5rB2gsrAWDLrUlyjFUD">
+        <img src="images/Los Angeles.jpg" alt="Los Angeles Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1984-03-01" data-artist-name="Minor Threat" data-album-name="Minor Threat" data-genres="Hardcore Punk" data-spotify-uri="spotify:album:6Sty6rLnMTXFjKxKUZEfmy">
+        <img src="images/Minor Threat.jpg" alt="Minor Threat Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1994-04-08" data-artist-name="The Offspring" data-album-name="Smash" data-genres="Punk Rock,Skate Punk,Pop-Punk,Melodic Hardcore" data-spotify-uri="spotify:album:7IDywTRaCI8qzS3X8tNU3x">
+        <img src="images/Smash.png" alt="Smash Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1984-07-03" data-artist-name="Minutemen" data-album-name="Double Nickels on the Dime" data-genres="Hardcore Punk,Post-Punk,Post-Hardcore" data-spotify-uri="spotify:album:5viZ5HyYtV0wafK7DoXmgF">
+        <img src="images/Double Nickels on the Dime.jpg" alt="Double Nickels on the Dime Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1978-11-10" data-artist-name="X-Ray Spex" data-album-name="Germfree Adolescents" data-genres="Punk Rock,New Wave" data-spotify-uri="spotify:album:7nZ0F572fluFD4tQCFf3z7">
+        <img src="images/Germfree Adolescents.jpg" alt="Germfree Adolescents Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1982-01-01" data-artist-name="The Exploited" data-album-name="Troops of Tomorrow" data-genres="Street Punk,Hardcore Punk" data-spotify-uri="spotify:album:5Fdeu9x15r5y4ddHWEClu1">
+        <img src="images/Troops Of Tomorrow.jpg" alt="Troops of Tomorrow Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1989-11-02" data-artist-name="Bad Religion" data-album-name="No Control" data-genres="Hardcore Punk,Melodic Hardcore" data-spotify-uri="spotify:album:3efgo1fUo21py17Z7jGsle">
+        <img src="images/No Control.png" alt="No Control Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1995-08-22" data-artist-name="Rancid" data-album-name="...And Out Come the Wolves" data-genres="Punk Rock,Ska Punk,Pop-Punk" data-spotify-uri="spotify:album:1HisV3ZKLs9It3KlGcPki5">
+        <img src="images/And Out Comes The Wolves.jpg" alt="...And Out Come the Wolves Album Cover" data-rating="7">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1979-09-25" data-artist-name="Buzzcocks" data-album-name="Singles Going Steady" data-genres="Punk Rock,Pop-Punk" data-spotify-uri="spotify:album:6TxgQwGrbG3XZLNPOEhg7E">
+        <img src="images/Singles Going Steady.jpg" alt="Singles Going Steady Album Cover" data-rating="8">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1982-03-01" data-artist-name="Misfits" data-album-name="Walk Among Us" data-genres="Hardcore Punk,Horror Punk,Punk Rock">
+        <img src="images/Walk Among Us.jpg" alt="Walk Among Us Album Cover" data-rating="7">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1982-02-05" data-artist-name="Bad Brains" data-album-name="Bad Brains" data-genres="Hardcore Punk,Reggae" data-spotify-uri="spotify:album:4NpepcKo9rQ8nkdCB6iWMP">
+        <img src="images/Bad Brains.png" alt="Bad Brains Album Cover" data-rating="8">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1979-09-25" data-artist-name="Gang of Four" data-album-name="Entertainment!" data-genres="Post-Punk,Dance-Punk,Art Punk" data-spotify-uri="spotify:album:7LMOo068Ndv0wjTGUDtYqK">
+        <img src="images/Entertainment!.jpg" alt="Entertainment! Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1983-01-01" data-artist-name="Subhumans" data-album-name="The Day the Country Died" data-genres="Anarcho-Punk" data-spotify-uri="spotify:album:0Ac1BnAP68QE6d7vQATap1">
+        <img src="images/The Day The Country Died.png" alt="The Day the Country Died Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1985-01-01" data-artist-name="New Day Rising" data-album-name="Hüsker Dü" data-genres="Post-Hardcore,Alternative Rock,Noise Rock,Punk Rock" data-spotify-uri="spotify:album:2eOu9QDLP2MoO04ZtII2Vm">
+        <img src="images/New Day Rising.png" alt="Hüsker Dü Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1979-11-02" data-artist-name="The Damned" data-album-name="Machine Gun Etiquette" data-genres="Punk Rock,Hardcore Punk,Neo-Psychedelia" data-spotify-uri="spotify:album:1lvAASyHZrOQ04lowYjWEC">
+        <img src="images/Machine Gun Etiquette.jpg" alt="Machine Gun Etiquette Album Cover" data-rating="8">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1987-07-01" data-artist-name="Dag Nasty" data-album-name="Wig Out at Denko's" data-genres="Melodic Hardcore,Emo" data-spotify-uri="spotify:album:7qo9nGR0MaHmCvFd4t6Kjq">
+        <img src="images/Wig Out at Denko's.png" alt="Wig Out at Denko's Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1984-10-02" data-artist-name="The Replacements" data-album-name="Let It Be" data-genres="Post-Punk,Indie Rock,Alternative Rock,College Rock">
+        <img src="images/Let It Be.png" alt="Let It Be Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1979-11-21" data-artist-name="The Raincoats" data-album-name="The Raincoats" data-genres="Post-Punk,Experimental Rock,Folk Punk" data-spotify-uri="spotify:album:190Tx9jPHndq0qUlq79BJJ">
+        <img src="images/The Raincoats.jpg" alt="The Raincoats Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1973-02-07" data-artist-name="The Stooges" data-album-name="Raw Power" data-genres="Proto-Punk,Hard Rock,Garage Rock, Punk Metal" data-spotify-uri="spotify:album:6mxbG8KrOTZIxlP4gzaliM">
+        <img src="images/Raw Power.jpg" alt="Raw Power Album Cover" data-rating="9">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1983-01-01" data-artist-name="Social Distortion" data-album-name="Mommy's Little Monster" data-genres="Hardcore Punk,Punk Rock,Melodic Hardcore,Pop-Punk" data-spotify-uri="spotify:album:6vR60BFJ7zZgKmlEY0p2w9">
+        <img src="images/Mommy's Little Monster.jpg" alt="Mommy's Little Monster Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1994-07-19" data-artist-name="NOFX" data-album-name="Punk in Drublic" data-genres="Skate Punk,Hardcore Punk,Melodic Hardcore,Pop-Punk" data-spotify-uri="spotify:album:6Z8BYH27wINoUk4QMUx7gh">
+        <img src="images/Punk in Drublic.jpg" alt="Punk in Drublic Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1979-06-15" data-artist-name="Joy Division" data-album-name="Unknown Pleasures" data-genres="Post-Punk,Gothic Rock" data-spotify-uri="spotify:album:5Dgqy4bBg09Rdw7CQM545s">
+        <img src="images/Unknown Pleasures.jpg" alt="Unknown Pleasures Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1982-04-15" data-artist-name="Charged GBH" data-album-name="City Baby Attacked by Rats" data-genres="Street Punk,Hardcore Punk" data-spotify-uri="spotify:album:6ZzIjYclPtkNk8JG29IU0t">
+        <img src="images/City Baby Attacked By Rats.jpg" alt="City Baby Attacked by Rats Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1992-11-05" data-artist-name="NOFX" data-album-name="White Trash, Two Heebs and a Bean" data-genres="Hardcore Punk" data-spotify-uri="spotify:album:5dbWoqjHDExyrEJD9ftnay">
+        <img src="images/White Trash, Two Heebs and a Bean.jpg" alt="White Trash, Two Heebs and a Bean Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1990-04-19" data-artist-name="Fugazi" data-album-name="Repeater" data-genres="Post-Hardcore,Garage Rock" data-spotify-uri="spotify:album:6JbGZGta38AArBgflt024C">
+        <img src="images/Repeater.jpg" alt="Repeater Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1983-04-01" data-artist-name="Minor Threat" data-album-name="Out of Step" data-genres="Hardcore Punk" data-spotify-uri="spotify:album:6wPX4FdHqmn0aHZ84WUCW5">
+        <img src="images/Out of Step.jpg" alt="Out of Step Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1977-09-01" data-artist-name="Richard Hell & the Voidoids" data-album-name="Blank Generation" data-genres="Punk Rock,Art Punk" data-spotify-uri="spotify:album:69b7nBXWwREudaeDgIhZXA">
+        <img src="images/Blank Generation.jpg" alt="Blank Generation Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1983-05-16" data-artist-name="Rudimentary Peni" data-album-name="Death Church" data-genres="Punk Rock,Anarcho-Punk" data-spotify-uri="spotify:album:0KXkZEPaYRXHOtYtTjrHbI">
+        <img src="images/Death Church.jpg" alt="Death Church Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1993-09-21" data-artist-name="Nirvana" data-album-name="In Utero" data-genres="Grunge,Alternative Rock,Punk Rock,Noise Rock" data-spotify-uri="spotify:album:7wOOA7l306K8HfBKfPoafr">
+        <img src="images/In Utero.jpg" alt="In Utero Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1979-08-12" data-artist-name="Crass" data-album-name="Stations of the Crass" data-genres="Anarcho-Punk,Hardcore Punk,Art Punk" data-spotify-uri="spotify:album:5mHiRO5Eq8eeRpd8s1Mtof">
+        <img src="images/Stations Of The Crass.jpg" alt="Stations of the Crass Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1998-10-27" data-artist-name="Refused" data-album-name="The Shape of Punk to Come" data-genres="Hardcore Punk,Post-Hardcore" data-spotify-uri="spotify:album:2Us9qPHLvLoTl6HkYAPcz2">
+        <img src="images/The Shape of Punk to Come.jpg" alt="The Shape of Punk to Come Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1999-06-01" data-artist-name="Blink-182" data-album-name="Enema of the State" data-genres="Pop-Punk,Skate Punk" data-spotify-uri="spotify:album:652N05EcNH1a4bIlUixQE2">
+        <img src="images/Enema of the State.jpg" alt="Enema of the State Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1978-01-01" data-artist-name="Pere Ubu" data-album-name="The Modern Dance" data-genres="Art Punk,Post-Punk,Experimental Rock" data-spotify-uri="spotify:album:3zGgLRMaApg4t8GUhG9X8W">
+        <img src="images/The Modern Dance.png" alt="The Modern Dance Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1970-07-07" data-artist-name="The Stooges" data-album-name="Fun House" data-genres="Proto-Punk,Hard Rock,Experimental Rock,Punk Jazz,Garage Rock" data-spotify-uri="spotify:album:5qhXaVIC5BdE4a5Kq1FMZG">
+        <img src="images/Fun House.png" alt="Fun House Album Cover" data-rating="6">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1979-09-07" data-artist-name="The Slits" data-album-name="Cut" data-genres="Post-Punk,Dub,Art Pop" data-spotify-uri="spotify:album:0TfUvdJAj5ggwaLihQQ5qs">
+        <img src="images/Cut.jpg" alt="Cut Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1986-08-01" data-artist-name="Conflict" data-album-name="The Ungovernable Force" data-genres="Anarcho-Punk" data-spotify-uri="spotify:album:4QPZPvrgK00WO7fEs6mknG">
+        <img src="images/The Ungovernable Force.jpg" alt="The Ungovernable Force Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1987-07-01" data-artist-name="Napalm Death" data-album-name="Scum" data-genres="Grindcore" data-spotify-uri="spotify:album:51wqCUWehVrNj2Ltc83zJu">
+        <img src="images/Scum.png" alt="Scum Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1995-06-13" data-artist-name="Pennywise" data-album-name="About Time" data-genres="Punk Rock,Skate Punk,Hardcore Punk" data-spotify-uri="spotify:album:2MyjkvQLos52FxpyHJZsfE">
+        <img src="images/About Time.jpg" alt="About Time Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+
+
+
+
+
+
+</div>
+<section id="last-song">
+    <h2>Sonic Footprint</h2>
+    <div class="container">
+        <div id="last-song-container"></div>
+    </div>
+ </section>
+<h2>Figures Unveiled: Spotlight on Stats</h2>
+<section class="stats-section">
+    <div class="stats-columns">
+      <section id="most-albums">
+        <h3>Collection's Top Creatives:</h3> 
+        <h4>Prolific Album Masters</h4>
+        <ul></ul>
+      </section>
+      <section id="most-rating-points">
+        <h3>Point Leaders:</h3>
+        <h4>Artistry in Full Score</h4>
+        <ul></ul>
+      </section>
+      <section id="most-genres">
+        <h3>Genre Highlights:</h3>
+        <h4>Leading Tags</h4>
+        <ul></ul>
+      </section>
+    </div>
+  </section>
+  <p id="total-albums"></p>
+    <script src="scripts.js"></script>
+    <script src="revoltage-stats.js"></script>
+</body>
+</html>
