@@ -1,2 +1,2 @@
 # melodic-mosaic
-Collection of my albums.
+Collection of LPs & EPs.
