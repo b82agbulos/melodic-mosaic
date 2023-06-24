@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onslaught</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Onslaught</h1>
+
+    <div class="sort-buttons">
+        <button id="sort-album-name">Sort by Album</button>
+        <button id="sort-artist-name">Sort by Artist</button>
+        <button id="sort-release-date">Sort by Release Date</button>
+        <button id="sort-rating">Sort by Rating</button>
+        <button id="shuffle">Shuffle</button>
+      </div>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search by album, artist, release date, or genre" />
+    </div>
+    <div class="playlist-buttons">
+        <a href="onslaught-vortex.html">
+            <button id="vortex">Vortex</button>
+       </a>      
+       <a href="onslaught-amplified.html">
+        <button id="amplified">Amplified</button>
+         </a>     
+         <a href="onslaught-transgression.html">
+            <button id="transgression">Transgression</button>
+             </a>     
+        <button class="button" id="melodic-mosaic">Melodic Mosaic</button>
+    </div>
+
+
+<div class="container">
+    <div class="album-cover" data-release-date="1970-09-18" data-artist-name="Black Sabbath" data-album-name="Paranoid" data-genres="Heavy Metal" data-spotify-uri="spotify:album:6r7LZXAVueS5DqdrvXJJK7">
+        <img src="images/Paranoid.png" alt="Paranoid Album Cover" data-rating="8">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1986-10-07" data-artist-name="Slayer" data-album-name="Reign in Blood" data-genres="Thrash Metal" data-spotify-uri="spotify:album:2DumvqHl78bNXuvU9kQfPN">
+        <img src="images/Reign in Blood.jpg" alt="Reign in Blood Album Cover" data-rating="7">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1986-03-03" data-artist-name="Metallica" data-album-name="Master of Puppets" data-genres="Thrash Metal" data-spotify-uri="spotify:album:5gzLOflH95LkKYE6XSXE9k">
+        <img src="images/Master of Puppets.png" alt="Master of Puppets Album Cover" data-rating="7">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1982-03-22" data-artist-name="Iron Maiden" data-album-name="The Number of the Beast" data-genres="Heavy Metal" data-spotify-uri="spotify:album:33d72N71hl9bXwT4zAcqUy">
+        <img src="images/The Number of the Beast.jpg" alt="The Number of the Beast Album Cover" data-rating="7">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1980-04-14" data-artist-name="Judas Priest" data-album-name="British Steel" data-genres="Heavy Metal" data-spotify-uri="spotify:album:5bqtZRbUZUxUps8mrO9tGY">
+        <img src="images/British Steel.jpg" alt="British Steel Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2001-09-04" data-artist-name="Converge" data-album-name="Jane Doe" data-genres="Metalcore,Hardcore Punk,Post-Hardcore" data-spotify-uri="spotify:album:2gtM4m6sglJDrX3toJWZO6">
+        <img src="images/Jane Doe.jpg" alt="Jane Doe Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1970-02-13" data-artist-name="Black Sabbath" data-album-name="Black Sabbath" data-genres="Heavy Metal" data-spotify-uri="spotify:album:4ZLy3U2q17Yjw7jkjXPJQj">
+        <img src="images/Black Sabbath.png" alt="Black Sabbath Album Cover" data-rating="8">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1987-07-01" data-artist-name="Napalm Death" data-album-name="Scum" data-genres="Grindcore" data-spotify-uri="spotify:album:51wqCUWehVrNj2Ltc83zJu">
+        <img src="images/Scum.png" alt="Scum Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1984-09-01" data-artist-name="Motörhead" data-album-name="No Remorse" data-genres="Heavy Metal,Hard Rock" data-spotify-uri="spotify:album:7sRhaLxwU2iUWuSBCNU5ba">
+        <img src="images/No Remorse.jpg" alt="No Remorse Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1993-10-18" data-artist-name="Carcass" data-album-name="Heartwork" data-genres="Melodic Death Metal" data-spotify-uri="spotify:album:3WUGsnZVtQyc2miaUQdLpI">
+        <img src="images/Heartwork.jpg" alt="Heartwork Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1986-09-19" data-artist-name="Megadeth" data-album-name="Peace Sells... but Who's Buying?" data-genres="Thrash Metal" data-spotify-uri="spotify:album:4U8ZF5zDIRy4lBnnXBN2uO">
+        <img src="images/Peace Sells... But Who's Buying-.jpg" alt="Peace Sells... but Who's Buying? Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1980-10-01" data-artist-name="Motörhead" data-album-name="Ace of Spades" data-genres="Heavy Metal,Speed Metal,Hard Rock" data-spotify-uri="spotify:album:7cTXWw02BWHxyH77wRfhuQ">
+        <img src="images/Ace of Spades.jpg" alt="Ace of Spades Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1980-09-12" data-artist-name="Ozzy Osbourne" data-album-name="Blizzard of Ozz" data-genres="Heavy Metal" data-spotify-uri="spotify:album:4qUMByJ3Pk94BFnCmGaUPS">
+        <img src="images/Blizzard of Ozz.png" alt="Blizzard of Ozz Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2004-08-31" data-artist-name="Mastodon" data-album-name="Leviathan" data-genres="Progressive Metal,Sludge Metal,Thrash Metal" data-spotify-uri="spotify:album:6khFoLWnJZDQvZ7Pijym3b">
+        <img src="images/Leviathan.jpg" alt="Leviathan Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1992-02-25" data-artist-name="Pantera" data-album-name="Vulgar Display of Power" data-genres="Groove Metal,Thrash Metal" data-spotify-uri="spotify:album:7kW0cpKgSVsEqcc8xgbSb0">
+        <img src="images/Vulgar Display of Power.jpg" alt="Vulgar Display of Power Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1996-09-17" data-artist-name="Tool" data-album-name="Ænima" data-genres="Alternative Metal,Progressive Metal" data-spotify-uri="spotify:album:6yWMN087PgSimbcVmHLEwG">
+        <img src="images/AEima.jpg" alt="Ænima Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1984-07-27" data-artist-name="Metallica" data-album-name="Ride the Lightning" data-genres="Thrash Metal" data-spotify-uri="spotify:album:1nTvIQEXvygqSIqc2vuwAz">
+        <img src="images/Ride the Lightning.png" alt="Ride the Lightning Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1996-04-02" data-artist-name="Neurosis" data-album-name="Through Silver in Blood" data-genres="Post-Metal,Hardcore Punk,Industrial,Sludge Metal" data-spotify-uri="spotify:album:6HBRtTolIqgDVJXBwtyYPV">
+        <img src="images/Through Silver In Blood.jpg" alt="Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1982-07-01" data-artist-name="Judas Priest" data-album-name="Screaming for Vengeance" data-genres="Heavy Metal" data-spotify-uri="spotify:album:0V7mTTzioHiYIjfM8ATZBI">
+        <img src="images/Screaming for Vengeance.jpg" alt="Screaming for Vengeance Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2009-10-13" data-artist-name="Baroness" data-album-name="Blue Record" data-genres="Progressive Metal,Sludge Metal" data-spotify-uri="spotify:album:489qYkpzu44u4I6W9Ldtsx">
+        <img src="images/Blue Record.jpg" alt="Blue Record Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1980-04-14" data-artist-name="Iron Maiden" data-album-name="Iron Maiden" data-genres="Heavy Metal" data-spotify-uri="spotify:album:5nyyw7ThJdClJ0jPisOta3">
+        <img src="images/Iron Maiden.jpg" alt="Iron Maiden Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1984-09-03" data-artist-name="Iron Maiden" data-album-name="Powerslave" data-genres="Heavy Metal" data-spotify-uri="spotify:album:2HPWTaRPYl0Iu3lJrI5V2z">
+        <img src="images/Powerslave.png" alt="Powerslave Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1972-09-25" data-artist-name="Black Sabbath" data-album-name="Vol. 4" data-genres="Heavy Metal" data-spotify-uri="spotify:album:4wWi3uFdpNLF8rxJ1dBYrq">
+        <img src="images/Vol. 4.jpg" alt="Vol. 4 Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1990-09-24" data-artist-name="Megadeth" data-album-name="Rust in Peace" data-genres="Thrash Metal" data-spotify-uri="spotify:album:4e6ML9RBhDyyKTaTwbiRZv">
+        <img src="images/Rust In Peace.jpg" alt="Rust in Peace Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1981-10-01" data-artist-name="Ozzy Osbourne" data-album-name="Diary of a Madman" data-genres="Heavy Metal,Hard Rock" data-spotify-uri="spotify:album:4xiRrFE0Gq4Si9mAfPB3hZ">
+        <img src="images/Diary of a Madman.jpg" alt="Diary of a Madman Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2013-06-11" data-artist-name="Deafheaven" data-album-name="Sunbather" data-genres="Blackgaze,Post-Metal,Ambient Black Metal" data-spotify-uri="spotify:album:2kKXGWaCEl06EKZ4DxBJIT">
+        <img src="images/Sunbather.jpg" alt="Sunbather Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1983-05-25" data-artist-name="Dio" data-album-name="Holy Diver" data-genres="Heavy Metal" data-spotify-uri="spotify:album:2ivNJLSx8Rbvnsvcn01Yt3">
+        <img src="images/Holy Diver.jpg" alt="Holy Diver Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1983-10-01" data-artist-name="Mercyful Fate" data-album-name="Melissa" data-genres="Heavy Metal" data-spotify-uri="spotify:album:1hxG9oE767xQ4MLsEU5u58">
+        <img src="images/Melissa.jpg" alt="Melissa Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1995-03-21" data-artist-name="Death" data-album-name="Symbolic" data-genres="Technical Death Metal,Melodic Death Metal" data-spotify-uri="spotify:album:1QgFthItpbxvMXlgGjvhBR">
+        <img src="images/Symbolic.jpg" alt="Symbolic Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1999-11-01" data-artist-name="Botch" data-album-name="We Are the Romans" data-genres="Mathcore,Metalcore" data-spotify-uri="spotify:album:3fUYIIkOg3eLsUAx6VTFFP">
+        <img src="images/We Are the Romans.png" alt="We Are the Romans Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1987-03-16" data-artist-name="Anthrax" data-album-name="Among the Living" data-genres="Thrash Metal" data-spotify-uri="spotify:album:4Y2jEzU70sLpTCMCl6JE0t">
+        <img src="images/Among the Living.png" alt="Among the Living Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2000-09-25" data-artist-name="Electric Wizard" data-album-name="Dopethrone" data-genres="Doom Metal,Stoner Rock" data-spotify-uri="spotify:album:1AxwLCMtx8rnIxkFQKU2LO">
+        <img src="images/Dopethrone.jpg" alt="Dopethrone Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1988-09-07" data-artist-name="Metallica" data-album-name="...And Justice for All" data-genres="Thrash Metal,Progressive Metal" data-spotify-uri="spotify:album:4Cn4T0onWhfJZwWVzU5a2t">
+        <img src="images/And Justice For All.jpg" alt="...And Justice for All Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1989-11-14" data-artist-name="Ministry" data-album-name="The Mind Is a Terrible Thing to Taste" data-genres="Industrial Metal" data-spotify-uri="spotify:album:2Z73HeYQNCf5T8dzzHaoz5">
+        <img src="images/The Mind is a Terrible Thing to Taste.jpg" alt="The Mind Is a Terrible Thing to Taste Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1981-11-10" data-artist-name="Mötley Crüe" data-album-name="Too Fast for Love" data-genres="Heavy Metal,Glam Metal,Glam Punk" data-spotify-uri="spotify:album:3Ui0xzVmKgfphMEQpgs9e0">
+        <img src="images/Too Fast for Love.jpg" alt="Too Fast for Love Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1992-06-23" data-artist-name="Helmet" data-album-name="Meantime" data-genres="Alternative Metal,Noise Rock" data-spotify-uri="spotify:album:0U7asaf4jS8EORTjHEWNcJ">
+        <img src="images/Meantime.jpg" alt="Meantime Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1988-08-30" data-artist-name="Danzig" data-album-name="Danzig" data-genres="Heavy Metal" data-spotify-uri="spotify:album:3elIDlrTtrgKfbxYVgp3uW">
+        <img src="images/Danzig.jpg" alt="Danzig Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2005-11-18" data-artist-name="Boris" data-album-name="Pink" data-genres="Heavy Metal,Stoner Rock,Noise Rock,Garage Punk,Ambient,Psychedelic" data-spotify-uri="spotify:album:0L7mC9kTa31p3cEaFwHIgD">
+        <img src="images/Pink.png" alt="Pink Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1992-11-03" data-artist-name="Rage Against the Machine" data-album-name="Rage Against the Machine" data-genres="Rap Metal,Funk Metal,Alternative Metal,Rap Rock" data-spotify-uri="spotify:album:4LaRYkT4oy47wEuQgkLBul">
+        <img src="images/Rage Against The Machine.png" alt="Rage Against the Machine Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1995-11-14" data-artist-name="At the Gates" data-album-name="Slaughter of the Soul" data-genres="Melodic Death Metal" data-spotify-uri="spotify:album:1m0px7K5tJndjxU6RIuL8U">
+        <img src="images/Slaughter of the Soul.png" alt="Slaughter of the Soul Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1991-08-12" data-artist-name="Metallica" data-album-name="Metallica" data-genres="Heavy Metal" data-spotify-uri="spotify:album:55fq75UfkYbGMq4CncCtOH">
+        <img src="images/Metallica.jpg" alt="Metallica Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+
+
+
+
+
+
+
+
+</div>
+<section id="last-song">
+    <h2>Sonic Footprint</h2>
+    <div class="container">
+        <div id="last-song-container"></div>
+    </div>
+ </section>
+<h2>Figures Unveiled: Spotlight on Stats</h2>
+<section class="stats-section">
+    <div class="stats-columns">
+      <section id="most-albums">
+        <h3>Collection's Top Creatives:</h3> 
+        <h4>Prolific Album Masters</h4>
+        <ul></ul>
+      </section>
+      <section id="most-rating-points">
+        <h3>Point Leaders:</h3>
+        <h4>Artistry in Full Score</h4>
+        <ul></ul>
+      </section>
+      <section id="most-genres">
+        <h3>Genre Highlights:</h3>
+        <h4>Leading Tags</h4>
+        <ul></ul>
+      </section>
+    </div>
+  </section>
+  <p id="total-albums"></p>
+    <script src="scripts.js"></script>
+    <script src="onslaught-stats.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onslaught: Amplified</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Onslaught</h1>
+    <h2>Amplified</h2>
+
+    <div class="sort-buttons">
+        <button id="sort-album-name">Sort by Album</button>
+        <button id="sort-artist-name">Sort by Artist</button>
+        <button id="sort-release-date">Sort by Release Date</button>
+        <button id="sort-rating">Sort by Rating</button>
+        <button id="shuffle">Shuffle</button>
+      </div>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search by album, artist, release date, or genre" />
+    </div>
+    <div class="playlist-buttons">
+        <a href="onslaught.html">
+            <button id="onslaught">Onslaught</button>
+       </a>      
+       <a href="onslaught-vortex.html">
+        <button id="vortex">Vortex</button>
+         </a>     
+         <a href="onslaught-transgression.html">
+            <button id="transgression">Transgression</button>
+             </a>  
+        <button class="button" id="melodic-mosaic">Melodic Mosaic</button>
+    </div>
+    <div class="album-cover" data-release-date="1982-03-22" data-artist-name="Iron Maiden" data-album-name="The Number of the Beast" data-genres="Heavy Metal" data-spotify-uri="spotify:album:33d72N71hl9bXwT4zAcqUy">
+        <img src="images/The Number of the Beast.jpg" alt="The Number of the Beast Album Cover" data-rating="7">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="2001-09-04" data-artist-name="Converge" data-album-name="Jane Doe" data-genres="Metalcore,Hardcore Punk,Post-Hardcore" data-spotify-uri="spotify:album:2gtM4m6sglJDrX3toJWZO6">
+        <img src="images/Jane Doe.jpg" alt="Jane Doe Album Cover" data-rating="5">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1980-10-01" data-artist-name="Motörhead" data-album-name="Ace of Spades" data-genres="Heavy Metal,Speed Metal,Hard Rock" data-spotify-uri="spotify:album:7cTXWw02BWHxyH77wRfhuQ">
+        <img src="images/Ace of Spades.jpg" alt="Ace of Spades Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+
+
+
+
+
+
+</div>
+<section id="last-song">
+    <h2>Sonic Footprint</h2>
+    <div class="container">
+        <div id="last-song-container"></div>
+    </div>
+ </section>
+<h2>Figures Unveiled: Spotlight on Stats</h2>
+<section class="stats-section">
+    <div class="stats-columns">
+      <section id="most-albums">
+        <h3>Collection's Top Creatives:</h3> 
+        <h4>Prolific Album Masters</h4>
+        <ul></ul>
+      </section>
+      <section id="most-rating-points">
+        <h3>Point Leaders:</h3>
+        <h4>Artistry in Full Score</h4>
+        <ul></ul>
+      </section>
+      <section id="most-genres">
+        <h3>Genre Highlights:</h3>
+        <h4>Leading Tags</h4>
+        <ul></ul>
+      </section>
+    </div>
+  </section>
+  <p id="total-albums"></p>
+    <script src="scripts.js"></script>
+    <script src="onslaught-sub-stats.js"></script>
+</body>
+</html>
