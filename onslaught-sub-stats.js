@@ -31,7 +31,7 @@ function calculateStats() {
   const sortedGenreCounts = Object.entries(genreCounts)
   .filter(([genre, count]) => count > 0)
     .sort((a, b) => b[1] - a[1])
-    .slice(0, 50);
+    .slice(0, 51);
 
   return { sortedAlbumCounts, sortedRatingPoints, sortedGenreCounts };
 }
