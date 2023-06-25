@@ -26,9 +26,7 @@ font-size: 1.25rem;
 margin: 20px 0;
 color: #f7dc6f;
 }
-h3{
-  text-align: center;
-}
+
 
 .container {
   display: flex;
@@ -141,8 +139,7 @@ margin: 20px 0;
 color: #f7dc6f;
 }
 h3{
-  text-align: center;
-  color: #d35400
+  color: #f39c12
 }
 
 .container {
