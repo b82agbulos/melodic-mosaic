@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digiscape</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Digiscape</h1>
+
+    <div class="sort-buttons">
+        <button id="sort-album-name">Sort by Album</button>
+        <button id="sort-artist-name">Sort by Artist</button>
+        <button id="sort-release-date">Sort by Release Date</button>
+        <button id="sort-rating">Sort by Rating</button>
+        <button id="shuffle">Shuffle</button>
+      </div>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search by album, artist, release date, or genre" />
+    </div>
+    <div class="playlist-buttons">
+        <button class="button" id="melodic-mosaic">Melodic Mosaic</button>
+    </div>
+
+
+<div class="container">
+
+    <div class="album-cover" data-release-date="1996-09-16" data-artist-name="DJ Shadow" data-album-name="Endtroducing....." data-genres="Industrial Hip Hop,Trip Hop,Plunderphonics,Sampledelia" data-spotify-uri="spotify:album:4tUVkNYSFrrEqqrxBQW9PN">
+        <img src="images/Endtroducing......jpg" alt="Endtroducing..... Album Cover" data-rating="4">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1994-08-22" data-artist-name="Portishead" data-album-name="Dummy" data-genres="Trip Hop" data-spotify-uri="spotify:album:3539EbNgIdEDGBKkUf4wno">
+        <img src="images/Dummy.png" alt="Dummy Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1998-04-20" data-artist-name="Boards of Canada" data-album-name="Music Has the Right to Children" data-genres="Electric,Ambient,IDM,Downtempo,Trip Hop,Psychedelic" data-spotify-uri="spotify:album:6LZiNXaDvhzvnXUubVOmNU">
+        <img src="images/Music Has the Right to Children.png" alt="Music Has the Right to Children Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1992-11-09" data-artist-name="Aphex Twin" data-album-name="Selected Ambient Works 85–92" data-genres="Ambient Techno,IDM,Electronica,Ambient" data-spotify-uri="spotify:album:7aNclGRxTysfh6z0d8671k">
+        <img src="images/Selected Ambient Works 85-92.jpg" alt="Selected Ambient Works 85–92 Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1998-01-16" data-artist-name="Air" data-album-name="Moon Safari" data-genres="Space Age Pop,Electronica,Lounge,Chill-Out,Downtempo,Dream Pop,Psychedelic" data-spotify-uri="spotify:album:206GTDefY2qRMQxYXmfb0a">
+        <img src="images/Moon Safari.jpg" alt="Moon Safari Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1997-01-20" data-artist-name="Daft Punk" data-album-name="Homework" data-genres="French House,Techno,Disco,Chicago House" data-spotify-uri="spotify:album:5uRdvUR7xCnHmUW8n64n9y">
+        <img src="images/Homework.jpg" alt="Homework Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1995-06-07" data-artist-name="Björk" data-album-name="Post" data-genres="Art Pop,Electronica,Trip Hop,Experimental" data-spotify-uri="spotify:album:2Ul7B1LEHxXzYubtkTMENs">
+        <img src="images/Post.png" alt="Post Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1995-11-06" data-artist-name="Autechre" data-album-name="Tri Repetae" data-genres="IDM" data-spotify-uri="spotify:album:3p1ZD8q3sGC6tf81QeVrYI">
+        <img src="images/Tri Repetae.jpg" alt="Tri Repetae Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1990-03-19" data-artist-name="Depeche Mode" data-album-name="Violator" data-genres="Synth-Pop,Alternative Rock,Dance,Gothic Rock" data-spotify-uri="spotify:album:5g3Yi15plTSMaq6tYiuw8p">
+        <img src="images/Violator.png" alt="Violator Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1994-03-08" data-artist-name="Nine Inch Nails" data-album-name="The Downward Spiral" data-genres="Industrial Rock,Alternative Rock,Industrial Metal" data-spotify-uri="spotify:album:3nJnyDV8fwFpffo0EyHQto">
+        <img src="images/The Downward Spiral.png" alt="The Downward Spiral Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1998-04-20" data-artist-name="Massive Attack" data-album-name="Mezzanine" data-genres="Trip Hop,Electronica" data-spotify-uri="spotify:album:49MNmJhZQewjt06rpwp6QR">
+        <img src="images/Mezzanine.png" alt="Mezzanine Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1997-09-20" data-artist-name="Björk" data-album-name="Homogenic" data-genres="Electronica,Trip Hop,Art Pop,Glitch,Experimental" data-spotify-uri="spotify:album:0HMsmYvoT1h2x1C4di5faf">
+        <img src="images/Homogenic.jpg" alt="Homogenic Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1994-03-07" data-artist-name="Aphex Twin" data-album-name="Selected Ambient Works Volume II" data-genres="Ambient,Dark Ambient,Electronic,Post-Industrial,Drone,Minimal">
+        <img src="images/Selected Ambient Works Volume II.jpg" alt="Selected Ambient Works Volume II Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1994-01-24" data-artist-name="Underworld" data-album-name="Dubnobasswithmyheadman" data-genres="Acid House,Dub,Techno" data-spotify-uri="spotify:album:3WQpmFc7GonmzN40EjbbKY">
+        <img src="images/dubnobasswithmyheadman.jpg" alt="Dubnobasswithmyheadman Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1997-07-21" data-artist-name="Big Loada" data-album-name="Squarepusher" data-genres="Drill 'N' Bass,IDM,Jungle" data-spotify-uri="spotify:album:0QnctTeHdyQqYptrzGnAmS">
+        <img src="images/Big Loada.jpg" alt="Squarepusher Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1995-04-24" data-artist-name="Aphex Twin" data-album-name="...I Care Because You Do" data-genres="IDM,Techno,Avant-Garde,Ambient,Trip Hop,Classical,Drill 'N' Bass" data-spotify-uri="spotify:album:6TmEZKJtPJ9mPsMBmyteCE">
+        <img src="images/I Care Because You Do.jpg" alt="...I Care Because You Do Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1995-06-26" data-artist-name="The Chemical Brothers" data-album-name="Exit Planet Dust" data-genres="Big Beat,Electronica,Psychedelic,Acid House" data-spotify-uri="spotify:album:1Bmuyq89rXZJNK1w8pauEg">
+        <img src="images/Exit Planet Dust.jpg" alt="Exit Planet Dust Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1995-02-20" data-artist-name="Tricky" data-album-name="Maxinquaye" data-genres="Trip Hop,Experimental,Electronic,R&B,Post-Rock,British Hip Hop" data-spotify-uri="spotify:album:7qlZpMib7D0riFPQ5JHDT8">
+        <img src="images/Maxinquaye.jpg" alt="Maxinquaye Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1998-10-19" data-artist-name="Fatboy Slim" data-album-name="You've Come a Long Way, Baby" data-genres="Big Beat,Techno" data-spotify-uri="spotify:album:7G7cCHgQKbDD6zvwDQZyJu">
+        <img src="images/You’ve Come a Long Way, Baby.jpg" alt="You've Come a Long Way, Baby Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1997-09-22" data-artist-name="Stereolab" data-album-name="Dots and Loops" data-genres="Art Pop,Experimental Pop,Post-Rock,Lounge,Easy Listening" data-spotify-uri="spotify:album:4TQhvd3hojFZAIZCRULdhn">
+        <img src="images/Dots and Loops.jpg" alt="Dots and Loops Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1997-03-10" data-artist-name="Stars of the Lid" data-album-name="The Ballasted Orchestra" data-genres="Ambient,Drone" data-spotify-uri="spotify:album:7sKtEM0XcdniOZL50Opz74">
+        <img src="images/The Ballasted Orchestra.jpg" alt="The Ballasted Orchestra Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1997-06-09" data-artist-name="Broadcast" data-album-name="Work and Non Work" data-genres="Indie Electric" data-spotify-uri="spotify:album:6BwEy6Zz4U5y09nbSJQE2j">
+        <img src="images/Work and Non-Work.jpg" alt="Work and Non Work Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1996-03-11" data-artist-name="Underworld" data-album-name="Second Toughest in the Infants" data-genres="Techno,Progressive House,Trance,Breakbeat,Drum And Bass,Ambient,Experimental" data-spotify-uri="spotify:album:2L4lA4O95iu8bvq5Nzo6aI">
+        <img src="images/Second Toughest in the Infants.jpg" alt="Second Toughest in the Infants Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1998-07-13" data-artist-name="Autechre" data-album-name="LP5" data-genres="IDM" data-spotify-uri="spotify:album:5TiPpuwLSWSJl98yTyE8BK">
+        <img src="images/LP5.jpg" alt="LP5 Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1991-04-08" data-artist-name="Massive Attack" data-album-name="Blue Lines" data-genres="Trip Hop, British Hip Hop" data-spotify-uri="spotify:album:5mAPk4qeNqVLtNydaWbWlf">
+        <img src="images/Blue Lines.jpg" alt="Blue Lines Album Cover" data-rating="2">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1993-05-24" data-artist-name="Orbital" data-album-name="Orbital" data-genres="Techno,Dance" data-spotify-uri="spotify:album:1JYyYFJSYrXMHLe7Dz1B3W">
+        <img src="images/Orbital.jpg" alt="Orbital Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1992-07-06" data-artist-name="The Orb" data-album-name="U.F.Orb" data-genres="Electronica,Ambient House,Dub,Ambient Techno" data-spotify-uri="spotify:album:2Kn0WVtKYv7bcE3EYk3wRA">
+        <img src="images/U.F.Orb.jpg" alt="U.F.Orb Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1997-06-01" data-artist-name="Biosphere" data-album-name="Substrata" data-genres="Ambient" data-spotify-uri="spotify:album:5QIf4hNIAksV1uMCXHVkAZ">
+        <img src="images/Substrata.jpg" alt="Substrata Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1994-09-26" data-artist-name="Massive Attack" data-album-name="Protection" data-genres="Trip Hop" data-spotify-uri="spotify:album:5CnZjFfPDmxOX7KnWLLqpC">
+        <img src="images/Protection.jpg" alt="Protection Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1997-06-23" data-artist-name="Roni Size & Reprazent" data-album-name="New Forms" data-genres="Drum And Bass" data-spotify-uri="spotify:album:3e38PrPtIRDGbtbpc6jHrM">
+        <img src="images/New Forms.jpg" alt="New Forms Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1997-09-16" data-artist-name="Portishead" data-album-name="Portishead" data-genres="Trip Hop" data-spotify-uri="spotify:album:3G36754KQVLyGuskraEAVA">
+        <img src="images/Portishead.png" alt="Portishead Album Cover" data-rating="3">
+        <div class="album-info"></div>
+    </div>
+    <div class="album-cover" data-release-date="1995-01-01" data-artist-name="Oval" data-album-name="94 Diskont" data-genres="Glitch,Ambient" data-spotify-uri="spotify:album:33xUwaoTPJ9aNbCJZEpRol">
+        <img src="images/94 Diskont.jpg" alt="94 Diskont Album Cover" data-rating="1">
+        <div class="album-info"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+    
+</div>
+<section id="last-song">
+    <h2>Sonic Footprint</h2>
+    <div class="container">
+        <div id="last-song-container"></div>
+    </div>
+ </section>
+ <h2>Figures Unveiled: Spotlight on Stats</h2>
+ <section class="stats-section">
+     <div class="stats-columns">
+       <section id="most-albums">
+         <h3>Top Creatives</h3> 
+         <!-- <h4>Prolific Album Masters</h4> -->
+         <ul></ul>
+       </section>
+       <section id="most-rating-points">
+         <h3>Point Leaders</h3>
+         <!-- <h4>Artistry in Full Score</h4> -->
+         <ul></ul>
+       </section>
+       <section id="most-genres">
+         <h3>Genre Highlights</h3>
+         <!-- <h4>Leading Tags</h4> -->
+         <ul></ul>
+       </section>
+     </div>
+   </section>
+   <p id="total-albums"></p>
+     <script src="scripts.js"></script>
+     <script src="Digiscape-stats.js"></script>
+ </body>
+ </html>
