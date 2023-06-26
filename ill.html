@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ill</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Ill</h1>
+
+    <div class="sort-buttons">
+        <button id="sort-album-name">Sort by Album</button>
+        <button id="sort-artist-name">Sort by Artist</button>
+        <button id="sort-release-date">Sort by Release Date</button>
+        <button id="sort-rating">Sort by Rating</button>
+        <button id="shuffle">Shuffle</button>
+    </div>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search by album, artist, release date, or genre" />
+    </div>
+    <div class="playlist-buttons">
+        <!--   <a href="dawn.html">
+            <button id="digiscape">Digiscape</button>
+        </a> -->
+        <button class="button" id="melodic-mosaic">Melodic Mosaic</button>
+    </div>
+
+
+    <div class="container">
+
+
+
+        <div class="album-cover" data-release-date="1994-04-19" data-artist-name="Nas" data-album-name="Illmatic"
+            data-genres="East Coast Hip Hop,Hardcore Hip Hop,Jazz Rap"
+            data-spotify-uri="spotify:album:3kEtdS2pH6hKcMU9Wioob1">
+            <img src="images/Illmatic.jpg" alt="Illmatic Album Cover" data-rating="13">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1994-09-13" data-artist-name="The Notorious B.I.G."
+            data-album-name="Ready to Die" data-genres="East Coast Hip Hop, Gangsta Rap,Hardcore Hip Hop"
+            data-spotify-uri="spotify:album:2HTbQ0RHwukKVXAlTmCZP2">
+            <img src="images/Ready to Die.jpg" alt="Ready to Die Album Cover" data-rating="11">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1988-06-28" data-artist-name="Public Enemy"
+            data-album-name="It Takes a Nation of Millions to Hold Us Back"
+            data-genres="Hip Hop,Political Hip Hop,Sampledelia" data-spotify-uri="spotify:album:1Rj1daFzMlYzLv7lJl14hz">
+            <img src="images/It Takes a Nation of Millions to Hold Us Back.jpg"
+                alt="It Takes a Nation of Millions to Hold Us Back Album Cover" data-rating="13">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="2000-10-31" data-artist-name="Outkast" data-album-name="Stankonia"
+            data-genres="Southern Hip Hop,Progressive Rap,Funk,Alternative Hip Hop"
+            data-spotify-uri="spotify:album:2tm3Ht61kqqRZtIYsBjxEj">
+            <img src="images/Stankonia.png" alt="Stankonia Album Cover" data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1987-07-07" data-artist-name="Eric B. & Rakim"
+            data-album-name="Paid in Full" data-genres="Golden Age Hip Hop"
+            data-spotify-uri="spotify:album:3miZDfDnP7SmOXAJXWdFmz">
+            <img src="images/Paid in Full.jpg" alt="Paid in Full Album Cover" data-rating="8">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="2001-09-11" data-artist-name="Jay-Z" data-album-name="The Blueprint"
+            data-genres="East Coast Hip Hop" data-spotify-uri="spotify:album:69CmkikTHkGKdkrUZTtyWl">
+            <img src="images/The Blueprint.jpg" alt="The Blueprint Album Cover" data-rating="4">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1991-09-24" data-artist-name="A Tribe Called Quest"
+            data-album-name="The Low End Theory" data-genres="East Coast Hip Hop,Alternative Hip Hop,Jazz Rap"
+            data-spotify-uri="spotify:album:1p12OAWwudgMqfMzjMvl2a">
+            <img src="images/The Low End Theory.png" alt="The Low End Theory Album Cover" data-rating="10">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1993-11-09" data-artist-name="Wu-Tang Clan"
+            data-album-name="Enter the Wu-Tang (36 Chambers)"
+            data-genres="Hardcore Hip Hop,East Coast Hip Hop,Alternative Hip Hop"
+            data-spotify-uri="spotify:album:6acGx168JViE5LLFR1rGRE">
+            <img src="images/Enter the Wu-Tang (36 Chambers).jpg" alt="Enter the Wu-Tang (36 Chambers) Album Cover"
+                data-rating="11">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="2015-03-15" data-artist-name="Kendrick Lamar"
+            data-album-name="To Pimp a Butterfly"
+            data-genres="Alternative Hip Hop,Progressive Rap,Conscious Hip Hop,Jazz Rap,G-Funk,Neo Soul"
+            data-spotify-uri="spotify:album:7ycBtnsMtyVbbwTfJwRjSP">
+            <img src="images/To Pimp a Butterfly.png" alt="To Pimp a Butterfly Album Cover" data-rating="6">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="2004-03-23" data-artist-name="Madvillain"
+            data-album-name="Madvillainy" data-genres="Alternative Hip Hop,Jazz Rap"
+            data-spotify-uri="spotify:album:19bQiwEKhXUBJWY6oV3KZk">
+            <img src="images/Madvillainy.png" alt="Madvillainy Album Cover" data-rating="5">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1995-08-01" data-artist-name="Raekwon"
+            data-album-name="Only Built 4 Cuban Linx..." data-genres="Mafioso Rap"
+            data-spotify-uri="spotify:album:7btiyhWzUfzxN3ijSiBpC8">
+            <img src="images/Only Built 4 Cuban Linx….jpg" alt="Only Built 4 Cuban Linx... Album Cover" data-rating="6">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="2010-11-22" data-artist-name="Kanye West"
+            data-album-name="My Beautiful Dark Twisted Fantasy" data-genres="Hip Hop,Progressive Rap,Rap Opera"
+            data-spotify-uri="spotify:album:20r762YmB5HeofjMCiPMLv">
+            <img src="images/My Beautiful Dark Twisted Fantasy.jpg" alt="My Beautiful Dark Twisted Fantasy Album Cover"
+                data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="2001-05-15" data-artist-name="Missy Elliott"
+            data-album-name="Miss E... So Addictive" data-genres="Hip Hop,R&B,Progressive Rap"
+            data-spotify-uri="spotify:album:20t54K6C80QQH7vbcpfJcP">
+            <img src="images/Miss E… So Addictive.png" alt="Miss E... So Addictive Album Cover" data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1988-10-04" data-artist-name="Ultramagnetic MCs"
+            data-album-name="Critical Beatdown" data-genres="Golden Age Hip Hop"
+            data-spotify-uri="spotify:album:7JKJGhEcQPmEVhULUZZKKE">
+            <img src="images/Critical Beatdown.jpg" alt="Critical Beatdown Album Cover" data-rating="5">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1988-08-08" data-artist-name="N.W.A"
+            data-album-name="Straight Outta Compton" data-genres="West Coast Hip Hop,Gangsta Rap,Hardcore Hip Hop"
+            data-spotify-uri="spotify:album:0Y7qkJVZ06tS2GUCDptzyW">
+            <img src="images/Straight Outta Compton.jpg" alt="Straight Outta Compton Album Cover" data-rating="6">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1993-11-09" data-artist-name="A Tribe Called Quest"
+            data-album-name="Midnight Marauders" data-genres="East Coast Hip Hop,Alternative Hip Hop,Jazz Rap"
+            data-spotify-uri="spotify:album:4v5x3Oo3UjQ9YmF3hRAip5">
+            <img src="images/Midnight Marauders.jpg" alt="Midnight Marauders Album Cover" data-rating="4">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1987-03-03" data-artist-name="Boogie Down Productions"
+            data-album-name="Criminal Minded" data-genres="Hardcore Hip Hop,Gangsta Rap"
+            data-spotify-uri="spotify:album:3AJ15ysr4Hz5p0N2tnNb1F">
+            <img src="images/Criminal Minded.jpg" alt="Criminal Minded Album Cover" data-rating="6">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1992-12-15" data-artist-name="Dr. Dre" data-album-name="The Chronic"
+            data-genres="West Coast Hip Hop,G-Funk,Gangsta Rap" data-spotify-uri="spotify:album:2V5rhszUpCudPcb01zevOt">
+            <img src="images/The Chronic.jpg" alt="The Chronic Album Cover" data-rating="7">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1998-08-25" data-artist-name="Lauryn Hill"
+            data-album-name="The Miseducation of Lauryn Hill"
+            data-genres="Neo Soul,R&B,Hip Hop, Hip Hop Soul,Progressive Rap"
+            data-spotify-uri="spotify:album:1BZoqf8Zje5nGdwZhOjAtD">
+            <img src="images/The Miseducation of Lauryn Hill.jpg" alt="The Miseducation of Lauryn Hill Album Cover"
+                data-rating="4">
+            <div class="album-info"></div>
+        </div>
+
+
+
+    </div>
+    <section id="last-song">
+        <h2>Sonic Footprint</h2>
+        <div class="container">
+            <div id="last-song-container"></div>
+        </div>
+    </section>
+    <h2>Figures Unveiled: Spotlight on Stats</h2>
+    <section class="stats-section">
+        <div class="stats-columns">
+            <section id="most-albums">
+                <h3>Top Creatives</h3>
+                <!-- <h4>Prolific Album Masters</h4> -->
+                <ul></ul>
+            </section>
+            <section id="most-rating-points">
+                <h3>Point Leaders</h3>
+                <!-- <h4>Artistry in Full Score</h4> -->
+                <ul></ul>
+            </section>
+            <section id="most-genres">
+                <h3>Genre Highlights</h3>
+                <!-- <h4>Leading Tags</h4> -->
+                <ul></ul>
+            </section>
+        </div>
+    </section>
+    <p id="total-albums"></p>
+    <script src="scripts.js"></script>
+    <script src="lounge-stats.js"></script>
+</body>
+
+</html>
