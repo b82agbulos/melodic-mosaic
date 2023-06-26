@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dakota</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Dakota</h1>
+
+    <div class="sort-buttons">
+        <button id="sort-album-name">Sort by Album</button>
+        <button id="sort-artist-name">Sort by Artist</button>
+        <button id="sort-release-date">Sort by Release Date</button>
+        <button id="sort-rating">Sort by Rating</button>
+        <button id="shuffle">Shuffle</button>
+    </div>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search by album, artist, release date, or genre" />
+    </div>
+    <div class="playlist-buttons">
+        <button class="button" id="melodic-mosaic">Melodic Mosaic</button>
+    </div>
+
+
+    <div class="container">
+
+
+        <div class="album-cover" data-release-date="1959-08-17" data-artist-name="Miles Davis"
+            data-album-name="Kind of Blue" data-genres="Rock,Alternative"
+            data-spotify-uri="spotify:album:1weenld61qoidwYuZ1GESA">
+            <img src="images/Kind Of Blue.jpg" alt="Kind of Blue Album Cover" data-rating="8">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1965-02-01" data-artist-name="John Coltrane"
+            data-album-name="A Love Supreme" data-genres="Modal Jazz,Post-Bop,Spirtual Jazz"
+            data-spotify-uri="spotify:album:7Eoz7hJvaX1eFkbpQxC5PA">
+            <img src="images/A Love Supreme.jpg" alt="A Love Supreme Album Cover" data-rating="6">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1959-10-01" data-artist-name="Charles Mingus"
+            data-album-name="Mingus Ah Um" data-genres="Post-Bop,Jazz"
+            data-spotify-uri="spotify:album:7pojWP7x9uEFSJgw765khA">
+            <img src="images/Mingus Ah Um.jpg" alt="Mingus Ah Um Album Cover" data-rating="6">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1959-12-14" data-artist-name="The Dave Brubeck Quartet"
+            data-album-name="Time Out" data-genres="West Coast Jazz"
+            data-spotify-uri="spotify:album:0nTTEAhCZsbbeplyDMIFuA">
+            <img src="images/Time Out.jpg" alt="Time Out Album Cover" data-rating="6">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1957-03-31" data-artist-name="Sonny Rollins"
+            data-album-name="Saxophone Colossus" data-genres="Hard Bop"
+            data-spotify-uri="spotify:album:2dtjLAwt7Cq763h6AupyPZ">
+            <img src="images/Saxophone Colossus.jpg" alt="Saxophone Colossus Album Cover" data-rating="6">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1958-08-01" data-artist-name="Cannonball Adderley"
+            data-album-name="Somethin' Else" data-genres="Jazz, Hard Bop,Bebop"
+            data-spotify-uri="spotify:album:3Wu0chxAm4GxSeRnIIf2Om">
+            <img src="images/Somethin' Else.jpg" alt="Somethin' Else Album Cover" data-rating="6">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1960-02-01" data-artist-name="John Coltrane"
+            data-album-name="Giant Steps" data-genres="Post-Bop,Hard Bop"
+            data-spotify-uri="spotify:album:7MBQWjukLxXZYvQ8vzEH7t">
+            <img src="images/Giant Steps.jpg" alt="Giant Steps Album Cover" data-rating="6">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1965-03-18" data-artist-name="Herbie Hancock"
+            data-album-name="Maiden Voyage" data-genres="Modal Jazz,Post-Bop"
+            data-spotify-uri="spotify:album:7huPJTTsWVt854oZkr88mf">
+            <img src="images/Maiden Voyage.jpg" alt="Maiden Voyage Album Cover" data-rating="6">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1959-01-01" data-artist-name="Art Blakey and the Jazz Messengers"
+            data-album-name="Moanin'" data-genres="Hard Bop" data-spotify-uri="spotify:album:5PzlTnVafjgt5RtjTdIKoC">
+            <img src="images/Moanin'.jpg" alt="Moanin' Album Cover" data-rating="6">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1957-04-04" data-artist-name="Thelonious Monk"
+            data-album-name="Brilliant Corners" data-genres="Hard Bop"
+            data-spotify-uri="spotify:album:5gWF47eGSbv4BOfxoFcQtd">
+            <img src="images/Brilliant Corners.jpg" alt="Brilliant Corners Album Cover" data-rating="6">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1964-08-01" data-artist-name="Eric Dolphy"
+            data-album-name="Out to Lunch!" data-genres="Avant-Garde Jazz,Free Jazz,Third Stream"
+            data-spotify-uri="spotify:album:3PIVqZzL1PnrxFZDzuT1aX">
+            <img src="images/Out to Lunch!.png" alt="Out to Lunch! Album Cover" data-rating="4">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1975-11-30" data-artist-name="Keith Jarrett"
+            data-album-name="The Köln Concert" data-genres="Jazz"
+            data-spotify-uri="spotify:album:0I8vpSE1bSmysN2PhmHoQg">
+            <img src="images/The Köln Concert.jpg" alt="The Köln Concert Album Cover" data-rating="4">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1995-09-19" data-artist-name="Louis Armstrong"
+            data-album-name="25 Greatest Hot Fives & Sevens" data-genres="Jazz">
+            <img src="images/25 Greatest Hot Fives & Sevens.jpg" alt="25 Greatest Hot Fives & Sevens Album Cover"
+                data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1962-02-28" data-artist-name="The Bill Evans Trio"
+            data-album-name="Waltz for Debby" data-genres="Jazz, Cool Jazz"
+            data-spotify-uri="spotify:album:0MjlKhtsyax9HSWNkYaWM2">
+            <img src="images/Waltz for Debby.png" alt="Waltz for Debby Album Cover" data-rating="4">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1964-03-01" data-artist-name="Stan Getz and João Gilberto"
+            data-album-name="Getz/Gilberto" data-genres="Jazz,Bossa Nova"
+            data-spotify-uri="spotify:album:73ZRKdD3Ds43IjHrhKgucY">
+            <img src="images/Getz-Gilberto.jpg" alt="Getz/Gilberto Album Cover" data-rating="4">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1959-11-01" data-artist-name="Ornette Coleman"
+            data-album-name="The Shape of Jazz to Come" data-genres="Avant-Garde Jazz,Free Jazz"
+            data-spotify-uri="spotify:album:2iPH3iUmpa9ufIpwY76keF">
+            <img src="images/The Shape of Jazz to Come.jpg" alt="The Shape of Jazz to Come Album Cover" data-rating="4">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1958-01-01" data-artist-name="John Coltrane"
+            data-album-name="Blue Train" data-genres="Hard Bop" data-spotify-uri="spotify:album:2Z11cXWEa2qqYQBGkJrCga">
+            <img src="images/Blue Train.jpg" alt="Blue Train Album Cover" data-rating="4">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1966-06-01" data-artist-name="Wayne Shorter"
+            data-album-name="Speak No Evil" data-genres="Post-Bop,Hard Bop,Modal Jazz"
+            data-spotify-uri="spotify:album:27Rl7A8jXEQOkIfUKOa6ZU">
+            <img src="images/Speak No Evil.jpg" alt="Speak No Evil Album Cover" data-rating="4">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="2000-08-22" data-artist-name="Louis Armstrong"
+            data-album-name="Hot Fives & Sevens" data-genres="Jazz"
+            data-spotify-uri="spotify:album:1fw3JJvlzlyRGDNVRQOzOK">
+            <img src="images/Hot Fives & Sevens.jpg" alt="Hot Fives & Sevens Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1964-07-01" data-artist-name="Lee Morgan"
+            data-album-name="The Sidewinder" data-genres="Jazz,Hard Bop"
+            data-spotify-uri="spotify:album:1n1trPeeY9Q5H4eLbbHHRg">
+            <img src="images/The Sidewinder.jpg" alt="The Sidewinder Album Cover" data-rating="4">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="2000-10-24" data-artist-name="Charlie Parker"
+            data-album-name="The Complete Savoy and Dial Studio Recordings" data-genres="Jazz,Bebop"
+            data-spotify-uri="spotify:album:2c6BUJGIxa4SA94iYX4JkT">
+            <img src="images/The Savoy & Dial Studio Sessions.jpg"
+                alt="The Complete Savoy and Dial Studio Recordings Album Cover" data-rating="4">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1970-03-30" data-artist-name="Miles Davis"
+            data-album-name="Bitches Brew" data-genres="Jazz Fusion,Jazz-Rock,Avant-Garde Jazz,Avant-Funk,Psychedelic"
+            data-spotify-uri="spotify:album:3Q0zkOZEOC855ErOOJ1AdO">
+            <img src="images/Bitches Brew.jpg" alt="Bitches Brew Album Cover" data-rating="4">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1965-01-31" data-artist-name="The Horace Silver Quintet"
+            data-album-name="Song for My Father" data-genres="Hard Bop"
+            data-spotify-uri="spotify:album:4LEnATSqKeANOJ0mLUAuCE">
+            <img src="images/Song for My Father.jpg" alt="Song for My Father Album Cover" data-rating="4">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1961-08-01" data-artist-name="Oliver Nelson"
+            data-album-name="The Blues and the Abstract Truth" data-genres="Post-Bop"
+            data-spotify-uri="spotify:album:6lxRA8Rl9a9XoZDCVWBzBY">
+            <img src="images/The Blues and the Abstract Truth.jpg" alt="The Blues and the Abstract Truth Album Cover"
+                data-rating="4">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1956-11-01" data-artist-name="Duke Ellington"
+            data-album-name="Ellington at Newport" data-genres="Jazz"
+            data-spotify-uri="spotify:album:0t41BkcZayaAsa0FdRelfz">
+            <img src="images/Ellington At Newport.jpg" alt="Ellington at Newport Album Cover" data-rating="4">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1963-07-01" data-artist-name="Charles Mingus"
+            data-album-name="The Black Saint and the Sinner Lady" data-genres="Avant-Garde Jazz,Third Stream"
+            data-spotify-uri="spotify:album:6Sts4Yh7KsDFwq2yTWrGGV">
+            <img src="images/The Black Saint and Sinner Lady.jpg" alt="The Black Saint and the Sinner Lady Album Cover"
+                data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1960-04-01" data-artist-name="Wes Montgomery"
+            data-album-name="The Incredible Jazz Guitar of Wes Montgomery" data-genres="Jazz"
+            data-spotify-uri="spotify:album:1junpO1JYOvWEcWOIt5PpP">
+            <img src="images/Incredible Jazz Guitar.jpg" alt="The Incredible Jazz Guitar of Wes Montgomery Album Cover"
+                data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1961-10-01" data-artist-name="The Bill Evans Trio"
+            data-album-name="Sunday at the Village Vanguard" data-genres="Jazz"
+            data-spotify-uri="spotify:album:20ONXWjxrJhlX3rfNeAbS0">
+            <img src="images/Sunday at the Village Vanguard.png" alt="Sunday at the Village Vanguard Album Cover"
+                data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1956-10-01" data-artist-name="Ella Fitzgerald, Louis Armstrong"
+            data-album-name="Ella and Louis" data-genres="Jazz" data-spotify-uri="spotify:album:3kfnwa4p4uYiTOP8K8ooSE">
+            <img src="images/Ella and Louis.jpg" alt="Ella and Louis Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1961-03-01" data-artist-name="John Coltrane"
+            data-album-name="My Favorite Things" data-genres="Modal Jazz"
+            data-spotify-uri="spotify:album:3nLStxdTkSzihxm7FTLzCP">
+            <img src="images/My Favorite Things.jpg" alt="My Favorite Things Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1977-03-01" data-artist-name="Weather Report"
+            data-album-name="Heavy Weather" data-genres="Jazz Fusion"
+            data-spotify-uri="spotify:album:2M9F2yYsUvqiBPwUGeNvn1">
+            <img src="images/Heavy Weather.jpg" alt="Heavy Weather Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1962-08-27" data-artist-name="Dexter Gordon" data-album-name="Go!"
+            data-genres="Hard Bop" data-spotify-uri="spotify:album:5nEJj9bjoarnzlS88NiWet">
+            <img src="images/Go!.jpg" alt="Go! Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1989-08-23" data-artist-name="Chet Baker"
+            data-album-name="The Best Of Chet Baker Sings" data-genres="Cool Jazz,Bebop,West Coast Jazz"
+            data-spotify-uri="spotify:album:5rb3LlPlS4L3qPHwxRVUML">
+            <img src="images/The Best of Chet Baker Sings.jpeg" alt="The Best Of Chet Baker Sings Album Cover"
+                data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="2001-09-28" data-artist-name="Billie Holiday"
+            data-album-name="Lady Day: The Best of Billie Holiday" data-genres="Jazz,Swing,Blues,Traditional Pop"
+            data-spotify-uri="spotify:album:7pBwUBRsdgtIyX7tGOmaoy">
+            <img src="images/Lady Day.jpg" alt="Lady Day: The Best of Billie Holiday Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+    <section id="last-song">
+        <h2>Sonic Footprint</h2>
+        <div class="container">
+            <div id="last-song-container"></div>
+        </div>
+    </section>
+    <h2>Figures Unveiled: Spotlight on Stats</h2>
+    <section class="stats-section">
+        <div class="stats-columns">
+            <section id="most-albums">
+                <h3>Top Creatives</h3>
+                <!-- <h4>Prolific Album Masters</h4> -->
+                <ul></ul>
+            </section>
+            <section id="most-rating-points">
+                <h3>Point Leaders</h3>
+                <!-- <h4>Artistry in Full Score</h4> -->
+                <ul></ul>
+            </section>
+            <section id="most-genres">
+                <h3>Genre Highlights</h3>
+                <!-- <h4>Leading Tags</h4> -->
+                <ul></ul>
+            </section>
+        </div>
+    </section>
+    <p id="total-albums"></p>
+    <script src="scripts.js"></script>
+    <script src="dakota-stats.js"></script>
+</body>
+
+</html>
