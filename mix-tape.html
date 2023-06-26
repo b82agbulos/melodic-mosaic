@@ -17,7 +17,7 @@
         <button id="sort-release-date">Sort by Release Date</button>
         <button id="sort-rating">Sort by Rating</button>
         <button id="shuffle">Shuffle</button>
-      </div>
+    </div>
     <div class="search-container">
         <input type="text" id="search-input" placeholder="Search by album, artist, release date, or genre" />
     </div>
@@ -26,385 +26,551 @@
     </div>
 
 
-<div class="container">
-
-    <div class="album-cover" data-release-date="1991-09-24" data-artist-name="Nirvana" data-album-name="Nevermind" data-genres="Grunge,Alternative Rock" data-spotify-uri="spotify:album:2guirTSEqLizK7j9i1MTTZ">
-        <img src="images/Nevermind.png" alt="Nevermind Album Cover" data-rating="7">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1997-05-21" data-artist-name="Radiohead" data-album-name="OK Computer" data-genres="Art Rock,Alternative Rock" data-spotify-uri="spotify:album:6dVIqQ8qmQ5GBnJ9shOYGE">
-        <img src="images/Ok Computer.png" alt="OK Computer Album Cover" data-rating="8">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1990-06-26" data-artist-name="Sonic Youth" data-album-name="Goo" data-genres="Alternative Rock,Hard Rock" data-spotify-uri="spotify:album:5iYYQwB0oH9FVyVlaOXZdr">
-        <img src="images/Goo.png" alt="Goo Album Cover" data-rating="2">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1991-11-18" data-artist-name="U2" data-album-name="Achtung Baby Album Cover" data-genres="Alternative Rock" data-spotify-uri="spotify:album:5n52kyQKeUZs5ObZJejLQd">
-        <img src="images/Achtung Baby.jpg" alt="Achtung Baby" data-rating="5">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1992-09-04" data-artist-name="Sugar" data-album-name="Copper Blue" data-genres="Alternative Rock,Power Pop" data-spotify-uri="spotify:album:2gezpSJBHJaRG12p6NXJEX">
-        <img src="images/Copper Blue.jpg" alt="Copper Blue Album Cover" data-rating="3">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1994-02-14" data-artist-name="Pavement" data-album-name="Crooked Rain, Crooked Rain" data-genres="Indie Rock, Alternative Rock" data-spotify-uri="spotify:album:1XFNz6KIvLyIsLFOiLRKqP">
-        <img src="images/Crooked Rain, Crooked Rain.jpg" alt="Crooked Rain, Crooked Rain Album Cover" data-rating="3">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1993-08-30" data-artist-name="The Breeders" data-album-name="Last Splash" data-genres="Alternative Rock,Experimental,Indie Rock,Noise Pop,Pop Rock" data-spotify-uri="spotify:album:57F44c0MTziVzHPEuJtH9A">
-        <img src="images/Last Splash.jpg" alt="Last Splash Album Cover" data-rating="2">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1994-02-01" data-artist-name="Green Day" data-album-name="Dookie" data-genres="Punk Rock,Pop-Punk,Skate Punk" data-spotify-uri="spotify:album:4uG8q3GPuWHQlRbswMIRS6">
-        <img src="images/Dookie.jpg" alt="Dookie Album Cover" data-rating="4">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1992-10-05" data-artist-name="R.E.M." data-album-name="Automatic for the People" data-genres="Alternative Rock,Baroque Pop" data-spotify-uri="spotify:album:0BiNb8HYR4JvuxUa31Z58Q">
-        <img src="images/Automatic for the People.jpg" alt="Automatic for the People Album Cover" data-rating="6">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1993-09-21" data-artist-name="Nirvana" data-album-name="In Utero" data-genres="Grunge,Alternative Rock,Punk Rock,Noise Rock" data-spotify-uri="spotify:album:7wOOA7l306K8HfBKfPoafr">
-        <img src="images/In Utero.jpg" alt="In Utero Album Cover" data-rating="3">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1994-03-08" data-artist-name="Nine Inch Nails" data-album-name="The Downward Spiral" data-genres="Industrial Rock,Alternative Rock,Industrial Metal" data-spotify-uri="spotify:album:3nJnyDV8fwFpffo0EyHQto">
-        <img src="images/The Downward Spiral.png" alt="The Downward Spiral Album Cover" data-rating="6">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1995-10-02" data-artist-name="Oasis" data-album-name="(What's the Story) Morning Glory? Album Cover" data-genres="Rock,Britpop" data-spotify-uri="spotify:album:2u30gztZTylY4RG7IvfXs8">
-        <img src="images/(What's the Story) Morning Glory-.jpg" alt="(What's the Story) Morning Glory?" data-rating="5">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1993-07-27" data-artist-name="The Smashing Pumpkins" data-album-name="Siamese Dream" data-genres="Alternative Rock,Grunge,Alternative Metal,Psychedelic Rock,Indie Rock" data-spotify-uri="spotify:album:0bQglEvsHphrS19FGODEGo">
-        <img src="images/Siamese Dream.jpg" alt="Siamese Dream Album Cover" data-rating="6">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1998-02-10" data-artist-name="Neutral Milk Hotel" data-album-name="In the Aeroplane Over the Sea" data-genres="Indie Rock,Psychedelic Folk,Lo-Fi" data-spotify-uri="spotify:album:0vVekV45lOaVKs6RZQQNob">
-        <img src="images/In the Aeroplane Over the Sea.jpg" alt="In the Aeroplane Over the Sea Album Cover" data-rating="3">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1996-01-22" data-artist-name="Tori Amos" data-album-name="Boys for Pele" data-genres="Baroque Pop,Alternative Rock" data-spotify-uri="spotify:album:7vuSTl6tuWg0CQdmfphkFQ">
-        <img src="images/Boys for Pele.png" alt="Boys for Pele Album Cover" data-rating="3">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1995-02-27" data-artist-name="PJ Harvey" data-album-name="To Bring You My Love" data-genres="Alternative Rock,Punk Blues,Blues Rock" data-spotify-uri="spotify:album:2yMg8ronKfVDHngnlLNnl8">
-        <img src="images/To Bring You My Love.jpg" alt="To Bring You My Love Album Cover" data-rating="3">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1999-03-09" data-artist-name="Wilco" data-album-name="Summerteeth" data-genres="Psychedelic Pop,Alternative Country" data-spotify-uri="spotify:album:1JpaFJzzcsiulO6MdIcQdK">
-        <img src="images/Summerteeth.jpg" alt="Summerteeth Album Cover" data-rating="3">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1990-08-21" data-artist-name="Jane's Addiction" data-album-name="Ritual de lo Habitual" data-genres="Alternative Metal,Hard Rock,Alternative Rock,Funk Metal,Psychedelic Rock" data-spotify-uri="spotify:album:2Jkbi83HTSfqEd0CBdYwpU">
-        <img src="images/Ritual De Lo Habitual.jpg" alt="Ritual de lo Habitual Album Cover" data-rating="5">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1996-08-13" data-artist-name="Failure" data-album-name="Fantastic Planet" data-genres="Alternative Rock,Post-Grunge,Space Rock" data-spotify-uri="spotify:album:5hbxMCegyQPhpycfjtlW6I">
-        <img src="images/Fantastic Planet.jpg" alt="Fantastic Planet Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1996-06-18" data-artist-name="Beck" data-album-name="Odelay" data-genres="Alternative Rock,Sampledelia,Alternative Hip Hop,Experimental Rock,Folk Rock,Neo-Psychedelia" data-spotify-uri="spotify:album:1Pus5h1qGedCn4CtOuPVtp">
-        <img src="images/Odelay.jpg" alt="Odelay Album Cover" data-rating="4">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1996-09-24" data-artist-name="Weezer" data-album-name="Pinkerton" data-genres="Alternative Rock,Emo,Power Pop,Pop-Punk,Lo-Fi,Indie Rock" data-spotify-uri="spotify:album:3jWhmYMAWw5NvHTTeiQtfl">
-        <img src="images/Pinkerton.png" alt="Pinkerton Album Cover" data-rating="3">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1990-03-20" data-artist-name="Sinéad O'Connor" data-album-name="I Do Not Want What I Haven't Got" data-genres="Rock,Folk" data-spotify-uri="spotify:album:0fV9DAddjwNZcmCP1Q8b01">
-        <img src="images/I Do Not Want What I Haven't Got.jpg" alt="I Do Not Want What I Haven't Got Album Cover" data-rating="3">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1997-03-18" data-artist-name="Ben Folds Five" data-album-name="Whatever and Ever Amen" data-genres="Alternative Rock" data-spotify-uri="spotify:album:3oz8kworUyU7oXjaEVhDsZ">
-        <img src="images/Whatever and Ever Amen.jpg" alt="Whatever and Ever Amen Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1992-09-29" data-artist-name="Alice in Chains" data-album-name="Dirt" data-genres="Grunge,Heavy Metal,Alternative Metal" data-spotify-uri="spotify:album:58NXIEYqmq5dQHg9nV9duM">
-        <img src="images/Dirt.jpg" alt="Dirt Album Cover" data-rating="4">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1993-10-19" data-artist-name="Pearl Jam" data-album-name="Vs." data-genres="Grunge,Hard Rock,Alternative Rock" data-spotify-uri="spotify:album:3BSOiAas8BpJOii3kCPyjV">
-        <img src="images/Vs..jpg" alt="Vs. Album Cover" data-rating="3">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1992-04-21" data-artist-name="Beastie Boys" data-album-name="Check Your Head" data-genres="Alternative Rock,Rap Rock,Hip Hop,Punk-Rap,Progressive Rap" data-spotify-uri="spotify:album:7CSP7J60QKIBCqOV64qILq">
-        <img src="images/Check Your Head.jpg" alt="Check Your Head Album Cover" data-rating="2">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1995-09-25" data-artist-name="David Bowie" data-album-name="Outside" data-genres="Art Rock,Experimental Rock,Industrial Rock,Avant-Garde Jazz,Electronica,Ambient" data-spotify-uri="spotify:album:6lo9vk77R6NAzAg3tTcJxc">
-        <img src="images/Outside.jpg" alt="Outside Album Cover" data-rating="2">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1999-05-17" data-artist-name="The Flaming Lips" data-album-name="The Soft Bulletin" data-genres="Neo-Psychedelia,Psychedelic Rock,Orchestral Pop,Art Rock,Dream Pop" data-spotify-uri="spotify:album:1mJFgPeuLhU1PzLNBURdJC">
-        <img src="images/The Soft Bulletin.jpg" alt="The Soft Bulletin Album Cover" data-rating="2">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1992-04-21" data-artist-name="The Cure" data-album-name="Wish" data-genres="Alternative Rock,Gothic Rock,Jangle Pop" data-spotify-uri="spotify:album:3x1CmNdXWU0DzpTZXFFRZu">
-        <img src="images/Wish.jpg" alt="Wish Album Cover" data-rating="2">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1991-08-27" data-artist-name="Pearl Jam" data-album-name="Ten" data-genres="Grunge,Alternative Rock,Hard Rock" data-spotify-uri="spotify:album:5B4PYA7wNN4WdEXdIJu58a">
-        <img src="images/Ten.png" alt="Ten Album Cover" data-rating="2">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1995-10-10" data-artist-name="No Doubt" data-album-name="Tragic Kingdom" data-genres="Ska,Ska Punk,Pop,Rock" data-spotify-uri="spotify:album:3VekjWskUut57hx6W9wqL8">
-        <img src="images/Tragic Kingdom.jpg" alt="Tragic Kingdom Album Cover" data-rating="2">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1992-06-08" data-artist-name="Faith No More" data-album-name="Angel Dust" data-genres="Alternative Metal" data-spotify-uri="spotify:album:59GwovfBk0Kp2HJw1G7E5Q">
-        <img src="images/Angel Dust.jpg" alt="Angel Dust Album Cover" data-rating="2">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1994-10-10" data-artist-name="Suede" data-album-name="Dog Man Star" data-genres="Art Rock,Glam Rock,Alternative Rock,Britpop" data-spotify-uri="spotify:album:2EqmYUomXLsQ1ookAbbtjw">
-        <img src="images/Dog Man Star.jpg" alt="Dog Man Star Album Cover" data-rating="2">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1991-11-04" data-artist-name="My Bloody Valentine" data-album-name="Loveless" data-genres="Shoegaze,Dream Pop,Noise Pop,Noise Rock,Experimental Rock" data-spotify-uri="spotify:album:3GH4IiI6jQAIvnHVdb5FB6">
-        <img src="images/Loveless.jpg" alt="Loveless Album Cover" data-rating="4">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1994-04-12" data-artist-name="Hole" data-album-name="Live Through This" data-genres="Alternative Rock,Grunge,Punk Rock" data-spotify-uri="spotify:album:2Rwf2nPYZQ9aIe4QXACTC7">
-        <img src="images/Live Through This.jpg" alt="Live Through This Album Cover" data-rating="2">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1991-09-24" data-artist-name="Red Hot Chili Peppers" data-album-name="Blood Sugar Sex Magik" data-genres="Funk Rock,Alternative Rock,Funk Metal,Rap Rock" data-spotify-uri="spotify:album:1DCI2yWmV4UI7Aga71yx9B">
-        <img src="images/Blood Sugar Sex Magik.png" alt="Blood Sugar Sex Magik Album Cover" data-rating="2">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1990-03-19" data-artist-name="Depeche Mode" data-album-name="Violator" data-genres="Synth-Pop,Alternative Rock,Dance,Gothic Rock" data-spotify-uri="spotify:album:5g3Yi15plTSMaq6tYiuw8p">
-        <img src="images/Violator.png" alt="Violator Album Cover" data-rating="3">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1994-04-25" data-artist-name="Blur" data-album-name="Parklife" data-genres="Britpop" data-spotify-uri="spotify:album:0YS25Dr3hMtMFlVTfuvzl4">
-        <img src="images/Parklife.png" alt="Parklife Album Cover" data-rating="3">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1992-11-03" data-artist-name="Rage Against the Machine" data-album-name="Rage Against the Machine" data-genres="Rap Metal,Funk Metal,Alternative Metal,Rap Rock" data-spotify-uri="spotify:album:4LaRYkT4oy47wEuQgkLBul">
-        <img src="images/Rage Against The Machine.png" alt="Rage Against the Machine Album Cover" data-rating="2">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1993-01-25" data-artist-name="Belly" data-album-name="Star" data-genres="Alternative Rock,Dream Pop,Experimental Rock,Folk Rock,Jangle Pop,Post-Punk,Avant-Pop" data-spotify-uri="spotify:album:2b5r3YRZYwSAeXd7aWZjWp">
-        <img src="images/Star.jpg" alt="Star Album Cover" data-rating="2">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1994-03-08" data-artist-name="Soundgarden" data-album-name="Superunknown" data-genres="Grunge,Heavy Metal,Hard Rock,Stoner Rock" data-spotify-uri="spotify:album:4K8bxkPDa5HENw0TK7WxJh">
-        <img src="images/Superunknown.png" alt="Superunknown Album Cover" data-rating="2">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1991-09-23" data-artist-name="Primal Scream" data-album-name="Screamadelica" data-genres="Alternative Rock,Alternative Dance,Neo-Psychedelia,Maddchester,Dance-Rock" data-spotify-uri="spotify:album:4TECsw2dFHZ1ULrT7OA3OL">
-        <img src="images/Screamadelica.jpg" alt="Screamadelica Album Cover" data-rating="2">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1992-07-27" data-artist-name="Morrissey" data-album-name="Your Arsenal" data-genres="Glam Rock,Rockabilly,Britpop" data-spotify-uri="spotify:album:5gg79cLcpB2vhjWr53Te2X">
-        <img src="images/Your Arsenal.jpg" alt="Your Arsenal Album Cover" data-rating="2">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1991-04-08" data-artist-name="Sleater-Kinney" data-album-name="Dig Me Out" data-genres="Punk Rock" data-spotify-uri="spotify:album:3tshnNFNhHrO6NUQ0BHw42">
-        <img src="images/Dig Me Out.jpg" alt="Dig Me Out Album Cover" data-rating="2">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1998-09-21" data-artist-name="Eels" data-album-name="Electro-Shock Blues" data-genres="Indie Rock" data-spotify-uri="spotify:album:0WxLDRcFFjHUb5lfOt6t51">
-        <img src="images/Electro-­Shock Blues.jpg" alt="Electro-Shock Blues Album Cover" data-rating="2">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1990-09-25" data-artist-name="The Replacements" data-album-name="All Shook Down" data-genres="Alternative Rock" data-spotify-uri="spotify:album:1JXodg2ZixCkemVstxSQN9">
-        <img src="images/All Shook Down.jpg" alt="All Shook Down Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1990-04-19" data-artist-name="Fugazi" data-album-name="Repeater" data-genres="Post-Hardcore,Garage Rock" data-spotify-uri="spotify:album:6JbGZGta38AArBgflt024C">
-        <img src="images/Repeater.jpg" alt="Repeater Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1996-09-16" data-artist-name="DJ Shadow" data-album-name="Endtroducing....." data-genres="Industrial Hip Hop,Trip Hop,Plunderphonics,Sampledelia" data-spotify-uri="spotify:album:4tUVkNYSFrrEqqrxBQW9PN">
-        <img src="images/Endtroducing......jpg" alt="Endtroducing..... Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1993-06-22" data-artist-name="Liz Phair" data-album-name="Exile in Guyville" data-genres="Indie Rock,Lo-Fi" data-spotify-uri="spotify:album:7sCpW2cLGcRk1zf9zi0Yqd">
-        <img src="images/Exile in Guyville.jpg" alt="Exile in Guyville Album Cover" data-rating="2">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1995-03-13" data-artist-name="Radiohead" data-album-name="The Bends" data-genres="Alternative Rock,Britpop,Indie Rock" data-spotify-uri="spotify:album:35UJLpClj5EDrhpNIi4DFg">
-        <img src="images/The Bends.png" alt="The Bends Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1995-06-07" data-artist-name="Björk" data-album-name="Post" data-genres="Art Pop,Electronica,Trip Hop,Experimental" data-spotify-uri="spotify:album:2Ul7B1LEHxXzYubtkTMENs">
-        <img src="images/Post.png" alt="Post Album Cover" data-rating="2">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1994-08-22" data-artist-name="Portishead" data-album-name="Dummy" data-genres="Trip Hop" data-spotify-uri="spotify:album:3539EbNgIdEDGBKkUf4wno">
-        <img src="images/Dummy.png" alt="Dummy Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1995-10-24" data-artist-name="The Smashing Pumpkins" data-album-name="Mellon Collie and the Infinite Sadness" data-genres="Alternative Rock,Grunge,Alternative Metal,Art Rock,Heavy Metal" data-spotify-uri="spotify:album:55RhFRyQFihIyGf61MgcfV">
-        <img src="images/Mellon Collie and the Infinite Sadness.jpg" alt="Mellon Collie and the Infinite Sadness Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1997-11-18" data-artist-name="Modest Mouse" data-album-name="The Lonesome Crowded West" data-genres="Indie Rock" data-spotify-uri="spotify:album:5mvHTVy1iUIkAflIufoOpj">
-        <img src="images/The Lonesome Crowded West.jpg" alt="The Lonesome Crowded West Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1990-02-26" data-artist-name="The House of Love" data-album-name="The House of Love" data-genres="Alternative Rock" data-spotify-uri="spotify:album:6dIFn9PVo8zstNxsOCSovJ">
-        <img src="images/House of Love.jpg" alt="The House of Love Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1994-08-29" data-artist-name="Oasis" data-album-name="Definitely Maybe" data-genres="Britpop,Rock" data-spotify-uri="spotify:album:3LzKUdUTdJb6P7xGN6SotC">
-        <img src="images/Definitely Maybe.jpg" alt="Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1991-02-19" data-artist-name="Dinosaur Jr." data-album-name="Green Mind" data-genres="Alternative Rock" data-spotify-uri="spotify:album:6O2rF8WIEEUPxxOYqWOacF">
-        <img src="images/Green Mind.png" alt="Green Mind Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1994-08-23" data-artist-name="Jeff Buckley" data-album-name="Grace" data-genres="Alternative Rock,Folk Rock,Jazz-Rock" data-spotify-uri="spotify:album:7yQtjAjhtNi76KRu05XWFS">
-        <img src="images/Grace.jpg" alt="Grace Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1998-03-24" data-artist-name="Semisonic" data-album-name="Feeling Strangely Fine" data-genres="Alternative Rock,Power Pop,Post-Grunge" data-spotify-uri="spotify:album:6KaEKR4KsmFWVrb0ktQo2T">
-        <img src="images/Feeling Strangely Fine.jpg" alt="Feeling Strangely Fine Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1992-04-20" data-artist-name="Pavement" data-album-name="Slanted and Enchanted" data-genres="Indie Rock,Lo-Fi,Noise Pop" data-spotify-uri="spotify:album:7o14zVcXSRk7clV6QCEdOD">
-        <img src="images/Slanted and Enchanted.jpg" alt="Slanted and Enchanted Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1996-11-18" data-artist-name="Belle and Sebastian" data-album-name="If You're Feeling Sinister" data-genres="Chamber Pop,Indie Rock,Indie Pop,Twee Pop" data-spotify-uri="spotify:album:3e9VtbXnl6tqrFKrnNyxaI">
-        <img src="images/If You're Feeling Sinister.png" alt="If You're Feeling Sinister Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1992-03-09" data-artist-name="Curve" data-album-name="Doppelgänger" data-genres="Shoegaze">
-        <img src="images/Doppelgänger.jpg" alt="Doppelgänger Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1997-01-28" data-artist-name="Built to Spill" data-album-name="Perfect from Now On" data-genres="Indie Rock,Alternative Rock" data-spotify-uri="spotify:album:6DlZzUnITGI5cWGTjIWSBm">
-        <img src="images/Perfect From Now On.jpg" alt="Perfect from Now On Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1996-10-29" data-artist-name="Wilco" data-album-name="Being There" data-genres="Alternative Country" data-spotify-uri="spotify:album:4gy64TkuOWP2Uuu1DuDeZK">
-        <img src="images/Being There.jpg" alt="Being There Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1995-03-13" data-artist-name="Elastica" data-album-name="Elastica" data-genres="Britpop,Post-Punk" data-spotify-uri="spotify:album:00MAXeszCotk3g9q8KYJlZ">
-        <img src="images/Elastica.jpg" alt="Elastica Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1994-05-31" data-artist-name="Beastie Boys" data-album-name="Ill Communication" data-genres="Hip Hop,Rock,Jazz,Funk" data-spotify-uri="spotify:album:6lfjbwFGzQ6aSNP1N3JlT8">
-        <img src="images/Ill Communication.jpg" alt="Ill Communication Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1990-05-15" data-artist-name="Bloodletting" data-album-name="Concrete Blonde" data-genres="Alternative Rock,Gothic Rock" data-spotify-uri="spotify:album:0Qny7PmxUlBMrw4xdeiHaU">
-        <img src="images/Bloodletting.jpg" alt="Concrete Blonde Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1997-05-20" data-artist-name="Foo Fighters" data-album-name="The Colour and the Shape" data-genres="Alternative Rock,Post-Grunge,Hard Rock,Grunge,Punk Rock" data-spotify-uri="spotify:album:30ly6F6Xl0TKmyBCU50Khv">
-        <img src="images/The Colour and the Shape.png" alt="The Colour and the Shape Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1990-02-09" data-artist-name="Midnight Oil" data-album-name="Blue Sky Mining" data-genres="Alternative Rock" data-spotify-uri="spotify:album:4C3raKL0dzfTitM3YtqN1S">
-        <img src="images/Blue Sky Mining.jpg" alt="Blue Sky Mining Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1997-04-22" data-artist-name="Yo La Tengo" data-album-name="I Can Hear the Heart Beating as One" data-genres="Indie Rock,Indie Pop,Noise Pop" data-spotify-uri="spotify:album:3V18DIKvRuwdxc2LE4wuac">
-        <img src="images/I Can Hear The Heart Beating As One.png" alt="I Can Hear the Heart Beating as One Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1999-06-12" data-artist-name="Sigur Rós" data-album-name="Ágætis byrjun" data-genres="Post-Rock,Dream Pop,Ambient,Art Rock,Shoegaze" data-spotify-uri="spotify:album:1DMMv1Kmoli3Y9fVEZDUVC">
-        <img src="images/Ágætis Byrjun.jpg" alt="Ágætis byrjun Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1991-04-15" data-artist-name="Temple of the Dog" data-album-name="Temple of the Dog" data-genres="Grunge" data-spotify-uri="spotify:album:63HdXCn0Xz1pRZc2GzMw7k">
-        <img src="images/Temple of the Dog.jpg" alt="Temple of the Dog Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1995-08-15" data-artist-name="Garbage" data-album-name="Garbage" data-genres="Alternative Rock,Dance-Rock,Power Pop" data-spotify-uri="spotify:album:5oBySdXAQniFqWOgxPWQSs">
-        <img src="images/Garbage.jpg" alt="Garbage Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1997-02-25" data-artist-name="Elliott Smith" data-album-name="Either/Or" data-genres="Indie Folk,Indie Rock,Lo-Fi,Americana,Pop Rock" data-spotify-uri="spotify:album:5bmpvyP7UGqB4VuXmrJUMy">
-        <img src="images/Either-Or.png" alt="Either/Or Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1995-08-15" data-artist-name="Blind Melon" data-album-name="Soup" data-genres="Alternative Rock" data-spotify-uri="spotify:album:1oFb2lITfburNYlKeyGnMO">
-        <img src="images/Soup.jpg" alt="Soup Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1994-05-10" data-artist-name="Weezer" data-album-name="Weezer" data-genres="Alternative Rock,Power Pop,Pop Punk,Pop Rock,Geek Rock,Hard Rock,Emo" data-spotify-uri="spotify:album:1xpGyKyV26uPstk1Elgp9Q">
-        <img src="images/Weezer.jpg" alt="Weezer Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1991-05-27" data-artist-name="Electronic" data-album-name="Electronic" data-genres="Alternative Dance,Synth-Pop,Alternative Rock" data-spotify-uri="spotify:album:6g8Zu43gbKXEHqYs0ZKTcT">
-        <img src="images/Electronic.jpg" alt="Electronic Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1994-06-07" data-artist-name="Stone Temple Pilots" data-album-name="Purple" data-genres="Grunge,Alternative Rock" data-spotify-uri="spotify:album:57lcTrUlYgfMIPvBUsVU6h">
-        <img src="images/Purple.jpg" alt="Purple Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1998-03-30" data-artist-name="Pulp" data-album-name="This Is Hardcore" data-genres="Art Rock,Glam Rock,Britpop" data-spotify-uri="spotify:album:32T4VUVJCN17nA2uybRRon">
-        <img src="images/This is Hardcore.jpg" alt="This Is Hardcore Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1995-10-30" data-artist-name="Pulp" data-album-name="Different Class" data-genres="Britpop, Art Rock" data-spotify-uri="spotify:album:3ly9T2L4pqTZijFgQssd3x">
-        <img src="images/Different Class.jpg" alt="Different Class Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1990-05-07" data-artist-name="Ultra Vivid Scene" data-album-name="Joy 1967-1990" data-genres="Alternative Rock" data-spotify-uri="spotify:album:2KzZDQ1NyBRRj1CAgUV9Ae">
-        <img src="images/Joy 1967­-1990.jpg" alt="Joy 1967-1990 Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1993-09-14" data-artist-name="Morphine" data-album-name="Cure for Pain" data-genres="Alternative Rock,Jazz-Rock" data-spotify-uri="spotify:album:0FocpOyE7RnaNsiaEhSbp6">
-        <img src="images/Cure for Pain.jpg" alt="Cure for Pain Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1991-03-27" data-artist-name="Slint" data-album-name="Spiderland" data-genres="Post-Hardcore,Post-Rock,Math Rock" data-spotify-uri="spotify:album:2NnkLRaeX33d1Mn8ZLgTo8">
-        <img src="images/Spiderland.jpg" alt="Spiderland Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1991-08-06" data-artist-name="Robyn Hitchcock and The Egyptians" data-album-name="Perspex Island" data-genres="Alternative Rock" data-spotify-uri="spotify:album:1wvTn9h2mTVEyimUbxSrro">
-        <img src="images/Perspex Island.jpg" alt="Perspex Island Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-    <div class="album-cover" data-release-date="1998-04-20" data-artist-name="Massive Attack" data-album-name="Mezzanine" data-genres="Trip Hop,Electronica" data-spotify-uri="spotify:album:49MNmJhZQewjt06rpwp6QR">
-        <img src="images/Mezzanine.png" alt="Mezzanine Album Cover" data-rating="1">
-        <div class="album-info"></div>
-    </div>
-
-
-
-
-
-
-
-
-</div>
-<section id="last-song">
-    <h2>Sonic Footprint</h2>
     <div class="container">
-        <div id="last-song-container"></div>
+
+        <div class="album-cover" data-release-date="1991-09-24" data-artist-name="Nirvana" data-album-name="Nevermind"
+            data-genres="Grunge,Alternative Rock" data-spotify-uri="spotify:album:2guirTSEqLizK7j9i1MTTZ">
+            <img src="images/Nevermind.png" alt="Nevermind Album Cover" data-rating="7">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1997-05-21" data-artist-name="Radiohead"
+            data-album-name="OK Computer" data-genres="Art Rock,Alternative Rock"
+            data-spotify-uri="spotify:album:6dVIqQ8qmQ5GBnJ9shOYGE">
+            <img src="images/Ok Computer.png" alt="OK Computer Album Cover" data-rating="8">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1990-06-26" data-artist-name="Sonic Youth" data-album-name="Goo"
+            data-genres="Alternative Rock,Hard Rock" data-spotify-uri="spotify:album:5iYYQwB0oH9FVyVlaOXZdr">
+            <img src="images/Goo.png" alt="Goo Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1991-11-18" data-artist-name="U2"
+            data-album-name="Achtung Baby Album Cover" data-genres="Alternative Rock"
+            data-spotify-uri="spotify:album:5n52kyQKeUZs5ObZJejLQd">
+            <img src="images/Achtung Baby.jpg" alt="Achtung Baby" data-rating="5">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1992-09-04" data-artist-name="Sugar" data-album-name="Copper Blue"
+            data-genres="Alternative Rock,Power Pop" data-spotify-uri="spotify:album:2gezpSJBHJaRG12p6NXJEX">
+            <img src="images/Copper Blue.jpg" alt="Copper Blue Album Cover" data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1994-02-14" data-artist-name="Pavement"
+            data-album-name="Crooked Rain, Crooked Rain" data-genres="Indie Rock, Alternative Rock"
+            data-spotify-uri="spotify:album:1XFNz6KIvLyIsLFOiLRKqP">
+            <img src="images/Crooked Rain, Crooked Rain.jpg" alt="Crooked Rain, Crooked Rain Album Cover"
+                data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1993-08-30" data-artist-name="The Breeders"
+            data-album-name="Last Splash" data-genres="Alternative Rock,Experimental,Indie Rock,Noise Pop,Pop Rock"
+            data-spotify-uri="spotify:album:57F44c0MTziVzHPEuJtH9A">
+            <img src="images/Last Splash.jpg" alt="Last Splash Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1994-02-01" data-artist-name="Green Day" data-album-name="Dookie"
+            data-genres="Punk Rock,Pop-Punk,Skate Punk" data-spotify-uri="spotify:album:4uG8q3GPuWHQlRbswMIRS6">
+            <img src="images/Dookie.jpg" alt="Dookie Album Cover" data-rating="4">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1992-10-05" data-artist-name="R.E.M."
+            data-album-name="Automatic for the People" data-genres="Alternative Rock,Baroque Pop"
+            data-spotify-uri="spotify:album:0BiNb8HYR4JvuxUa31Z58Q">
+            <img src="images/Automatic for the People.jpg" alt="Automatic for the People Album Cover" data-rating="6">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1993-09-21" data-artist-name="Nirvana" data-album-name="In Utero"
+            data-genres="Grunge,Alternative Rock,Punk Rock,Noise Rock"
+            data-spotify-uri="spotify:album:7wOOA7l306K8HfBKfPoafr">
+            <img src="images/In Utero.jpg" alt="In Utero Album Cover" data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1994-03-08" data-artist-name="Nine Inch Nails"
+            data-album-name="The Downward Spiral" data-genres="Industrial Rock,Alternative Rock,Industrial Metal"
+            data-spotify-uri="spotify:album:3nJnyDV8fwFpffo0EyHQto">
+            <img src="images/The Downward Spiral.png" alt="The Downward Spiral Album Cover" data-rating="6">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1995-10-02" data-artist-name="Oasis"
+            data-album-name="(What's the Story) Morning Glory? Album Cover" data-genres="Rock,Britpop"
+            data-spotify-uri="spotify:album:2u30gztZTylY4RG7IvfXs8">
+            <img src="images/(What's the Story) Morning Glory-.jpg" alt="(What's the Story) Morning Glory?"
+                data-rating="5">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1993-07-27" data-artist-name="The Smashing Pumpkins"
+            data-album-name="Siamese Dream"
+            data-genres="Alternative Rock,Grunge,Alternative Metal,Psychedelic Rock,Indie Rock"
+            data-spotify-uri="spotify:album:0bQglEvsHphrS19FGODEGo">
+            <img src="images/Siamese Dream.jpg" alt="Siamese Dream Album Cover" data-rating="6">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1998-02-10" data-artist-name="Neutral Milk Hotel"
+            data-album-name="In the Aeroplane Over the Sea" data-genres="Indie Rock,Psychedelic Folk,Lo-Fi"
+            data-spotify-uri="spotify:album:0vVekV45lOaVKs6RZQQNob">
+            <img src="images/In the Aeroplane Over the Sea.jpg" alt="In the Aeroplane Over the Sea Album Cover"
+                data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1996-01-22" data-artist-name="Tori Amos"
+            data-album-name="Boys for Pele" data-genres="Baroque Pop,Alternative Rock"
+            data-spotify-uri="spotify:album:7vuSTl6tuWg0CQdmfphkFQ">
+            <img src="images/Boys for Pele.png" alt="Boys for Pele Album Cover" data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1995-02-27" data-artist-name="PJ Harvey"
+            data-album-name="To Bring You My Love" data-genres="Alternative Rock,Punk Blues,Blues Rock"
+            data-spotify-uri="spotify:album:2yMg8ronKfVDHngnlLNnl8">
+            <img src="images/To Bring You My Love.jpg" alt="To Bring You My Love Album Cover" data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1999-03-09" data-artist-name="Wilco" data-album-name="Summerteeth"
+            data-genres="Psychedelic Pop,Alternative Country" data-spotify-uri="spotify:album:1JpaFJzzcsiulO6MdIcQdK">
+            <img src="images/Summerteeth.jpg" alt="Summerteeth Album Cover" data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1990-08-21" data-artist-name="Jane's Addiction"
+            data-album-name="Ritual de lo Habitual"
+            data-genres="Alternative Metal,Hard Rock,Alternative Rock,Funk Metal,Psychedelic Rock"
+            data-spotify-uri="spotify:album:2Jkbi83HTSfqEd0CBdYwpU">
+            <img src="images/Ritual De Lo Habitual.jpg" alt="Ritual de lo Habitual Album Cover" data-rating="5">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1996-08-13" data-artist-name="Failure"
+            data-album-name="Fantastic Planet" data-genres="Alternative Rock,Post-Grunge,Space Rock"
+            data-spotify-uri="spotify:album:5hbxMCegyQPhpycfjtlW6I">
+            <img src="images/Fantastic Planet.jpg" alt="Fantastic Planet Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1996-06-18" data-artist-name="Beck" data-album-name="Odelay"
+            data-genres="Alternative Rock,Sampledelia,Alternative Hip Hop,Experimental Rock,Folk Rock,Neo-Psychedelia"
+            data-spotify-uri="spotify:album:1Pus5h1qGedCn4CtOuPVtp">
+            <img src="images/Odelay.jpg" alt="Odelay Album Cover" data-rating="4">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1996-09-24" data-artist-name="Weezer" data-album-name="Pinkerton"
+            data-genres="Alternative Rock,Emo,Power Pop,Pop-Punk,Lo-Fi,Indie Rock"
+            data-spotify-uri="spotify:album:3jWhmYMAWw5NvHTTeiQtfl">
+            <img src="images/Pinkerton.png" alt="Pinkerton Album Cover" data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1990-03-20" data-artist-name="Sinéad O'Connor"
+            data-album-name="I Do Not Want What I Haven't Got" data-genres="Rock,Folk"
+            data-spotify-uri="spotify:album:0fV9DAddjwNZcmCP1Q8b01">
+            <img src="images/I Do Not Want What I Haven't Got.jpg" alt="I Do Not Want What I Haven't Got Album Cover"
+                data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1997-03-18" data-artist-name="Ben Folds Five"
+            data-album-name="Whatever and Ever Amen" data-genres="Alternative Rock"
+            data-spotify-uri="spotify:album:3oz8kworUyU7oXjaEVhDsZ">
+            <img src="images/Whatever and Ever Amen.jpg" alt="Whatever and Ever Amen Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1992-09-29" data-artist-name="Alice in Chains"
+            data-album-name="Dirt" data-genres="Grunge,Heavy Metal,Alternative Metal"
+            data-spotify-uri="spotify:album:58NXIEYqmq5dQHg9nV9duM">
+            <img src="images/Dirt.jpg" alt="Dirt Album Cover" data-rating="4">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1993-10-19" data-artist-name="Pearl Jam" data-album-name="Vs."
+            data-genres="Grunge,Hard Rock,Alternative Rock" data-spotify-uri="spotify:album:3BSOiAas8BpJOii3kCPyjV">
+            <img src="images/Vs..jpg" alt="Vs. Album Cover" data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1992-04-21" data-artist-name="Beastie Boys"
+            data-album-name="Check Your Head" data-genres="Alternative Rock,Rap Rock,Hip Hop,Punk-Rap,Progressive Rap"
+            data-spotify-uri="spotify:album:7CSP7J60QKIBCqOV64qILq">
+            <img src="images/Check Your Head.jpg" alt="Check Your Head Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1995-09-25" data-artist-name="David Bowie" data-album-name="Outside"
+            data-genres="Art Rock,Experimental Rock,Industrial Rock,Avant-Garde Jazz,Electronica,Ambient"
+            data-spotify-uri="spotify:album:6lo9vk77R6NAzAg3tTcJxc">
+            <img src="images/Outside.jpg" alt="Outside Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1999-05-17" data-artist-name="The Flaming Lips"
+            data-album-name="The Soft Bulletin"
+            data-genres="Neo-Psychedelia,Psychedelic Rock,Orchestral Pop,Art Rock,Dream Pop"
+            data-spotify-uri="spotify:album:1mJFgPeuLhU1PzLNBURdJC">
+            <img src="images/The Soft Bulletin.jpg" alt="The Soft Bulletin Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1992-04-21" data-artist-name="The Cure" data-album-name="Wish"
+            data-genres="Alternative Rock,Gothic Rock,Jangle Pop"
+            data-spotify-uri="spotify:album:3x1CmNdXWU0DzpTZXFFRZu">
+            <img src="images/Wish.jpg" alt="Wish Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1991-08-27" data-artist-name="Pearl Jam" data-album-name="Ten"
+            data-genres="Grunge,Alternative Rock,Hard Rock" data-spotify-uri="spotify:album:5B4PYA7wNN4WdEXdIJu58a">
+            <img src="images/Ten.png" alt="Ten Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1995-10-10" data-artist-name="No Doubt"
+            data-album-name="Tragic Kingdom" data-genres="Ska,Ska Punk,Pop,Rock"
+            data-spotify-uri="spotify:album:3VekjWskUut57hx6W9wqL8">
+            <img src="images/Tragic Kingdom.jpg" alt="Tragic Kingdom Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1992-06-08" data-artist-name="Faith No More"
+            data-album-name="Angel Dust" data-genres="Alternative Metal"
+            data-spotify-uri="spotify:album:59GwovfBk0Kp2HJw1G7E5Q">
+            <img src="images/Angel Dust.jpg" alt="Angel Dust Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1994-10-10" data-artist-name="Suede" data-album-name="Dog Man Star"
+            data-genres="Art Rock,Glam Rock,Alternative Rock,Britpop"
+            data-spotify-uri="spotify:album:2EqmYUomXLsQ1ookAbbtjw">
+            <img src="images/Dog Man Star.jpg" alt="Dog Man Star Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1991-11-04" data-artist-name="My Bloody Valentine"
+            data-album-name="Loveless" data-genres="Shoegaze,Dream Pop,Noise Pop,Noise Rock,Experimental Rock"
+            data-spotify-uri="spotify:album:3GH4IiI6jQAIvnHVdb5FB6">
+            <img src="images/Loveless.jpg" alt="Loveless Album Cover" data-rating="4">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1994-04-12" data-artist-name="Hole"
+            data-album-name="Live Through This" data-genres="Alternative Rock,Grunge,Punk Rock"
+            data-spotify-uri="spotify:album:2Rwf2nPYZQ9aIe4QXACTC7">
+            <img src="images/Live Through This.jpg" alt="Live Through This Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1991-09-24" data-artist-name="Red Hot Chili Peppers"
+            data-album-name="Blood Sugar Sex Magik" data-genres="Funk Rock,Alternative Rock,Funk Metal,Rap Rock"
+            data-spotify-uri="spotify:album:1DCI2yWmV4UI7Aga71yx9B">
+            <img src="images/Blood Sugar Sex Magik.png" alt="Blood Sugar Sex Magik Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1990-03-19" data-artist-name="Depeche Mode"
+            data-album-name="Violator" data-genres="Synth-Pop,Alternative Rock,Dance,Gothic Rock"
+            data-spotify-uri="spotify:album:5g3Yi15plTSMaq6tYiuw8p">
+            <img src="images/Violator.png" alt="Violator Album Cover" data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1994-04-25" data-artist-name="Blur" data-album-name="Parklife"
+            data-genres="Britpop" data-spotify-uri="spotify:album:0YS25Dr3hMtMFlVTfuvzl4">
+            <img src="images/Parklife.png" alt="Parklife Album Cover" data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1992-11-03" data-artist-name="Rage Against the Machine"
+            data-album-name="Rage Against the Machine" data-genres="Rap Metal,Funk Metal,Alternative Metal,Rap Rock"
+            data-spotify-uri="spotify:album:4LaRYkT4oy47wEuQgkLBul">
+            <img src="images/Rage Against The Machine.png" alt="Rage Against the Machine Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1993-01-25" data-artist-name="Belly" data-album-name="Star"
+            data-genres="Alternative Rock,Dream Pop,Experimental Rock,Folk Rock,Jangle Pop,Post-Punk,Avant-Pop"
+            data-spotify-uri="spotify:album:2b5r3YRZYwSAeXd7aWZjWp">
+            <img src="images/Star.jpg" alt="Star Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1994-03-08" data-artist-name="Soundgarden"
+            data-album-name="Superunknown" data-genres="Grunge,Heavy Metal,Hard Rock,Stoner Rock"
+            data-spotify-uri="spotify:album:4K8bxkPDa5HENw0TK7WxJh">
+            <img src="images/Superunknown.png" alt="Superunknown Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1991-09-23" data-artist-name="Primal Scream"
+            data-album-name="Screamadelica"
+            data-genres="Alternative Rock,Alternative Dance,Neo-Psychedelia,Maddchester,Dance-Rock"
+            data-spotify-uri="spotify:album:4TECsw2dFHZ1ULrT7OA3OL">
+            <img src="images/Screamadelica.jpg" alt="Screamadelica Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1992-07-27" data-artist-name="Morrissey"
+            data-album-name="Your Arsenal" data-genres="Glam Rock,Rockabilly,Britpop"
+            data-spotify-uri="spotify:album:5gg79cLcpB2vhjWr53Te2X">
+            <img src="images/Your Arsenal.jpg" alt="Your Arsenal Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1991-04-08" data-artist-name="Sleater-Kinney"
+            data-album-name="Dig Me Out" data-genres="Punk Rock"
+            data-spotify-uri="spotify:album:3tshnNFNhHrO6NUQ0BHw42">
+            <img src="images/Dig Me Out.jpg" alt="Dig Me Out Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1998-09-21" data-artist-name="Eels"
+            data-album-name="Electro-Shock Blues" data-genres="Indie Rock"
+            data-spotify-uri="spotify:album:0WxLDRcFFjHUb5lfOt6t51">
+            <img src="images/Electro-­Shock Blues.jpg" alt="Electro-Shock Blues Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1990-09-25" data-artist-name="The Replacements"
+            data-album-name="All Shook Down" data-genres="Alternative Rock"
+            data-spotify-uri="spotify:album:1JXodg2ZixCkemVstxSQN9">
+            <img src="images/All Shook Down.jpg" alt="All Shook Down Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1990-04-19" data-artist-name="Fugazi" data-album-name="Repeater"
+            data-genres="Post-Hardcore,Garage Rock" data-spotify-uri="spotify:album:6JbGZGta38AArBgflt024C">
+            <img src="images/Repeater.jpg" alt="Repeater Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1996-09-16" data-artist-name="DJ Shadow"
+            data-album-name="Endtroducing....." data-genres="Industrial Hip Hop,Trip Hop,Plunderphonics,Sampledelia"
+            data-spotify-uri="spotify:album:4tUVkNYSFrrEqqrxBQW9PN">
+            <img src="images/Endtroducing......jpg" alt="Endtroducing..... Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1993-06-22" data-artist-name="Liz Phair"
+            data-album-name="Exile in Guyville" data-genres="Indie Rock,Lo-Fi"
+            data-spotify-uri="spotify:album:7sCpW2cLGcRk1zf9zi0Yqd">
+            <img src="images/Exile in Guyville.jpg" alt="Exile in Guyville Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1995-03-13" data-artist-name="Radiohead" data-album-name="The Bends"
+            data-genres="Alternative Rock,Britpop,Indie Rock" data-spotify-uri="spotify:album:35UJLpClj5EDrhpNIi4DFg">
+            <img src="images/The Bends.png" alt="The Bends Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1995-06-07" data-artist-name="Björk" data-album-name="Post"
+            data-genres="Art Pop,Electronica,Trip Hop,Experimental"
+            data-spotify-uri="spotify:album:2Ul7B1LEHxXzYubtkTMENs">
+            <img src="images/Post.png" alt="Post Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1994-08-22" data-artist-name="Portishead" data-album-name="Dummy"
+            data-genres="Trip Hop" data-spotify-uri="spotify:album:3539EbNgIdEDGBKkUf4wno">
+            <img src="images/Dummy.png" alt="Dummy Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1995-10-24" data-artist-name="The Smashing Pumpkins"
+            data-album-name="Mellon Collie and the Infinite Sadness"
+            data-genres="Alternative Rock,Grunge,Alternative Metal,Art Rock,Heavy Metal"
+            data-spotify-uri="spotify:album:55RhFRyQFihIyGf61MgcfV">
+            <img src="images/Mellon Collie and the Infinite Sadness.jpg"
+                alt="Mellon Collie and the Infinite Sadness Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1997-11-18" data-artist-name="Modest Mouse"
+            data-album-name="The Lonesome Crowded West" data-genres="Indie Rock"
+            data-spotify-uri="spotify:album:5mvHTVy1iUIkAflIufoOpj">
+            <img src="images/The Lonesome Crowded West.jpg" alt="The Lonesome Crowded West Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1990-02-26" data-artist-name="The House of Love"
+            data-album-name="The House of Love" data-genres="Alternative Rock"
+            data-spotify-uri="spotify:album:6dIFn9PVo8zstNxsOCSovJ">
+            <img src="images/House of Love.jpg" alt="The House of Love Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1994-08-29" data-artist-name="Oasis"
+            data-album-name="Definitely Maybe" data-genres="Britpop,Rock"
+            data-spotify-uri="spotify:album:3LzKUdUTdJb6P7xGN6SotC">
+            <img src="images/Definitely Maybe.jpg" alt="Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1991-02-19" data-artist-name="Dinosaur Jr."
+            data-album-name="Green Mind" data-genres="Alternative Rock"
+            data-spotify-uri="spotify:album:6O2rF8WIEEUPxxOYqWOacF">
+            <img src="images/Green Mind.png" alt="Green Mind Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1994-08-23" data-artist-name="Jeff Buckley" data-album-name="Grace"
+            data-genres="Alternative Rock,Folk Rock,Jazz-Rock" data-spotify-uri="spotify:album:7yQtjAjhtNi76KRu05XWFS">
+            <img src="images/Grace.jpg" alt="Grace Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1998-03-24" data-artist-name="Semisonic"
+            data-album-name="Feeling Strangely Fine" data-genres="Alternative Rock,Power Pop,Post-Grunge"
+            data-spotify-uri="spotify:album:6KaEKR4KsmFWVrb0ktQo2T">
+            <img src="images/Feeling Strangely Fine.jpg" alt="Feeling Strangely Fine Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1992-04-20" data-artist-name="Pavement"
+            data-album-name="Slanted and Enchanted" data-genres="Indie Rock,Lo-Fi,Noise Pop"
+            data-spotify-uri="spotify:album:7o14zVcXSRk7clV6QCEdOD">
+            <img src="images/Slanted and Enchanted.jpg" alt="Slanted and Enchanted Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1996-11-18" data-artist-name="Belle and Sebastian"
+            data-album-name="If You're Feeling Sinister" data-genres="Chamber Pop,Indie Rock,Indie Pop,Twee Pop"
+            data-spotify-uri="spotify:album:3e9VtbXnl6tqrFKrnNyxaI">
+            <img src="images/If You're Feeling Sinister.png" alt="If You're Feeling Sinister Album Cover"
+                data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1992-03-09" data-artist-name="Curve" data-album-name="Doppelgänger"
+            data-genres="Shoegaze">
+            <img src="images/Doppelgänger.jpg" alt="Doppelgänger Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1997-01-28" data-artist-name="Built to Spill"
+            data-album-name="Perfect from Now On" data-genres="Indie Rock,Alternative Rock"
+            data-spotify-uri="spotify:album:6DlZzUnITGI5cWGTjIWSBm">
+            <img src="images/Perfect From Now On.jpg" alt="Perfect from Now On Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1996-10-29" data-artist-name="Wilco" data-album-name="Being There"
+            data-genres="Alternative Country" data-spotify-uri="spotify:album:4gy64TkuOWP2Uuu1DuDeZK">
+            <img src="images/Being There.jpg" alt="Being There Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1995-03-13" data-artist-name="Elastica" data-album-name="Elastica"
+            data-genres="Britpop,Post-Punk" data-spotify-uri="spotify:album:00MAXeszCotk3g9q8KYJlZ">
+            <img src="images/Elastica.jpg" alt="Elastica Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1994-05-31" data-artist-name="Beastie Boys"
+            data-album-name="Ill Communication" data-genres="Hip Hop,Rock,Jazz,Funk"
+            data-spotify-uri="spotify:album:6lfjbwFGzQ6aSNP1N3JlT8">
+            <img src="images/Ill Communication.jpg" alt="Ill Communication Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1990-05-15" data-artist-name="Bloodletting"
+            data-album-name="Concrete Blonde" data-genres="Alternative Rock,Gothic Rock"
+            data-spotify-uri="spotify:album:0Qny7PmxUlBMrw4xdeiHaU">
+            <img src="images/Bloodletting.jpg" alt="Concrete Blonde Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1997-05-20" data-artist-name="Foo Fighters"
+            data-album-name="The Colour and the Shape"
+            data-genres="Alternative Rock,Post-Grunge,Hard Rock,Grunge,Punk Rock"
+            data-spotify-uri="spotify:album:30ly6F6Xl0TKmyBCU50Khv">
+            <img src="images/The Colour and the Shape.png" alt="The Colour and the Shape Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1990-02-09" data-artist-name="Midnight Oil"
+            data-album-name="Blue Sky Mining" data-genres="Alternative Rock"
+            data-spotify-uri="spotify:album:4C3raKL0dzfTitM3YtqN1S">
+            <img src="images/Blue Sky Mining.jpg" alt="Blue Sky Mining Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1997-04-22" data-artist-name="Yo La Tengo"
+            data-album-name="I Can Hear the Heart Beating as One" data-genres="Indie Rock,Indie Pop,Noise Pop"
+            data-spotify-uri="spotify:album:3V18DIKvRuwdxc2LE4wuac">
+            <img src="images/I Can Hear The Heart Beating As One.png"
+                alt="I Can Hear the Heart Beating as One Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1999-06-12" data-artist-name="Sigur Rós"
+            data-album-name="Ágætis byrjun" data-genres="Post-Rock,Dream Pop,Ambient,Art Rock,Shoegaze"
+            data-spotify-uri="spotify:album:1DMMv1Kmoli3Y9fVEZDUVC">
+            <img src="images/Ágætis Byrjun.jpg" alt="Ágætis byrjun Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1991-04-15" data-artist-name="Temple of the Dog"
+            data-album-name="Temple of the Dog" data-genres="Grunge"
+            data-spotify-uri="spotify:album:63HdXCn0Xz1pRZc2GzMw7k">
+            <img src="images/Temple of the Dog.jpg" alt="Temple of the Dog Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1995-08-15" data-artist-name="Garbage" data-album-name="Garbage"
+            data-genres="Alternative Rock,Dance-Rock,Power Pop" data-spotify-uri="spotify:album:5oBySdXAQniFqWOgxPWQSs">
+            <img src="images/Garbage.jpg" alt="Garbage Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1997-02-25" data-artist-name="Elliott Smith"
+            data-album-name="Either/Or" data-genres="Indie Folk,Indie Rock,Lo-Fi,Americana,Pop Rock"
+            data-spotify-uri="spotify:album:5bmpvyP7UGqB4VuXmrJUMy">
+            <img src="images/Either-Or.png" alt="Either/Or Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1995-08-15" data-artist-name="Blind Melon" data-album-name="Soup"
+            data-genres="Alternative Rock" data-spotify-uri="spotify:album:1oFb2lITfburNYlKeyGnMO">
+            <img src="images/Soup.jpg" alt="Soup Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1994-05-10" data-artist-name="Weezer" data-album-name="Weezer"
+            data-genres="Alternative Rock,Power Pop,Pop Punk,Pop Rock,Geek Rock,Hard Rock,Emo"
+            data-spotify-uri="spotify:album:1xpGyKyV26uPstk1Elgp9Q">
+            <img src="images/Weezer.jpg" alt="Weezer Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1991-05-27" data-artist-name="Electronic"
+            data-album-name="Electronic" data-genres="Alternative Dance,Synth-Pop,Alternative Rock"
+            data-spotify-uri="spotify:album:6g8Zu43gbKXEHqYs0ZKTcT">
+            <img src="images/Electronic.jpg" alt="Electronic Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1994-06-07" data-artist-name="Stone Temple Pilots"
+            data-album-name="Purple" data-genres="Grunge,Alternative Rock"
+            data-spotify-uri="spotify:album:57lcTrUlYgfMIPvBUsVU6h">
+            <img src="images/Purple.jpg" alt="Purple Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1998-03-30" data-artist-name="Pulp"
+            data-album-name="This Is Hardcore" data-genres="Art Rock,Glam Rock,Britpop"
+            data-spotify-uri="spotify:album:32T4VUVJCN17nA2uybRRon">
+            <img src="images/This is Hardcore.jpg" alt="This Is Hardcore Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1995-10-30" data-artist-name="Pulp"
+            data-album-name="Different Class" data-genres="Britpop, Art Rock"
+            data-spotify-uri="spotify:album:3ly9T2L4pqTZijFgQssd3x">
+            <img src="images/Different Class.jpg" alt="Different Class Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1990-05-07" data-artist-name="Ultra Vivid Scene"
+            data-album-name="Joy 1967-1990" data-genres="Alternative Rock"
+            data-spotify-uri="spotify:album:2KzZDQ1NyBRRj1CAgUV9Ae">
+            <img src="images/Joy 1967­-1990.jpg" alt="Joy 1967-1990 Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1993-09-14" data-artist-name="Morphine"
+            data-album-name="Cure for Pain" data-genres="Alternative Rock,Jazz-Rock"
+            data-spotify-uri="spotify:album:0FocpOyE7RnaNsiaEhSbp6">
+            <img src="images/Cure for Pain.jpg" alt="Cure for Pain Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1991-03-27" data-artist-name="Slint" data-album-name="Spiderland"
+            data-genres="Post-Hardcore,Post-Rock,Math Rock" data-spotify-uri="spotify:album:2NnkLRaeX33d1Mn8ZLgTo8">
+            <img src="images/Spiderland.jpg" alt="Spiderland Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1991-08-06" data-artist-name="Robyn Hitchcock and The Egyptians"
+            data-album-name="Perspex Island" data-genres="Alternative Rock"
+            data-spotify-uri="spotify:album:1wvTn9h2mTVEyimUbxSrro">
+            <img src="images/Perspex Island.jpg" alt="Perspex Island Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1998-04-20" data-artist-name="Massive Attack"
+            data-album-name="Mezzanine" data-genres="Trip Hop,Electronica"
+            data-spotify-uri="spotify:album:49MNmJhZQewjt06rpwp6QR">
+            <img src="images/Mezzanine.png" alt="Mezzanine Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+
+
+
+
+
+
+
+
     </div>
- </section>
- <h2>Figures Unveiled: Spotlight on Stats</h2>
- <section class="stats-section">
-     <div class="stats-columns">
-       <section id="most-albums">
-         <h3>Top Creatives</h3> 
-         <!-- <h4>Prolific Album Masters</h4> -->
-         <ul></ul>
-       </section>
-       <section id="most-rating-points">
-         <h3>Point Leaders</h3>
-         <!-- <h4>Artistry in Full Score</h4> -->
-         <ul></ul>
-       </section>
-       <section id="most-genres">
-         <h3>Genre Highlights</h3>
-         <!-- <h4>Leading Tags</h4> -->
-         <ul></ul>
-       </section>
-     </div>
-   </section>
-   <p id="total-albums"></p>
-     <script src="scripts.js"></script>
-     <script src="mix-tape-stats.js"></script>
- </body>
- </html>
+    <section id="last-song">
+        <h2>Sonic Footprint</h2>
+        <div class="container">
+            <div id="last-song-container"></div>
+        </div>
+    </section>
+    <h2>Figures Unveiled: Spotlight on Stats</h2>
+    <section class="stats-section">
+        <div class="stats-columns">
+            <section id="most-albums">
+                <h3>Top Creatives</h3>
+                <!-- <h4>Prolific Album Masters</h4> -->
+                <ul></ul>
+            </section>
+            <section id="most-rating-points">
+                <h3>Point Leaders</h3>
+                <!-- <h4>Artistry in Full Score</h4> -->
+                <ul></ul>
+            </section>
+            <section id="most-genres">
+                <h3>Genre Highlights</h3>
+                <!-- <h4>Leading Tags</h4> -->
+                <ul></ul>
+            </section>
+        </div>
+    </section>
+    <p id="total-albums"></p>
+    <script src="scripts.js"></script>
+    <script src="mix-tape-stats.js"></script>
+</body>
+
+</html>
