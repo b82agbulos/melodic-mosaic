@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essence</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Essence</h1>
+
+    <div class="sort-buttons">
+        <button id="sort-album-name">Sort by Album</button>
+        <button id="sort-artist-name">Sort by Artist</button>
+        <button id="sort-release-date">Sort by Release Date</button>
+        <button id="sort-rating">Sort by Rating</button>
+        <button id="shuffle">Shuffle</button>
+    </div>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search by album, artist, release date, or genre" />
+    </div>
+    <div class="playlist-buttons">
+        <button class="button" id="melodic-mosaic">Melodic Mosaic</button>
+    </div>
+
+
+    <div class="container">
+
+
+        <div class="album-cover" data-release-date="2000-07-18" data-artist-name="Jill Scott"
+            data-album-name="Who Is Jill Scott?: Words and Sounds Vol. 1" data-genres="R&B,Soul,Neo Soul,Hip Hop,Jazz"
+            data-spotify-uri="spotify:album:620y2xi6SkUb6IZlnnWxuG">
+            <img src="images/Who Is Jill Scott-- Words and Sounds Vol. 1.jpg"
+                alt="Who Is Jill Scott?: Words and Sounds Vol. 1 Album Cover" data-rating="5">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="2000-01-25" data-artist-name="D'Angelo" data-album-name="Voodoo"
+            data-genres="Neo Soul,R&B,Funk,Soul,Jazz,Psychedelic Soul"
+            data-spotify-uri="spotify:album:2lO9yuuIDgBpSJzxTh3ai8">
+            <img src="images/Voodoo.jpg" alt="Voodoo Album Cover" data-rating="4">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1996-04-02" data-artist-name="Maxwell"
+            data-album-name="Maxwell's Urban Hang Suite" data-genres="R&B,Neo Soul,Soul,Retro-Soul"
+            data-spotify-uri="spotify:album:2k5YAxjmAD3DmYtmlrY64p">
+            <img src="images/Maxwell’s Urban Hang Suite.jpg" alt="Maxwell's Urban Hang Suite Album Cover"
+                data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="2000-11-21" data-artist-name="Erykah Badu"
+            data-album-name="Mama's Gun" data-genres="Neo Soul" data-spotify-uri="spotify:album:3cADvHRdKniF9ELCn1zbGH">
+            <img src="images/Mama's Gun.jpg" alt="Mama's Gun Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="2001-07-27" data-artist-name="Bilal"
+            data-album-name="1st Born Second" data-genres="Neo Soul,R&B"
+            data-spotify-uri="spotify:album:6n09PKuOUkvyOmX9U3uO77">
+            <img src="images/1st Born Second.jpg" alt="1st Born Second Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1997-02-11" data-artist-name="Erykah Badu" data-album-name="Baduizm"
+            data-genres="R&B, Neo Soul" data-spotify-uri="spotify:album:3qr4pTBWEU1SVf01j6RAx3">
+            <img src="images/Baduizm.jpg" alt="Baduizm Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1998-08-25" data-artist-name="Lauryn Hill"
+            data-album-name="The Miseducation of Lauryn Hill"
+            data-genres="Neo Soul,R&B,Hip Hop, Hip Hop Soul,Progressive Rap"
+            data-spotify-uri="spotify:album:1BZoqf8Zje5nGdwZhOjAtD">
+            <img src="images/The Miseducation of Lauryn Hill.jpg" alt="The Miseducation of Lauryn Hill Album Cover"
+                data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1995-07-03" data-artist-name="D'Angelo"
+            data-album-name="Brown Sugar" data-genres="Neo Soul,R&B,Soul,Funk"
+            data-spotify-uri="spotify:album:4HTVABUq8amDUxBv3zJbX4">
+            <img src="images/Brown Sugar.jpg" alt="Brown Sugar Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="2001-06-26" data-artist-name="Res" data-album-name="How I Do"
+            data-genres="Soul,Pop,Rock,Post-Punk,Neo Soul" data-spotify-uri="spotify:album:4u50iZ3xFs19AxPRmakPYa">
+            <img src="images/How I Do.jpg" alt="How I Do Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="2011-03-25" data-artist-name="Raphael Saadiq"
+            data-album-name="Stone Rollin'" data-genres="R&B,Rock,Soul,Blues,Funk,Psychedelic,Progressive Soul"
+            data-spotify-uri="spotify:album:26orrccGqNXm1m6mr9OO91">
+            <img src="images/Stone Rollin’.jpg" alt="Stone Rollin' Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1997-01-28" data-artist-name="Rahsaan Patterson"
+            data-album-name="Rahsaan Patterson" data-genres="R&B,Soul,Neo Soul,Hip Hop,Funk"
+            data-spotify-uri="spotify:album:1uMPGRwlgCjpIxjGTjg93c">
+            <img src="images/Rahsaan Patterson.jpg" alt="Rahsaan Patterson Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="2012-07-10" data-artist-name="Frank Ocean"
+            data-album-name="Channel Orange" data-genres="Alternative R&B,Progressive Soul,Neo Soul"
+            data-spotify-uri="spotify:album:392p3shh2jkxUxY2VHvlH8">
+            <img src="images/Channel Orange.png" alt="Channel Orange Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="2000-11-14" data-artist-name="Musiq Soulchild"
+            data-album-name="Aijuswanaseing" data-genres="R&B,Neo Soul"
+            data-spotify-uri="spotify:album:2RmMKj20xouC3Mqq1CyZ3c">
+            <img src="images/Aijuswanaseing.jpg" alt="Aijuswanaseing Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="2013-07-09" data-artist-name="Thundercat"
+            data-album-name="Apocalypse" data-genres="Jazz Fusion,Electronic,Funk,R&B"
+            data-spotify-uri="spotify:album:2qqVy8a4qk9FCt00hal9vl">
+            <img src="images/Apocalypse.png" alt="Apocalypse Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="2001-03-27" data-artist-name="India Arie"
+            data-album-name="Acoustic Soul" data-genres="R&B" data-spotify-uri="spotify:album:6ApdnTHD5zXzmZqxf0TA9Z">
+            <img src="images/Acoustic Soul.jpg" alt="Acoustic Soul Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="2016-01-15" data-artist-name="Anderson .Paak"
+            data-album-name="Malibu" data-genres="R&B,Hip Hop,Neo Soul"
+            data-spotify-uri="spotify:album:4VFG1DOuTeDMBjBLZT7hCK">
+            <img src="images/Malibu.png" alt="Malibu Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <section id="last-song">
+        <h2>Sonic Footprint</h2>
+        <div class="container">
+            <div id="last-song-container"></div>
+        </div>
+    </section>
+    <h2>Figures Unveiled: Spotlight on Stats</h2>
+    <section class="stats-section">
+        <div class="stats-columns">
+            <section id="most-albums">
+                <h3>Top Creatives</h3>
+                <!-- <h4>Prolific Album Masters</h4> -->
+                <ul></ul>
+            </section>
+            <section id="most-rating-points">
+                <h3>Point Leaders</h3>
+                <!-- <h4>Artistry in Full Score</h4> -->
+                <ul></ul>
+            </section>
+            <section id="most-genres">
+                <h3>Genre Highlights</h3>
+                <!-- <h4>Leading Tags</h4> -->
+                <ul></ul>
+            </section>
+        </div>
+    </section>
+    <p id="total-albums"></p>
+    <script src="scripts.js"></script>
+    <script src="essence-stats.js"></script>
+</body>
+
+</html>
