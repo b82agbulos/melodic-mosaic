@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Glow</h1>
+
+    <div class="sort-buttons">
+        <button id="sort-album-name">Sort by Album</button>
+        <button id="sort-artist-name">Sort by Artist</button>
+        <button id="sort-release-date">Sort by Release Date</button>
+        <button id="sort-rating">Sort by Rating</button>
+        <button id="shuffle">Shuffle</button>
+    </div>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search by album, artist, release date, or genre" />
+    </div>
+    <div class="playlist-buttons">
+        <button class="button" id="melodic-mosaic">Melodic Mosaic</button>
+    </div>
+
+
+    <div class="container">
+
+        <div class="album-cover" data-release-date="1994-11-29" data-artist-name="Mary J. Blige"
+            data-album-name="My Life" data-genres="R&B" data-spotify-uri="spotify:album:1OQ5l5rHKqUumPpn559zJC">
+            <img src="images/My Life.jpg" alt="My Life Album Cover" data-rating="7">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1998-08-25" data-artist-name="Lauryn Hill"
+            data-album-name="The Miseducation of Lauryn Hill"
+            data-genres="Neo Soul,R&B,Hip Hop, Hip Hop Soul,Progressive Rap"
+            data-spotify-uri="spotify:album:1BZoqf8Zje5nGdwZhOjAtD">
+            <img src="images/The Miseducation of Lauryn Hill.jpg" alt="The Miseducation of Lauryn Hill Album Cover"
+                data-rating="12">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1994-08-30" data-artist-name="Boyz II Men" data-album-name="II"
+            data-genres="R&B,Soul,Pop,Hip Hop Soul" data-spotify-uri="spotify:album:1IWhZEOwEoXbOB4a40XaR3">
+            <img src="images/II.jpg" alt="II Album Cover" data-rating="4">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1995-11-14" data-artist-name="R. Kelly" data-album-name="R. Kelly"
+            data-genres="R&B" data-spotify-uri="spotify:album:4MYENSmUM01QisUKLi6FWr">
+            <img src="images/R. Kelly.jpg" alt="R. Kelly Album Cover" data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1995-11-14" data-artist-name="Various Artists"
+            data-album-name="Waiting to Exhale: Original Soundtrack Album" data-genres="R&B" data-spotify-uri="spotify:album:2EHFZkzTbRFDt1tomCBToM">
+            <img src="images/Waiting to Exhale- Original Soundtrack Album.jpg"
+                alt="Waiting to Exhale: Original Soundtrack Album Album Cover" data-rating="4">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1998-11-10" data-artist-name="R. Kelly" data-album-name="R."
+            data-genres="R&B,Soul,Hip Hop Soul,Gospel,Pop" data-spotify-uri="spotify:album:4yRYsQZfQpzkoVWH2XCX66">
+            <img src="images/R..png" alt="R. Album Cover" data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1998-06-09" data-artist-name="Brandy"
+            data-album-name="Never Say Never" data-genres="Pop,R&B" data-spotify-uri="spotify:album:1Co6e9ag1gRKcWdG7xKcCi">
+            <img src="images/Never Say Never.png" alt="Never Say Never Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1997-04-22" data-artist-name="Mary J. Blige"
+            data-album-name="Share My World" data-genres="R&B" data-spotify-uri="spotify:album:11s3RAPMk0LpsZhuniepSW">
+            <img src="images/Share My World.jpg" alt="Share My World Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1994-11-15" data-artist-name="TLC" data-album-name="CrazySexyCool"
+            data-genres="R&B,Hip Hop Soul" data-spotify-uri="spotify:album:5eg56dCpFn32neJak2vk0f">
+            <img src="images/CrazySexyCool.png" alt="CrazySexyCool Album Cover" data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1996-08-13" data-artist-name="Aaliyah"
+            data-album-name="One in a Million" data-genres="R&B,Hip Hop Soul,Pop" data-spotify-uri="spotify:album:79EIRdmpPSIWfRlxaZdJbG">
+            <img src="images/One In A Million.png" alt="One in a Million Album Cover" data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1993-07-13" data-artist-name="Toni Braxton"
+            data-album-name="Toni Braxton" data-genres="R&B,Pop,Soul" data-spotify-uri="spotify:album:73ojqvZakvdkBxSg9pyPqz">
+            <img src="images/Toni Braxton.jpg" alt="Toni Braxton Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1995-07-03" data-artist-name="D'Angelo"
+            data-album-name="Brown Sugar" data-genres="Neo Soul,R&B,Soul,Funk"
+            data-spotify-uri="spotify:album:4HTVABUq8amDUxBv3zJbX4">
+            <img src="images/Brown Sugar.jpg" alt="Brown Sugar Album Cover" data-rating="5">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1997-09-10" data-artist-name="Mariah Carey"
+            data-album-name="Butterfly" data-genres="R&B,Pop,Hip Hop" data-spotify-uri="spotify:album:7aDBFWp72Pz4NZEtVBANi9">
+            <img src="images/Butterfly.jpg" alt="Butterfly Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1999-10-12" data-artist-name="Donell Jones"
+            data-album-name="Where I Wanna Be" data-genres="Urban Contemporary" data-spotify-uri="spotify:album:01riz9JMpPdL99fYhoZaph">
+            <img src="images/Where I Wanna Be.jpg" alt="Where I Wanna Be Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1992-06-30" data-artist-name="Various Artists"
+            data-album-name="Boomerang" data-genres="R&B,New Jack Swing,Hip Hop,Soul" data-spotify-uri="spotify:album:3hrK0o67R7x4ZcG4NMTTXh">
+            <img src="images/Boomerang- Original Soundtrack Album.jpg" alt="Boomerang Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1997-02-11" data-artist-name="Erykah Badu" data-album-name="Baduizm"
+            data-genres="R&B, Neo Soul" data-spotify-uri="spotify:album:3qr4pTBWEU1SVf01j6RAx3">
+            <img src="images/Baduizm.jpg" alt="Baduizm Album Cover" data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1996-06-18" data-artist-name="Toni Braxton"
+            data-album-name="Secrets" data-genres="R&B" data-spotify-uri="spotify:album:6rxtWZH5ua9eANwWdwwf9o">
+            <img src="images/Secrets.jpg" alt="Secrets Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1991-05-28" data-artist-name="Jodeci"
+            data-album-name="Forever My Lady" data-genres="R&B,Hip Hop Soul,New Jack Swing" data-spotify-uri="spotify:album:2u41wsU4YVTbtOTCapKLe7">
+            <img src="images/Forever My Lady.jpg" alt="Forever My Lady Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1991-04-30" data-artist-name="Boyz II Men"
+            data-album-name="Cooleyhighharmony" data-genres="R&B,New Jack Swing" data-spotify-uri="spotify:album:3jknvlUSe6D9Oyn2E3JBLO">
+            <img src="images/Cooleyhighharmony.jpg" alt="Cooleyhighharmony Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1993-12-21" data-artist-name="Jodeci"
+            data-album-name="Diary of a Mad Band" data-genres="New Jack Swing,Soul,R&B" data-spotify-uri="spotify:album:41pgxrq2gjdSsGnqofrHGj">
+            <img src="images/Diary of a Mad Band.jpg" alt="Diary of a Mad Band Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1997-07-15" data-artist-name="Maxwell"
+            data-album-name="MTV Unplugged" data-genres="R&B,Neo Soul" data-spotify-uri="spotify:album:5ejwNegV5hPkQRyMi7CiCs">
+            <img src="images/Maxwell - MTV Unplugged.jpg" alt="MTV Unplugged Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1992-10-26" data-artist-name="Sade" data-album-name="Love Deluxe"
+            data-genres="R&B,Ambient,Cool Jazz,Art Pop,Trip Hop,Chill-Out" data-spotify-uri="spotify:album:2PfGKHtqEX58bHtkQxJnWG">
+            <img src="images/Love Deluxe.jpg" alt="Love Deluxe Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1995-08-29" data-artist-name="Faith Evans" data-album-name="Faith"
+            data-genres="R&B" data-spotify-uri="spotify:album:36G7gDkkRckUGU7lgG6nev">
+            <img src="images/Faith.jpg" alt="Faith Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1997-11-18" data-artist-name="Chico DeBarge"
+            data-album-name="Long Time No See" data-genres="Pop,R&B,Soul,Neo Soul,Hip Hop Soul" data-spotify-uri="spotify:album:0AHbQKIEj4X5ghszLRhnLL">
+            <img src="images/Long Time No See.jpg" alt="Long Time No See Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1993-05-18" data-artist-name="Janet Jackson" data-album-name="Janet"
+            data-genres="R&B" data-spotify-uri="spotify:album:7qIuZgsMkRuh7rzi4qVcpg">
+            <img src="images/janet.jpg" alt="Janet Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1997-09-16" data-artist-name="Jon B" data-album-name="Cool Relax"
+            data-genres="R&B" data-spotify-uri="spotify:album:4OLSMLHNl7Nf8wwsxnxqwJ">
+            <img src="images/Cool Relax.jpg" alt="Cool Relax Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1996-06-25" data-artist-name="Keith Sweat"
+            data-album-name="Keith Sweat" data-genres="Soul,New Jack Swing" data-spotify-uri="spotify:album:0BzXvdpUKDEk612hLc6rZV">
+            <img src="images/Keith Sweat.jpg" alt="Keith Sweat Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1997-10-28" data-artist-name="Tony! Toni! Toné!"
+            data-album-name="Hits" data-genres="R&B,Soul,Funk" data-spotify-uri="spotify:album:1yoA6HcbdX23c4k0MXNq5g">
+            <img src="images/Hits.jpg" alt="Hits Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+
+
+
+
+    </div>
+    <section id="last-song">
+        <h2>Sonic Footprint</h2>
+        <div class="container">
+            <div id="last-song-container"></div>
+        </div>
+    </section>
+    <h2>Figures Unveiled: Spotlight on Stats</h2>
+    <section class="stats-section">
+        <div class="stats-columns">
+            <section id="most-albums">
+                <h3>Top Creatives</h3>
+                <!-- <h4>Prolific Album Masters</h4> -->
+                <ul></ul>
+            </section>
+            <section id="most-rating-points">
+                <h3>Point Leaders</h3>
+                <!-- <h4>Artistry in Full Score</h4> -->
+                <ul></ul>
+            </section>
+            <section id="most-genres">
+                <h3>Genre Highlights</h3>
+                <!-- <h4>Leading Tags</h4> -->
+                <ul></ul>
+            </section>
+        </div>
+    </section>
+    <p id="total-albums"></p>
+    <script src="scripts.js"></script>
+    <script src="glow-stats.js"></script>
+</body>
+
+</html>
