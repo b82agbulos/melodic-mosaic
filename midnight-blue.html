@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midnight Blue</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Midnight Blue</h1>
+
+    <div class="sort-buttons">
+        <button id="sort-album-name">Sort by Album</button>
+        <button id="sort-artist-name">Sort by Artist</button>
+        <button id="sort-release-date">Sort by Release Date</button>
+        <button id="sort-rating">Sort by Rating</button>
+        <button id="shuffle">Shuffle</button>
+    </div>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search by album, artist, release date, or genre" />
+    </div>
+    <div class="playlist-buttons">
+        <button class="button" id="melodic-mosaic">Melodic Mosaic</button>
+    </div>
+
+
+    <div class="container">
+
+        <div class="album-cover" data-release-date="1967-03-10" data-artist-name="Aretha Franklin"
+            data-album-name="I Never Loved a Man the Way I Love You" data-genres="Southern Soul"
+            data-spotify-uri="spotify:album:5WndWfzGwCkHzAbQXVkg2V">
+            <img src="images/I Never Loved a Man the Way I Love You.png"
+                alt="I Never Loved a Man the Way I Love You Album Cover" data-rating="4">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1975-03-15" data-artist-name="Earth, Wind & Fire"
+            data-album-name="That's the Way of the World" data-genres="Soul,Funk,Progressive Soul"
+            data-spotify-uri="spotify:album:5tXZfxvr2VaWibD74nw8VL">
+            <img src="images/That's the Way of the World.jpg" alt="That's the Way of the World Album Cover"
+                data-rating="4">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1973-08-03" data-artist-name="Stevie Wonder"
+            data-album-name="Innervisions" data-genres="Progressive Soul,Funk,Soul,Rock,Jazz"
+            data-spotify-uri="spotify:album:5jgI8Eminx9MmLBontDWq8">
+            <img src="images/Innervisions.jpg" alt="Innervisions Album Cover" data-rating="5">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1970-09-01" data-artist-name="Curtis Mayfield"
+            data-album-name="Curtis" data-genres="Progressive Soul,Psychedelic Soul"
+            data-spotify-uri="spotify:album:1e7dJKGZZaPEsge725g2S8">
+            <img src="images/Curtis.jpg" alt="Curtis Album Cover" data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1971-05-21" data-artist-name="Marvin Gaye"
+            data-album-name="What's Going On" data-genres="Rock,Alternative"
+            data-spotify-uri="spotify:album:2v6ANhWhZBUKkg6pJJBs3B">
+            <img src="images/What's Going On.jpg" alt="What's Going On Album Cover" data-rating="6">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1972-07-11" data-artist-name="Curtis Mayfield"
+            data-album-name="Super Fly" data-genres="Psychedelic Soul,Funk,Progressive Soul"
+            data-spotify-uri="spotify:album:5ljIGCRRvS48V4ADzPGav2">
+            <img src="images/Super Fly.jpg" alt="Super Fly Album Cover" data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1976-09-28" data-artist-name="Stevie Wonder"
+            data-album-name="Songs in the Key of Life" data-genres="R&B,Soul,Pop,Avant-Pop,Progressive Soul"
+            data-spotify-uri="spotify:album:6YUCc2RiXcEKS9ibuZxjt0">
+            <img src="images/Songs in the Key of Life.jpg" alt="Songs in the Key of Life Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1971-11-01" data-artist-name="Sly and the Family Stone"
+            data-album-name="There's a Riot Goin' On"
+            data-genres="Psychedelic Funk, Progressive Soul,Avant-Pop,Deep Funk"
+            data-spotify-uri="spotify:album:29f2cOueckYE8Nc1pkJjrU">
+            <img src="images/There's A Riot Goin' On.jpg" alt="There's a Riot Goin' On Album Cover" data-rating="4">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1979-08-10" data-artist-name="Michael Jackson"
+            data-album-name="Off the Wall" data-genres="Disco,Funk,Pop,R&B"
+            data-spotify-uri="spotify:album:2ZytN2cY4Zjrr9ukb2rqTP">
+            <img src="images/Off the Wall.jpg" alt="Off the Wall Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1970-04-01" data-artist-name="Isaac Hayes"
+            data-album-name="The Isaac Hayes Movement" data-genres="Progressive Soul"
+            data-spotify-uri="spotify:album:1b4crsRWP5w01FbKDnuJX3">
+            <img src="images/The Isaac Hayes Movement.jpg" alt="The Isaac Hayes Movement Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1972-10-23" data-artist-name="Al Green"
+            data-album-name="I'm Still in Love with You" data-genres="Soul"
+            data-spotify-uri="spotify:album:7hI0QCwcx9GB8MZK24IfTT">
+            <img src="images/I'm Still In Love With You.jpg" alt="I'm Still in Love with You Album Cover"
+                data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1973-08-28" data-artist-name="Marvin Gaye"
+            data-album-name="Let's Get It On" data-genres="Soul,Funk"
+            data-spotify-uri="spotify:album:6AmnVWOxXYucWxgidEgwhy">
+            <img src="images/Let’s Get It On.png" alt="Let's Get It On Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1971-04-22" data-artist-name="The Temptations"
+            data-album-name="Sky's the Limit" data-genres="Soul,Psychedelic Soul"
+            data-spotify-uri="spotify:album:1w68QsDEt1Rt5SiwOJNGFn">
+            <img src="images/Sky’s The Limit.jpg" alt="Sky's the Limit Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1973-04-01" data-artist-name="Al Green" data-album-name="Call Me"
+            data-genres="Soul,R&B" data-spotify-uri="spotify:album:1hryVGXoRLV9WAhO97xEDJ">
+            <img src="images/Call Me.jpg" alt="Call Me Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1972-03-30" data-artist-name="Bobby Womack"
+            data-album-name="Understanding" data-genres="Soul,Funk"
+            data-spotify-uri="spotify:album:6szJ4kcqwQvLfXN5IqV9T4">
+            <img src="images/Understanding.jpg" alt="Understanding Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1966-10-15" data-artist-name="Otis Redding"
+            data-album-name="Complete & Unbelievable: The Otis Redding Dictionary of Soul" data-genres="Memphis Soul"
+            data-spotify-uri="spotify:album:25uNcuL4dAoV62eKmr8Q0Y">
+            <img src="images/Complete & Unbelievable- The Otis Redding Dictionary of Soul.png"
+                alt="Complete & Unbelievable: The Otis Redding Dictionary of Soul Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1970-08-24" data-artist-name="Aretha Franklin"
+            data-album-name="Spirit in the Dark" data-genres="Soul,R&B"
+            data-spotify-uri="spotify:album:1s3FSienS5KcpWckmq4NHO">
+            <img src="images/Sprit In The Dark.jpg" alt="Spirit in the Dark Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1963-08-01" data-artist-name="Sam Cooke"
+            data-album-name="Night Beat" data-genres="R&B,Lounge,Blues,Soul"
+            data-spotify-uri="spotify:album:4FsWNGbkeZtMD1BWXhIvRk">
+            <img src="images/Night Beat.jpg" alt="Night Beat Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1972-06-09" data-artist-name="James Brown"
+            data-album-name="There It Is" data-genres="Funk,Soul"
+            data-spotify-uri="spotify:album:3vHzPcnbxrqgYifZ6kQUbC">
+            <img src="images/There It Is.jpg" alt="There It Is Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1966-09-16" data-artist-name="Nina Simone"
+            data-album-name="Wild is the Wind" data-genres="Jazz,Blues,Folk,R&B"
+            data-spotify-uri="spotify:album:2EYVXfypcucR62WMKJl6Mr">
+            <img src="images/Wild Is the Wind.png" alt="Wild Is the Wind Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1973-11-10" data-artist-name="The O'Jays"
+            data-album-name="Ship Ahoy" data-genres="Soul" data-spotify-uri="spotify:album:0prtrB4HNL9tiEeAv57Bz8">
+            <img src="images/Ship Ahoy.jpg" alt="Ship Ahoy Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1971-07-12" data-artist-name="Funkadelic"
+            data-album-name="Maggot Brain" data-genres="Psychedelic Funk,Funk Rock,R&B,Acid Rock,Progressive Soul"
+            data-spotify-uri="spotify:album:3ywVzrwMQ3Kq43N9zBdBQm">
+            <img src="images/Maggot Brain.jpg" alt="Maggot Brain Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1968-06-14" data-artist-name="Aretha Franklin"
+            data-album-name="Aretha Now" data-genres="Southern Soul,Soul,R&B"
+            data-spotify-uri="spotify:album:55HZ2ectg1mMTEKDqIq3kC">
+            <img src="images/Aretha Now.jpg" alt="Aretha Now Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1972-11-01" data-artist-name="War"
+            data-album-name="The World Is a Ghetto" data-genres="Psychedelic Soul,Jazz,Progressive Soul"
+            data-spotify-uri="spotify:album:4UZmpGH8kpAgyZ2yqQ8sP9">
+            <img src="images/World is a Ghetto.jpg" alt="The World Is a Ghetto Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1978-08-11" data-artist-name="Chic" data-album-name="C'est Chic"
+            data-genres="Disco,Funk,R&B" data-spotify-uri="spotify:album:4a1EmaXGBiQ61Y4m6SNcYi">
+            <img src="images/C’est Chic.jpg" alt="C'est Chic Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+    <section id="last-song">
+        <h2>Sonic Footprint</h2>
+        <div class="container">
+            <div id="last-song-container"></div>
+        </div>
+    </section>
+    <h2>Figures Unveiled: Spotlight on Stats</h2>
+    <section class="stats-section">
+        <div class="stats-columns">
+            <section id="most-albums">
+                <h3>Top Creatives</h3>
+                <!-- <h4>Prolific Album Masters</h4> -->
+                <ul></ul>
+            </section>
+            <section id="most-rating-points">
+                <h3>Point Leaders</h3>
+                <!-- <h4>Artistry in Full Score</h4> -->
+                <ul></ul>
+            </section>
+            <section id="most-genres">
+                <h3>Genre Highlights</h3>
+                <!-- <h4>Leading Tags</h4> -->
+                <ul></ul>
+            </section>
+        </div>
+    </section>
+    <p id="total-albums"></p>
+    <script src="scripts.js"></script>
+    <script src="midnight-blue-stats.js"></script>
+</body>
+
+</html>
