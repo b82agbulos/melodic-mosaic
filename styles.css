@@ -13,20 +13,23 @@ body {
   line-height: 1.5;
 }
 
-h1 {
+h1, h2 {
   text-align: center;
-  font-size: 2.5rem;
   margin: 20px 0;
   color: #f7dc6f; /* Yellowish text color for the heading */
 }
 
-h2 {
-text-align: center;
-font-size: 1.25rem;
-margin: 20px 0;
-color: #f7dc6f;
+h1 {
+  font-size: 2.5rem;
 }
 
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  color: #f39c12;
+}
 
 .container {
   display: flex;
@@ -42,14 +45,13 @@ color: #f7dc6f;
   margin-bottom: 50px;
 }
 
-
 .info-displayed .container {
   align-items: flex-start;
   margin-top: 50px;
 }
 
 .album-cover {
-  position: relative; /* Add this line */
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,129 +70,7 @@ color: #f7dc6f;
 }
 
 /* Sort buttons */
-.sort-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-button {
-  background-color: #f39c12; /* Orange button background color */
-  color: #fff; /* White text color */
-  border: none;
-  padding: 10px 15px;
-  border-radius: 30px;
-  cursor: pointer;
-  font-size: 0.9em;
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-button:hover {
-  background-color: #f7dc6f; /* Yellowish button background color on hover */
-  transform: translateY(-3px);
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-}
-
-/* Search */
-.search-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-#search-input {
-  padding: 10px;
-  border-radius: 30px;
-  border: none;
-  outline: none;
-  width: 400px;
-  max-width: 100%;
-}
-
-
-/* Global styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Helvetica', sans-serif;
-}
-
-body {
-  background-color: #181818; /* Dark gray background color */
-  color: #fff; /* White text color */
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-h1 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin: 20px 0;
-  color: #f7dc6f; /* Yellowish text color for the heading */
-}
-
-h2 {
-text-align: center;
-font-size: 1.25rem;
-margin: 20px 0;
-color: #f7dc6f;
-}
-h3{
-  color: #f39c12
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  align-items: center;
-  height: 100%;
-  margin: auto;
-}
-
-.album-cover.info-displayed {
-  margin-bottom: 50px;
-}
-
-
-.info-displayed .container {
-  align-items: flex-start;
-  margin-top: 50px;
-}
-
-.album-cover {
-  position: relative; /* Add this line */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
-  transition: transform 0.3s;
-  max-height: auto;
-  padding: auto;
-}
-
-.album-cover:hover {
-  transform: translateY(-20px);
-}
-
-.album-cover:hover img {
-  height: calc(150px + (var(--rating) * 10px));
-}
-
-/* Sort buttons */
-.sort-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.playlist-buttons {
+.sort-buttons, .playlist-buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -248,7 +128,6 @@ button:hover {
   max-width: 100%;
 }
 
-
 .stats-section {
   width: 100%;
   margin: 40px auto;
@@ -257,11 +136,6 @@ button:hover {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-}
-
-.stats-section h2 {
-  text-align: center;
-  margin-bottom: 20px;
 }
 
 .stats-columns {
@@ -280,58 +154,56 @@ button:hover {
   align-items: center;
 }
 
-.stats-section h3 {
-  width: 100%;
-  text-align: center;
-}
-
 .stats-section ul {
   list-style-type: none;
   padding: 0;
   margin: 10px 0;
 }
 
-.song-info span:not(:last-child) {
+.song-info span:not(:last-child), .song-info img, .song-info button {
   display: inline-block;
   margin-left: 20px;
 }
+
 .song-info img {
-  display: block;
   width: 100px;
   height: 100px;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 20px;
 }
+
 .song-info button {
-  display: block;
   margin-top: 10px;
-  margin-left: 20px;
 }
 
 #total-albums {
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 20px;
-
 }
 
 .last-song-container{
   align-items: center;
 }
 
-::placeholder { /* Most modern browsers support this now. */
+::placeholder, ::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder { /* Most modern browsers support this now. */
   text-align: center;
 }
 
-::-webkit-input-placeholder { /* WebKit browsers */
-  text-align: center;
+.top-button {
+  display: inline-block; /* Add this property */
+  background-color: #f39c12; /* Orange button background color */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 20px; /* Add margins as required */
 }
 
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-  text-align: center;
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10+ */
-  text-align: center;
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
