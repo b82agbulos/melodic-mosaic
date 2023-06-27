@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frayed</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Frayed</h1>
+
+    <div class="sort-buttons">
+        <button id="sort-album-name">Sort by Album</button>
+        <button id="sort-artist-name">Sort by Artist</button>
+        <button id="sort-release-date">Sort by Release Date</button>
+        <button id="sort-rating">Sort by Rating</button>
+        <button id="shuffle">Shuffle</button>
+    </div>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search by album, artist, release date, or genre" />
+    </div>
+    <div class="playlist-buttons">
+        <button class="button" id="melodic-mosaic">Melodic Mosaic</button>
+    </div>
+
+
+    <div class="container">
+
+        <div class="album-cover" data-release-date="1991-09-24" data-artist-name="Nirvana" data-album-name="Nevermind"
+            data-genres="Grunge,Alternative Rock" data-spotify-uri="spotify:album:2guirTSEqLizK7j9i1MTTZ">
+            <img src="images/Nevermind.png" alt="Nevermind Album Cover" data-rating="8">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1991-08-27" data-artist-name="Pearl Jam" data-album-name="Ten"
+            data-genres="Grunge,Alternative Rock,Hard Rock" data-spotify-uri="spotify:album:5B4PYA7wNN4WdEXdIJu58a">
+            <img src="images/Ten.png" alt="Ten Album Cover" data-rating="5">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1991-10-08" data-artist-name="Soundgarden"
+            data-album-name="Badmotorfinger" data-genres="Grunge,Alternative Metal,Heavy Metal,Hard Rock"
+            data-spotify-uri="spotify:album:2W6MaUiInBkna5DfBES4E3">
+            <img src="images/Badmotorfinger.png" alt="Badmotorfinger Album Cover" data-rating="4">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1992-09-29" data-artist-name="Alice in Chains"
+            data-album-name="Dirt" data-genres="Grunge,Heavy Metal,Alternative Metal"
+            data-spotify-uri="spotify:album:58NXIEYqmq5dQHg9nV9duM">
+            <img src="images/Dirt.jpg" alt="Dirt Album Cover" data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1994-03-08" data-artist-name="Soundgarden"
+            data-album-name="Superunknown" data-genres="Grunge,Heavy Metal,Hard Rock,Stoner Rock"
+            data-spotify-uri="spotify:album:4K8bxkPDa5HENw0TK7WxJh">
+            <img src="images/Superunknown.png" alt="Superunknown Album Cover" data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1994-04-12" data-artist-name="Hole"
+            data-album-name="Live Through This" data-genres="Alternative Rock,Grunge,Punk Rock"
+            data-spotify-uri="spotify:album:2Rwf2nPYZQ9aIe4QXACTC7">
+            <img src="images/Live Through This.jpg" alt="Live Through This Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1993-09-21" data-artist-name="Nirvana" data-album-name="In Utero"
+            data-genres="Grunge,Alternative Rock,Punk Rock,Noise Rock"
+            data-spotify-uri="spotify:album:7wOOA7l306K8HfBKfPoafr">
+            <img src="images/In Utero.jpg" alt="In Utero Album Cover" data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1988-10-20" data-artist-name="Mudhoney"
+            data-album-name="Superfuzz Bigmuff" data-genres="Grunge,Garage Punk"
+            data-spotify-uri="spotify:album:318b6Is2MnqkuL079NnPko">
+            <img src="images/Superfuzz Bigmuff.jpg" alt="Superfuzz Bigmuff Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1994-06-07" data-artist-name="Stone Temple Pilots"
+            data-album-name="Purple" data-genres="Grunge,Alternative Rock"
+            data-spotify-uri="spotify:album:57lcTrUlYgfMIPvBUsVU6h">
+            <img src="images/Purple.jpg" alt="Purple Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1991-04-15" data-artist-name="Temple of the Dog"
+            data-album-name="Temple of the Dog" data-genres="Grunge"
+            data-spotify-uri="spotify:album:63HdXCn0Xz1pRZc2GzMw7k">
+            <img src="images/Temple of the Dog.jpg" alt="Temple of the Dog Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1989-06-15" data-artist-name="Nirvana" data-album-name="Bleach"
+            data-genres="Grunge,Sludge Metal,Punk Rock,Hard Rock,Indie Rock"
+            data-spotify-uri="spotify:album:1KVGLuPtrMrLlyy4Je6df7">
+            <img src="images/Bleach.jpg" alt="Bleach Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1993-07-27" data-artist-name="The Smashing Pumpkins"
+            data-album-name="Siamese Dream"
+            data-genres="Alternative Rock,Grunge,Alternative Metal,Psychedelic Rock,Indie Rock"
+            data-spotify-uri="spotify:album:0bQglEvsHphrS19FGODEGo">
+            <img src="images/Siamese Dream.jpg" alt="Siamese Dream Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1993-10-19" data-artist-name="Pearl Jam" data-album-name="Vs."
+            data-genres="Grunge,Hard Rock,Alternative Rock" data-spotify-uri="spotify:album:3BSOiAas8BpJOii3kCPyjV">
+            <img src="images/Vs..jpg" alt="Vs. Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+
+
+
+
+    </div>
+    <section id="last-song">
+        <h2>Sonic Footprint</h2>
+        <div class="container">
+            <div id="last-song-container"></div>
+        </div>
+    </section>
+    <h2>Figures Unveiled: Spotlight on Stats</h2>
+    <section class="stats-section">
+        <div class="stats-columns">
+            <section id="most-albums">
+                <h3>Top Creatives</h3>
+                <!-- <h4>Prolific Album Masters</h4> -->
+                <ul></ul>
+            </section>
+            <section id="most-rating-points">
+                <h3>Point Leaders</h3>
+                <!-- <h4>Artistry in Full Score</h4> -->
+                <ul></ul>
+            </section>
+            <section id="most-genres">
+                <h3>Genre Highlights</h3>
+                <!-- <h4>Leading Tags</h4> -->
+                <ul></ul>
+            </section>
+        </div>
+    </section>
+    <p id="total-albums"></p>
+    <script src="scripts.js"></script>
+    <script src="frayed-stats.js"></script>
+</body>
+
+</html>
