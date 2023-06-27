@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renaissance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Renaissance</h1>
+
+    <div class="sort-buttons">
+        <button id="sort-album-name">Sort by Album</button>
+        <button id="sort-artist-name">Sort by Artist</button>
+        <button id="sort-release-date">Sort by Release Date</button>
+        <button id="sort-rating">Sort by Rating</button>
+        <button id="shuffle">Shuffle</button>
+    </div>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search by album, artist, release date, or genre" />
+    </div>
+    <div class="playlist-buttons">
+        <button class="button" id="melodic-mosaic">Melodic Mosaic</button>
+    </div>
+
+
+    <div class="container">
+
+        <div class="album-cover" data-release-date="1997-10-14" data-artist-name="Richard Wagner"
+            data-album-name="Der Ring des Nibelungen" data-genres="Romantic,Opera,Classical"
+            data-spotify-uri="spotify:album:6CW9LaewE0HKN6kGUm9mUq">
+            <img src="images/Der Ring Des Nibelung.jpg" alt="Der Ring des Nibelungen Album Cover" data-rating="4">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1995-04-04" data-artist-name="Ludwig van Beethoven"
+            data-album-name="Symphonien Nos. 5 & 7" data-genres="Romantic,Classical"
+            data-spotify-uri="spotify:album:2rFE6csJ54y18Y25HbQ7xA">
+            <img src="images/Beethoven's Symphonies Nos 5 & 7.jpg" alt="Symphonien Nos. 5 & 7 Album Cover"
+                data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1963-01-01" data-artist-name="Benjamin Britten"
+            data-album-name="War Requiem" data-genres="Classical,Contemporary Classical"
+            data-spotify-uri="spotify:album:6kgngI410Q9h27t5XbBeJ8">
+            <img src="images/War Requiem.jpg" alt="War Requiem Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1956-01-01" data-artist-name="Johann Sebastian Bach"
+            data-album-name="Bach: The Goldberg Variations" data-genres="Baroque,Classical"
+            data-spotify-uri="spotify:album:1aCpHSQE5ghxibsQ5gkBe0">
+            <img src="images/JS Bach- Goldberg Variations.jpg" alt="Bach: The Goldberg Variations Album Cover"
+                data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1953-01-01" data-artist-name="Giacomo Puccini"
+            data-album-name="Tosca" data-genres="Opera,Classical"
+            data-spotify-uri="spotify:album:2l8HDEuUM2McRE6xCtWiJ7">
+            <img src="images/Tosca.jpg" alt="Tosca Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1965-01-01" data-artist-name="Edward Elgar"
+            data-album-name="Elgar: Cello Concerto / Sea Pictures" data-genres="Romantic,Classical"
+            data-spotify-uri="spotify:album:0b40AMmZPt7sjgw17WGk1s">
+            <img src="images/Elgar- Cello Concerto.jpg" alt="Elgar: Cello Concerto / Sea Pictures Album Cover"
+                data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1952-01-01" data-artist-name="Richard Wagner"
+            data-album-name="Tristan Und Isolde" data-genres="Opera,Romantic,Classical"
+            data-spotify-uri="spotify:album:1vrnAXE9a4Fa57CIwMlKtp">
+            <img src="images/Tristan und Isolde.jpeg" alt="Tristan Und Isolde Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1964-01-01" data-artist-name="Maurice Ravel / Hector Berlioz"
+            data-album-name="Shéhérazade / Nuits D'Été" data-genres="Romantic,Impressionism,Classical"
+            data-spotify-uri="spotify:album:1wAQtboQtay46yY4BwV0z0">
+            <img src="images/Shéhérazade-Nuits d'été.jpg" alt="Shéhérazade / Nuits D'Été Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1961-01-01" data-artist-name="Pyotr Ilyich Tchaikovsky"
+            data-album-name="Symphonies Nos. 4, 5 & 6 “Pathétique”" data-genres="Romantic,Classical"
+            data-spotify-uri="spotify:album:6ve8P89JIdSuJkGeuez3ac">
+            <img src="images/Symphonies Nos 4-6.jpg" alt="Symphonies Nos. 4, 5 & 6 “Pathétique” Album Cover"
+                data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1989-09-12" data-artist-name="George Gershwin"
+            data-album-name="Porgy And Bess" data-genres="Contemporary Classical,Classical"
+            data-spotify-uri="spotify:album:6JOrscZTwb7OH6e5EM9Jyg">
+            <img src="images/Porgy and Bess.jpeg" alt="Porgy And Bess Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+    <section id="last-song">
+        <h2>Sonic Footprint</h2>
+        <div class="container">
+            <div id="last-song-container"></div>
+        </div>
+    </section>
+    <h2>Figures Unveiled: Spotlight on Stats</h2>
+    <section class="stats-section">
+        <div class="stats-columns">
+            <section id="most-albums">
+                <h3>Top Creatives</h3>
+                <!-- <h4>Prolific Album Masters</h4> -->
+                <ul></ul>
+            </section>
+            <section id="most-rating-points">
+                <h3>Point Leaders</h3>
+                <!-- <h4>Artistry in Full Score</h4> -->
+                <ul></ul>
+            </section>
+            <section id="most-genres">
+                <h3>Genre Highlights</h3>
+                <!-- <h4>Leading Tags</h4> -->
+                <ul></ul>
+            </section>
+        </div>
+    </section>
+    <p id="total-albums"></p>
+    <script src="scripts.js"></script>
+    <script src="sub-stats.js"></script>
+</body>
+
+</html>

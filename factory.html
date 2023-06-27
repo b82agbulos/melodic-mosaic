@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Factory</h1>
+
+    <div class="sort-buttons">
+        <button id="sort-album-name">Sort by Album</button>
+        <button id="sort-artist-name">Sort by Artist</button>
+        <button id="sort-release-date">Sort by Release Date</button>
+        <button id="sort-rating">Sort by Rating</button>
+        <button id="shuffle">Shuffle</button>
+    </div>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search by album, artist, release date, or genre" />
+    </div>
+    <div class="playlist-buttons">
+        <button class="button" id="melodic-mosaic">Melodic Mosaic</button>
+    </div>
+
+
+    <div class="container">
+
+        <div class="album-cover" data-release-date="1988-11-01" data-artist-name="Front 242"
+            data-album-name="Front by Front" data-genres="EBM, Industrial"
+            data-spotify-uri="spotify:album:3bJDzdsqXwjo9EXupegwIR">
+            <img src="images/Front By Front.png" alt="Front by Front Album Cover" data-rating="6">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1979-12-01" data-artist-name="Throbbing Gristle"
+            data-album-name="20 Jazz Funk Greats" data-genres="Industrial,Synth-Pop,Experimental Pop,Electropop"
+            data-spotify-uri="spotify:album:2P2rEGacPr58w3aDUandWA">
+            <img src="images/20 Jazz Funk Greats.jpg" alt="20 Jazz Funk Greats Album Cover" data-rating="5">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1994-03-08" data-artist-name="Nine Inch Nails"
+            data-album-name="The Downward Spiral" data-genres="Industrial Rock,Alternative Rock,Industrial Metal"
+            data-spotify-uri="spotify:album:3nJnyDV8fwFpffo0EyHQto">
+            <img src="images/The Downward Spiral.png" alt="The Downward Spiral Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1969-01-01" data-artist-name="Cromagnon" data-album-name="Orgasm"
+            data-genres="Avant-Garde,Sound Collage,Outside,Psychedelic Rock,Noise,Industrial"
+            data-spotify-uri="spotify:album:60StK3mTvlqeHhTGr9LS6Z">
+            <img src="images/Orgasm.jpg" alt="Orgasm Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1990-10-30" data-artist-name="Skinny Puppy"
+            data-album-name="Too Dark Park" data-genres="Industrial Dance,Electro-Industrial,Industrial Metal"
+            data-spotify-uri="spotify:album:4AIHx6ud8viXZmwbmIgDDW">
+            <img src="images/Too Dark Park.jpg" alt="Too Dark Park Album Cover" data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1981-09-01" data-artist-name="Cabaret Voltaire"
+            data-album-name="Red Mecca" data-genres="Industrial,Post-Punk"
+            data-spotify-uri="spotify:album:5T06pEavfCaLWxhnq8eNdw">
+            <img src="images/Red Mecca.jpg" alt="Red Mecca Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1981-10-01" data-artist-name="Throbbing Gristle"
+            data-album-name="Greatest Hits" data-genres="Industrial,Post-Punk,Noise,Experimental,Electronic"
+            data-spotify-uri="spotify:album:2Rs6gKxCc91tGEZ8U80Muh">
+            <img src="images/Greatest Hits.jpg" alt="Greatest Hits Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1989-11-14" data-artist-name="Ministry"
+            data-album-name="The Mind Is a Terrible Thing to Taste" data-genres="Industrial Metal"
+            data-spotify-uri="spotify:album:2Z73HeYQNCf5T8dzzHaoz5">
+            <img src="images/The Mind is a Terrible Thing to Taste.jpg"
+                alt="The Mind Is a Terrible Thing to Taste Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1986-08-01" data-artist-name="Coil"
+            data-album-name="Horse Rotorvator" data-genres="Industrial,Psychedelic">
+            <img src="images/Horse Rotorvator.png" alt="Horse Rotorvator Album Cover" data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1989-01-09" data-artist-name="Nitzer Ebb" data-album-name="Belief"
+            data-genres="EBM" data-spotify-uri="spotify:album:7bJkNpwROlpNc6olJyvTD2">
+            <img src="images/Belief.jpg" alt="Belief Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1983-11-21" data-artist-name="Einstürzende Neubauten"
+            data-album-name="Zeichnungen des Patienten O. T." data-genres="Industrial,Experimental"
+            data-spotify-uri="spotify:album:26haV3xAO1klkweKLiMo3Q">
+            <img src="images/Zeichnungen des Patienten O.T..jpg" alt="Zeichnungen des Patienten O. T. Album Cover"
+                data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1988-09-12" data-artist-name="Skinny Puppy"
+            data-album-name="VIVIsectVI" data-genres="Electro-Industrial"
+            data-spotify-uri="spotify:album:5dCC29SnOre79SkoHBbPuG">
+            <img src="images/VIVIsectVI.png" alt="VIVIsectVI Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1980-10-05" data-artist-name="Killing Joke"
+            data-album-name="Killing Joke" data-genres="Post-Punk,Industrial Rock"
+            data-spotify-uri="spotify:album:0FfpevxQr8EyNsjc24TbmI">
+            <img src="images/Killing Joke.jpg" alt="Killing Joke Album Cover" data-rating="2">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1993-10-13" data-artist-name="KMFDM" data-album-name="Angst"
+            data-genres="Industrial Metal,Industrial Rock" data-spotify-uri="spotify:album:6We2VFbkhbRCQNX7Vud8aY">
+            <img src="images/Angst.jpg" alt="Angst Album Cover" data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1988-10-11" data-artist-name="Ministry"
+            data-album-name="The Land of Rape and Honey" data-genres="Industrial Rock,Industrial Metal"
+            data-spotify-uri="spotify:album:6TyCJQqyB8OZLhUEPCNgNT">
+            <img src="images/The Land Of Rape And Honey.jpg" alt="The Land of Rape and Honey Album Cover"
+                data-rating="3">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1996-10-08" data-artist-name="Marilyn Manson"
+            data-album-name="Antichrist Superstar"
+            data-genres="Industrial Metal,Industrial Rock,Alternative Metal,Gothic Rock"
+            data-spotify-uri="spotify:album:7APnZJwayR3lH9aUDPDYQB">
+            <img src="images/Antichrist Superstar.jpg" alt="Antichrist Superstar Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1993-03-22" data-artist-name="Chemlab"
+            data-album-name="Burn Out at the Hydrogen Bar" data-genres="Industrial Rock,Industrial Metal"
+            data-spotify-uri="spotify:album:420IN1wqFVZXBHxkxQatGj">
+            <img src="images/Burn Out at the Hydrogen Bar.jpg" alt="Burn Out at the Hydrogen Bar Album Cover"
+                data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1998-08-25" data-artist-name="Rob Zombie"
+            data-album-name="Hellbilly Deluxe" data-genres="Industrial Metal,Nu Metal"
+            data-spotify-uri="spotify:album:2B4lHoTCpWbxQPTZmCOjnH">
+            <img src="images/Hellbilly Deluxe.jpg" alt="Hellbilly Deluxe Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1987-05-11" data-artist-name="Nitzer Ebb"
+            data-album-name="That Total Age" data-genres="EBM" data-spotify-uri="spotify:album:7wm0bknBmCO7Ienh7plPz4">
+            <img src="images/That Total Age.jpg" alt="That Total Age Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1989-10-20" data-artist-name="Nine Inch Nails"
+            data-album-name="Pretty Hate Machine"
+            data-genres="Industrial Dance,Synth-Pop,Industrial Rock,Alternative Rock,Electronic Rock"
+            data-spotify-uri="spotify:album:3umFHeEpc4yLXtrRcv9gLN">
+            <img src="images/Pretty Hate Machine.jpg" alt="Pretty Hate Machine Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1989-11-13" data-artist-name="Godflesh"
+            data-album-name="Streetcleaner" data-genres="Industrial Metal"
+            data-spotify-uri="spotify:album:5fRIh0Yk4eFLst6Nj7RUDF">
+            <img src="images/Streetcleaner.png" alt="Streetcleaner Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1982-01-02" data-artist-name="Nurse with Wound"
+            data-album-name="Homotopy to Marie" data-genres="Industrial,Musique Concrète,Sound Collage"
+            data-spotify-uri="spotify:album:35gWcA1bHfQcd9PhNdIy8e">
+            <img src="images/Homotopy to Marie.jpg" alt="Homotopy to Marie Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1992-09-22" data-artist-name="Nine Inch Nails"
+            data-album-name="Broken" data-genres="Industrial Metal,Alternative Metal"
+            data-spotify-uri="spotify:album:4jyWDa1yM9ul7zgUdR80hw">
+            <img src="images/Broken.png" alt="Broken Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1999-10-25" data-artist-name="VNV Nation" data-album-name="Empires"
+            data-genres="Futurepop,Electro-Industrial" data-spotify-uri="spotify:album:7fSSsXxAJI1v9ClpIXGAGY">
+            <img src="images/Empires.jpg" alt="Empires Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1992-07-14" data-artist-name="Ministry"
+            data-album-name="ΚΕΦΑΛΗΞΘ aka Psalm 69: The Way to Succeed and the Way to Suck Eggs"
+            data-genres="Industrial Metal" data-spotify-uri="spotify:album:2wz3P1w89gQd3iXdmF1IA5">
+            <img src="images/Psalm 69- The Way To Succeed And The Way To Suck Eggs.jpg"
+                alt="ΚΕΦΑΛΗΞΘ aka Psalm 69: The Way to Succeed and the Way to Suck Eggs Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1995-04-04" data-artist-name="KMFDM" data-album-name="Nihil"
+            data-genres="Industrial Rock,Industrial Metal,Industrial Dance"
+            data-spotify-uri="spotify:album:47Z7zIEHWy2ZQQzmg6B1w5">
+            <img src="images/Nihil.jpg" alt="Nihil Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1996-10-14" data-artist-name="Haujobb"
+            data-album-name="Solutions for a Small Planet" data-genres="Electro-Industrial,IDM"
+            data-spotify-uri="spotify:album:2J5BOmmPPMdPbns4n0UJek">
+            <img src="images/Solutions for a Small Planet.jpg" alt="Solutions for a Small Planet Album Cover"
+                data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1990-11-15" data-artist-name="KMFDM" data-album-name="Naïve"
+            data-genres="Industrial Rock,Industrial Dance" data-spotify-uri="spotify:album:3jTXRgxzfTVgnaJvt9N44c">
+            <img src="images/Naïve.jpg" alt="Naïve Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+        <div class="album-cover" data-release-date="1997-12-09" data-artist-name="God & Beast" data-album-name="NON"
+            data-genres="Noise,Industrial,Experimental" data-spotify-uri="spotify:album:2hUJbuEcJF54kBfCaK2SjN">
+            <img src="images/God and Beast.jpg" alt="NON Album Cover" data-rating="1">
+            <div class="album-info"></div>
+        </div>
+
+
+
+    </div>
+    <section id="last-song">
+        <h2>Sonic Footprint</h2>
+        <div class="container">
+            <div id="last-song-container"></div>
+        </div>
+    </section>
+    <h2>Figures Unveiled: Spotlight on Stats</h2>
+    <section class="stats-section">
+        <div class="stats-columns">
+            <section id="most-albums">
+                <h3>Top Creatives</h3>
+                <!-- <h4>Prolific Album Masters</h4> -->
+                <ul></ul>
+            </section>
+            <section id="most-rating-points">
+                <h3>Point Leaders</h3>
+                <!-- <h4>Artistry in Full Score</h4> -->
+                <ul></ul>
+            </section>
+            <section id="most-genres">
+                <h3>Genre Highlights</h3>
+                <!-- <h4>Leading Tags</h4> -->
+                <ul></ul>
+            </section>
+        </div>
+    </section>
+    <p id="total-albums"></p>
+    <script src="scripts.js"></script>
+    <script src="sub-stats.js"></script>
+</body>
+
+</html>
