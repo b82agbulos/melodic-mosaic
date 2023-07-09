@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const mostAlbums = document.querySelector("#most-albums ul");
     stats.sortedAlbumCounts.forEach(([artist, count]) => {
       const li = document.createElement("li");
-      li.textContent = `${artist} (${count} albums)`;
+      li.textContent = `${artist} (${count} singles)`;
       mostAlbums.appendChild(li);
     });
 
