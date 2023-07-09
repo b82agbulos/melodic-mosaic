@@ -16,17 +16,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   
   let audio = new Audio('sounds/vinyl.mp3');
-
+  audio.play(); // Start playing the audio immediately
+  
   $(window).on('load', function() {
     $('#preloader').fadeOut('slow', function() { 
       $(this).remove(); 
       audio.pause(); // Stop the audio when loading is done
     });
-  
-    audio.play().catch((error) => { // Play the audio, handle errors
-      console.error('Audio playback error:', error);
-    });
   });
+
   
   // Display initial stats
   displayStats(stats);
