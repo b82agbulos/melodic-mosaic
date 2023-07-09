@@ -129,6 +129,24 @@ button:hover {
   text-align: center;
 }
 
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: #181818;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#preloader img {
+  width: 100%;
+  height: auto;
+}
+
 .stats-section {
   width: 100%;
   margin: 40px auto;

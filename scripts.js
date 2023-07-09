@@ -14,6 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const totalAlbumsElement = document.querySelector("#total-albums");
   totalAlbumsElement.textContent = `Total LPs & EPs: ${totalAlbums}`;
 
+  $(window).on('load', function() {
+    $('#preloader').fadeOut('slow', function() { $(this).remove(); });
+  });
+  
   // Display initial stats
   displayStats(stats);
 
