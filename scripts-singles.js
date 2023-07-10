@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let stats = calculateStats(albumCovers); // Changed to let
   const totalAlbums = countTotalAlbums(albumCovers);
   const totalAlbumsElement = document.querySelector("#total-albums");
-  totalAlbumsElement.textContent = `Total LPs & EPs: ${totalAlbums}`;
+  totalAlbumsElement.textContent = `Total Singles: ${totalAlbums}`;
 
   $(window).on('load', function() {
     $('#preloader').fadeOut('slow', function() { $(this).remove(); });
