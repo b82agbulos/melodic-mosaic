@@ -29,7 +29,7 @@ function calculateStats() {
     .sort((a, b) => b[1] - a[1])
     .slice(0, 50);
   const sortedGenreCounts = Object.entries(genreCounts)
-  .filter(([genre, count]) => count > 1)
+  .filter(([genre, count]) => count > 2)
     .sort((a, b) => b[1] - a[1])
     .slice(0, 50);
 
