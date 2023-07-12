@@ -154,7 +154,7 @@ button:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(24, 24, 24, 0.25);  /* #181818 with 33% opacity */
+  background: rgba(24, 24, 24, 0.25);  /* #181818 with 25% opacity */
 }
 .loading-text {
   position: absolute;
