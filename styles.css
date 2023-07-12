@@ -143,11 +143,19 @@ button:hover {
 }
 
 #preloader img {
-  width: 100%;
+  width:100%;
   height: auto;
   filter: grayscale(33%);
 }
-
+#preloader::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(24, 24, 24, 0.25);  /* #181818 with 33% opacity */
+}
 .loading-text {
   position: absolute;
   color: #f7dc6f;
