@@ -145,6 +145,7 @@ button:hover {
 #preloader img {
   width: 100%;
   height: auto;
+  filter: grayscale(33%);
 }
 
 .loading-text {
