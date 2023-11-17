@@ -22,14 +22,14 @@ function calculateStats() {
 
   const sortedAlbumCounts = Object.entries(artistAlbumCounts)
     .sort((a, b) => b[1] - a[1])
-    .filter(([artist, count]) => count > 3)
+    .filter(([artist, count]) => count > 2)
     .slice(0, 50);
   const sortedRatingPoints = Object.entries(artistRatingPoints)
-    .filter(([artist, points]) => points > 9)  
+    .filter(([artist, points]) => points > 8)  
     .sort((a, b) => b[1] - a[1])
     .slice(0, 50);
   const sortedGenreCounts = Object.entries(genreCounts)
-  .filter(([genre, count]) => count > 24)
+  .filter(([genre, count]) => count > 2)
     .sort((a, b) => b[1] - a[1])
     .slice(0, 50);
 
