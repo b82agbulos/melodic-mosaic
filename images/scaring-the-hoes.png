@@ -1,0 +1,58 @@
+importScripts('workerZip.js')
+
+/** generate Responses by iterating over a list of URLs */
+async function* activate(urls) {
+  for (const url of urls) {
+    try {
+      const response = await fetch(url.url)
+      if (!response.ok) console.warn(`skipping ${response.status} response for ${url.url}`)
+      else if (response.status === 204 || response.headers.get('Content-Length') === '0' || !response.body) console.warn(`skipping empty response for ${url.url}`)
+      else yield { name: url.name, input: response }
+    } catch (err) {
+      console.error(err)
+    }
+  }
+}
+
+async function handleRequest(request) {
+  if (request.method === 'POST') {
+    const url = new URL(request.url)
+    const [, name] = url.pathname.match(/\/downloadZip\/(.+)/i) || [,]
+    if (url.origin === self.origin && name) {
+      const dlUrls = await request.json()
+      return downloadZip(activate(dlUrls))
+    } else {
+      let res = await fetch(request)
+      return res
+    }
+  } else {
+    // Forward / Proxy original request
+    let res = await fetch(request)
+    return res
+  }
+}
+
+self.addEventListener('install', function (event) {
+  self.skipWaiting()
+})
+
+self.addEventListener('activate', (event) => {
+  clients.claim()
+})
+
+self.addEventListener('fetch', (event) => {
+  // this only works for Firefox
+  if (event.request.url.endsWith('/keep-alive')) {
+    return event.respondWith(new Response('ok'))
+  }
+
+  const url = new URL(event.request.url)
+  const [, name] = url.pathname.match(/\/downloadZip\/(.+)/i) || [,]
+  if (url.origin === self.origin && name)
+    event.respondWith(
+      event.request
+        .formData()
+        .then((data) => downloadZip(activate(JSON.parse(data.get('urls')))))
+        .catch((err) => new Response(err.message, { status: 500 }))
+    )
+})
