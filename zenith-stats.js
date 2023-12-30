@@ -25,11 +25,11 @@ function calculateStats() {
     .filter(([artist, count]) => count > 2)
     .slice(0, 50);
   const sortedRatingPoints = Object.entries(artistRatingPoints)
-    .filter(([artist, points]) => points > 2)  
+    .filter(([artist, points]) => points > 6)  
     .sort((a, b) => b[1] - a[1])
     .slice(0, 50);
   const sortedGenreCounts = Object.entries(genreCounts)
-  .filter(([genre, count]) => count > 8)
+  .filter(([genre, count]) => count > 10)
     .sort((a, b) => b[1] - a[1])
     .slice(0, 50);
 
